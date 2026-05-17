@@ -1,0 +1,219 @@
+{
+    "title": "What is Your Management Style?",
+    "desc": "Discover your dominant professional archetype. Find out how you handle challenges and lead projects.",
+    "info": "⏱️ 20 questions • Takes 2 minutes",
+    "startBtn": "Start Free Test",
+    "qOf": "Question {n} of {max}",
+    "resTitle": "Your Dominant Profile",
+    "shareBtn": "Share Verification Link",
+    "copied": "✓ Link Copied!",
+    "disclaimer": "Disclaimer: This tool is inspired by Dr. Ichak Adizes' PAEI framework but is unofficial and for educational use only. No official Adizes test items are used. All responses stay on your device and are not stored or shared.",
+    "questions": [
+        {
+            "text": "My mind constantly generates new concepts and ideas much more actively than most people I know.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "I easily connect disparate facts into a single global system and see trends as a whole.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Formulating a long-term mission and strategic vector of the organization is my main task.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "I am attracted to finding unconventional solutions for large-scale and complex challenges.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "I take on building strategic partnerships with key figures and counterparties.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Negotiations on the largest contracts and key agreements are my strong suit.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "My sincere passion for the product and belief in the company energize those around me.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "I am prone to getting excited about promising new projects, abandoning current tasks.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "My focus is always on what will happen tomorrow, not on current or past performance.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Daily administration, micromanagement, and employee control depress me.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "A high level of uncertainty and justified risk motivate me, not scare me.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "I regularly feel that colleagues move too slowly and don't immediately grasp my train of thought.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "My leadership style is to inspire hearts and motivate, not to monitor discipline.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "I gladly launch new initiatives, but prefer to delegate the routine of seeing them through.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "I am in continuous search of vectors for transformation, modernization, and business growth.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "In decision-making, I rely on developed intuition and react instantly.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Diving into minor technical details and bureaucratic specifics quickly drains my energy.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "My values and charisma are at the core of our team's corporate culture.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "When analyzing tasks, I first look for the answer to \"Why is this being done?\" rather than \"What is the algorithm?\"",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        },
+        {
+            "text": "I sincerely believe in the feasibility of the most ambitious goals, even if a detailed plan is not yet available.",
+            "options": [
+                { "text": "Strongly Disagree (This is not me)", "score": 1 },
+                { "text": "Somewhat Disagree", "score": 2 },
+                { "text": "Neutral / Unsure", "score": 3 },
+                { "text": "Somewhat Agree", "score": 4 },
+                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+            ]
+        }
+    ],
+    "results": [
+        { "min": 85, "title": "Absolute Visionary 🚀", "desc": "You are a classic idea generator and ideologist. You live in the future, masterfully create meaning and inspire people, but you vitally need a strong operational partner (Integrator/Executor) who will structure the chaos and bring your ideas to life." },
+        { "min": 60, "title": "Strategic Leader 🎯", "desc": "You have a well-developed big-picture vision and entrepreneurial instinct, while maintaining a connection to reality. You can successfully guide a company, combining creativity with an understanding of business processes." },
+        { "min": 40, "title": "Pragmatic Manager ⚖️", "desc": "You are more focused on tactics and stability. You can perceive others' innovative ideas and implement them, but independently finding 'breakthrough' solutions is not your main driving force." },
+        { "min": 0, "title": "Stabilizer / Operations Manager ⚙️", "desc": "Your strength lies in structure, order, logic, and 'here and now' processes. You excel at turning chaos into working systems, but tend to avoid risk and uncertainty." }
+    ]
+}

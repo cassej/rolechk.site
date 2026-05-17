@@ -1,0 +1,219 @@
+{
+    "title": "¿Cuál es tu Estilo de Gestión?",
+    "desc": "Descubre tu arquetipo profesional dominante. Conoce cómo manejas los desafíos y lideras proyectos.",
+    "info": "⏱️ 20 preguntas • Demora 2 minutos",
+    "startBtn": "Iniciar Prueba Gratis",
+    "qOf": "Pregunta {n} de {max}",
+    "resTitle": "Tu Perfil Dominante",
+    "shareBtn": "Compartir Enlace de Verificación",
+    "copied": "✓ ¡Enlace Copiado!",
+    "disclaimer": "Descargo de responsabilidad: Esta herramienta está inspirada en el marco PAEI del Dr. Ichak Adizes, pero es no oficial y solo para uso educativo. No se utilizan elementos oficiales de la prueba de Adizes. Todas las respuestas permanecen en su dispositivo y no se almacenan ni se comparten.",
+    "questions": [
+        {
+            "text": "Mi mente genera constantemente nuevos conceptos e ideas mucho más activamente que la mayoría de las personas que conozco.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Conecto fácilmente hechos dispares en un sistema global único y veo las tendencias en su conjunto.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Formular la misión a largo plazo y el vector estratégico de la organización es mi tarea principal.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Me atrae encontrar soluciones no convencionales para desafíos grandes y complejos.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Me encargo de construir alianzas estratégicas con figuras clave y contrapartes.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Las negociaciones de los contratos más grandes y acuerdos clave son mi punto fuerte.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Mi pasión sincera por el producto y la fe en la empresa energizan a quienes me rodean.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Soy propenso a entusiasmarme con nuevos proyectos prometedores, abandonando las tareas actuales.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Mi enfoque siempre está en lo que sucederá mañana, no en los resultados actuales o pasados.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "La administración diaria, el micromanagement y el control de empleados me deprimen.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Un alto nivel de incertidumbre y el riesgo justificado me motivan, no me asustan.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Siento regularmente que los colegas se mueven demasiado lento y no captan de inmediato el hilo de mis pensamientos.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Mi estilo de liderazgo es inspirar corazones y motivar, no supervisar la disciplina.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Lanzo nuevas iniciativas con gusto, pero prefiero delegar la rutina de llevarlas a cabo.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Estoy en búsqueda continua de vectores para la transformación, modernización y crecimiento del negocio.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "En la toma de decisiones, confío en mi intuición desarrollada y reacciono al instante.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Sumergirme en pequeños detalles técnicos y burocráticos rápidamente me agota.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Mis valores y carisma están en el centro de la cultura corporativa de nuestro equipo.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Al analizar tareas, primero busco la respuesta a \"¿Por qué se hace esto?\" en lugar de \"¿Cuál es el algoritmo?\"",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        },
+        {
+            "text": "Creo sinceramente en la viabilidad de los objetivos más ambiciosos, incluso si aún no hay un plan detallado para alcanzarlos.",
+            "options": [
+                { "text": "Totalmente en desacuerdo (No soy yo)", "score": 1 },
+                { "text": "Algo en desacuerdo", "score": 2 },
+                { "text": "Neutral / No estoy seguro", "score": 3 },
+                { "text": "Algo de acuerdo", "score": 4 },
+                { "text": "Totalmente de acuerdo (Me describe exactamente)", "score": 5 }
+            ]
+        }
+    ],
+    "results": [
+        { "min": 85, "title": "Visionario Absoluto 🚀", "desc": "Eres un generador de ideas e ideólogo clásico. Vives en el futuro, creas significado magistralmente e inspiras a las personas, pero necesitas vitalmente un socio operativo fuerte (Integrador/Ejecutor) que estructure el caos y haga realidad tus ideas." },
+        { "min": 60, "title": "Líder Estratégico 🎯", "desc": "Tienes una visión de gran alcance bien desarrollada y un instinto emprendedor, mientras mantienes una conexión con la realidad. Puedes guiar una empresa con éxito, combinando creatividad con comprensión de los procesos comerciales." },
+        { "min": 40, "title": "Gerente Pragmático ⚖️", "desc": "Estás más enfocado en la táctica y la estabilidad. Puedes percibir las ideas innovadoras de otros e implementarlas, pero encontrar soluciones 'revolucionarias' de forma independiente no es tu principal fuerza motriz." },
+        { "min": 0, "title": "Estabilizador / Gerente de Operaciones ⚙️", "desc": "Tu fortaleza radica en la estructura, el orden, la lógica y los procesos del 'aquí y ahora'. Exceles en convertir el caos en sistemas funcionales, pero tiendes a evitar el riesgo y la incertidumbre." }
+    ]
+}
