@@ -1,219 +1,276 @@
 {
-    "title": "What is Your Management Style?",
-    "desc": "Discover your dominant professional archetype. Find out how you handle challenges and lead projects.",
-    "info": "⏱️ 20 questions • Takes 2 minutes",
-    "startBtn": "Start Free Test",
-    "qOf": "Question {n} of {max}",
-    "resTitle": "Your Dominant Profile",
-    "shareBtn": "Share Verification Link",
-    "copied": "✓ Link Copied!",
-    "disclaimer": "Disclaimer: This tool is inspired by Dr. Ichak Adizes' PAEI framework but is unofficial and for educational use only. No official Adizes test items are used. All responses stay on your device and are not stored or shared.",
+    "nav": {
+        "home": "Tests",
+        "blog": "Blog",
+        "cookie": "Cookie Policy"
+    },
+    "home": {
+        "title": "RoleChk",
+        "subtitle": "Professional self-assessments to understand your strengths and working style.",
+        "tests": [
+            {
+                "id": "management-style",
+                "title": "Management Style Test",
+                "desc": "Discover your dominant professional archetype. Find out how you handle challenges and lead projects.",
+                "info": "20 questions · Takes 2 minutes",
+                "cta": "Start Free Test"
+            }
+        ]
+    },
+    "quiz": {
+        "qOf": "Question {n} of {max}",
+        "resTitle": "Your Result"
+    },
+    "result": {
+        "shareBtn": "Share Verification Link",
+        "copied": "Link Copied!",
+        "shareText": "I scored {score}/100 on the Management Style Test! Find out yours:",
+        "facebook": "Facebook",
+        "x": "X",
+        "linkedin": "LinkedIn",
+        "reddit": "Reddit",
+        "copyLink": "Copy Link"
+    },
+    "blog": {
+        "title": "Blog",
+        "readMore": "Read More",
+        "articles": [
+            {
+                "id": "what-is-paei",
+                "title": "What is the PAEI Framework?",
+                "excerpt": "An introduction to Dr. Ichak Adizes' management model and how it can help you understand your leadership style.",
+                "date": "2026-01-15",
+                "content": "<p>The PAEI framework, developed by Dr. Ichak Adizes, identifies four primary management roles: Producer, Administrator, Entrepreneur, and Integrator. Each role represents a different function necessary for organizational success.</p><p>Most people have a dominant style and a secondary style, with one role being either weak or absent. Understanding your PAEI profile helps you recognize your strengths, blind spots, and how to build complementary teams.</p><h2>The Four Roles</h2><p><strong>Producer (P)</strong>: Focused on results, execution, and getting things done. Producers are action-oriented and measure success by output.</p><p><strong>Administrator (A)</strong>: Focused on systems, structure, and efficiency. Administrators create order from chaos and ensure processes run smoothly.</p><p><strong>Entrepreneur (E)</strong>: Focused on vision, innovation, and future opportunities. Entrepreneurs are creative, risk-tolerant, and drive change.</p><p><strong>Integrator (I)</strong>: Focused on culture, collaboration, and team cohesion. Integrators build relationships and align people around shared values.</p><p>No single style is better than another. The most effective organizations have a balance of all four roles working together.</p>"
+            },
+            {
+                "id": "visionary-leadership",
+                "title": "The Strengths and Challenges of Visionary Leaders",
+                "excerpt": "Visionary leaders drive innovation but face unique challenges. Learn how to leverage your entrepreneurial drive while building effective teams.",
+                "date": "2026-02-01",
+                "content": "<p>Visionary leaders are the engine of innovation. They see possibilities where others see obstacles, inspire teams with compelling futures, and drive transformative change. However, this strength comes with distinct challenges.</p><h2>Key Strengths</h2><p><strong>Strategic Foresight</strong>: Visionaries anticipate trends and position their organizations ahead of the curve. They think in decades, not quarters.</p><p><strong>Inspirational Communication</strong>: They articulate a compelling vision that attracts talent, investors, and customers. People want to be part of something meaningful.</p><p><strong>Risk Tolerance</strong>: They are comfortable with uncertainty and willing to make bold bets that others avoid.</p><h2>Common Challenges</h2><p><strong>Execution Gap</strong>: Visionaries often struggle with follow-through. Generating ideas is natural; executing them requires discipline and systems.</p><p><strong>Impatience</strong>: They may become bored with routine operations and move on before ideas are fully realized.</p><p><strong>Communication Friction</strong>: Their rapid thinking can outpace their team's ability to implement, causing frustration on both sides.</p><h2>The Solution</h2><p>The most successful visionary leaders partner with strong operators who can translate vision into execution. Recognizing this need and building complementary teams is the hallmark of mature leadership.</p>"
+            },
+            {
+                "id": "building-balanced-teams",
+                "title": "Building Balanced Teams: Complementary Strengths",
+                "excerpt": "Great teams are built on complementary strengths. Learn how to identify gaps in your team and hire for balance.",
+                "date": "2026-02-15",
+                "content": "<p>No single person excels at everything. The most effective teams are built on complementary strengths where each member's abilities fill another's gaps.</p><h2>The Problem with Homogeneous Teams</h2><p>Teams that hire for cultural fit alone often end up with everyone thinking the same way. While this feels harmonious, it creates blind spots. A team of visionaries generates endless ideas but never ships. A team of administrators runs smoothly but never innovates.</p><h2>How to Build for Balance</h2><p><strong>Assess Your Current Team</strong>: Map each team member's dominant style using a framework like PAEI. Identify which roles are overrepresented and which are missing.</p><p><strong>Hire for Gaps, Not Mirrors</strong>: Resist the urge to hire people who think like you. Hire people who challenge you and bring skills you lack.</p><p><strong>Foster Psychological Safety</strong>: Complementary teams naturally have tension. Create an environment where respectful disagreement is encouraged and different perspectives are valued.</p><p><strong>Rotate Leadership</strong>: Allow different team members to lead based on the phase of the project. Visionaries lead during ideation, administrators during execution.</p>"
+            }
+        ]
+    },
+    "cookie": {
+        "title": "Cookie Policy",
+        "banner": "This site uses cookies to improve your experience. By continuing, you agree to our use of cookies.",
+        "accept": "Accept",
+        "content": "<p>This Cookie Policy explains how RoleChk uses cookies and similar tracking technologies.</p><h2>What Are Cookies</h2><p>Cookies are small text files stored on your device when you visit a website. They help the site remember your preferences and improve your experience.</p><h2>How We Use Cookies</h2><p><strong>Essential Cookies</strong>: Required for the site to function properly. These include storing your theme preference (light/dark mode) and language selection.</p><p><strong>Analytics Cookies</strong>: We may use basic analytics to understand how visitors interact with our site. No personal data is collected.</p><h2>Your Choices</h2><p>You can control cookies through your browser settings. Disabling cookies may affect certain features of the site.</p><p>By clicking \"Accept\" on the cookie banner, you consent to the use of essential and analytics cookies as described in this policy.</p><h2>Contact</h2><p>If you have questions about this policy, please contact us through the site.</p>"
+    },
+    "disclaimer": "Disclaimer: This tool is inspired by Dr. Ichak Adizes PAEI framework but is unofficial and for educational use only. All responses stay on your device and are not stored or shared.",
     "questions": [
         {
             "text": "My mind constantly generates new concepts and ideas much more actively than most people I know.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "I easily connect disparate facts into a single global system and see trends as a whole.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "Formulating a long-term mission and strategic vector of the organization is my main task.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "I am attracted to finding unconventional solutions for large-scale and complex challenges.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "I take on building strategic partnerships with key figures and counterparties.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "Negotiations on the largest contracts and key agreements are my strong suit.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "My sincere passion for the product and belief in the company energize those around me.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "I am prone to getting excited about promising new projects, abandoning current tasks.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "My focus is always on what will happen tomorrow, not on current or past performance.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "Daily administration, micromanagement, and employee control depress me.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "A high level of uncertainty and justified risk motivate me, not scare me.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "I regularly feel that colleagues move too slowly and don't immediately grasp my train of thought.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "My leadership style is to inspire hearts and motivate, not to monitor discipline.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "I gladly launch new initiatives, but prefer to delegate the routine of seeing them through.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "I am in continuous search of vectors for transformation, modernization, and business growth.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "In decision-making, I rely on developed intuition and react instantly.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "Diving into minor technical details and bureaucratic specifics quickly drains my energy.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "My values and charisma are at the core of our team's corporate culture.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "When analyzing tasks, I first look for the answer to \"Why is this being done?\" rather than \"What is the algorithm?\"",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
             "text": "I sincerely believe in the feasibility of the most ambitious goals, even if a detailed plan is not yet available.",
             "options": [
-                { "text": "Strongly Disagree (This is not me)", "score": 1 },
-                { "text": "Somewhat Disagree", "score": 2 },
-                { "text": "Neutral / Unsure", "score": 3 },
-                { "text": "Somewhat Agree", "score": 4 },
-                { "text": "Strongly Agree (This exactly describes me)", "score": 5 }
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
+                { "text": "Neutral", "score": 3 },
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         }
     ],
     "results": [
-        { "min": 85, "title": "Absolute Visionary 🚀", "desc": "You are a classic idea generator and ideologist. You live in the future, masterfully create meaning and inspire people, but you vitally need a strong operational partner (Integrator/Executor) who will structure the chaos and bring your ideas to life." },
-        { "min": 60, "title": "Strategic Leader 🎯", "desc": "You have a well-developed big-picture vision and entrepreneurial instinct, while maintaining a connection to reality. You can successfully guide a company, combining creativity with an understanding of business processes." },
-        { "min": 40, "title": "Pragmatic Manager ⚖️", "desc": "You are more focused on tactics and stability. You can perceive others' innovative ideas and implement them, but independently finding 'breakthrough' solutions is not your main driving force." },
-        { "min": 0, "title": "Stabilizer / Operations Manager ⚙️", "desc": "Your strength lies in structure, order, logic, and 'here and now' processes. You excel at turning chaos into working systems, but tend to avoid risk and uncertainty." }
+        { "min": 85, "title": "Absolute Visionary", "desc": "You are a classic idea generator and ideologist. You live in the future, masterfully create meaning and inspire people, but you vitally need a strong operational partner (Integrator/Executor) who will structure the chaos and bring your ideas to life." },
+        { "min": 60, "title": "Strategic Leader", "desc": "You have a well-developed big-picture vision and entrepreneurial instinct, while maintaining a connection to reality. You can successfully guide a company, combining creativity with an understanding of business processes." },
+        { "min": 40, "title": "Pragmatic Manager", "desc": "You are more focused on tactics and stability. You can perceive others' innovative ideas and implement them, but independently finding breakthrough solutions is not your main driving force." },
+        { "min": 0, "title": "Stabilizer / Operations Manager", "desc": "Your strength lies in structure, order, logic, and 'here and now' processes. You excel at turning chaos into working systems, but tend to avoid risk and uncertainty." }
     ]
 }

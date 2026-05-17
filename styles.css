@@ -5,3 +5,57 @@ html.dark { color-scheme: dark; }
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .choice-btn:active { transform: scale(0.99); }
+
+.nav-link {
+    transition: color 0.15s;
+}
+.nav-link.active {
+    color: rgb(79 70 229);
+}
+html.dark .nav-link.active {
+    color: rgb(129 140 248);
+}
+
+.test-card {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.test-card:hover {
+    transform: translateY(-2px);
+}
+
+.social-btn {
+    transition: all 0.15s;
+}
+.social-btn:active {
+    transform: scale(0.97);
+}
+
+.cookie-banner {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cookie-banner.hidden {
+    transform: translateY(100%);
+}
+
+.blog-card {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.blog-card:hover {
+    transform: translateY(-2px);
+}
+
+.screen {
+    display: none;
+}
+.screen.active {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
