@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Карта подотчетности: Кто правит в гараже — RoleChk</title>
-    <meta name="description" content="Карта подотчетности (Accountability Chart) из Rocket Fuel. Кто за что отвечает в бизнесе: Визионер vs Интегратор, правило одного шлюза.">
+    <title>问责表：谁在车库里说了算 — RoleChk</title>
+    <meta name="description" content="来自《火箭燃料》的问责表（Accountability Chart）。谁在您的企业中负责什么：远见者 vs 整合者，单网关规则。">
     <link rel="canonical" href="https://rolechk.site/zh/blog/accountability-chart/">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -28,16 +28,16 @@
                 <span class="text-lg tracking-tight">RoleChk</span>
             </a>
             <nav class="hidden sm:flex items-center gap-1">
-                <a href="/zh/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Journal</a>
-                <a href="/en/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Visionary</a>
-                <a href="/en/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Integrator</a>
+                <a href="/zh/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">博客</a>
+                <a href="/zh/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">远见者</a>
+                <a href="/zh/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">整合者</a>
             </nav>
             <div class="flex items-center gap-1.5">
                 <div class="relative">
                     <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
                         <option value="en">EN</option>
                         <option value="es">ES</option>
-                        <option value="zh">ZH</option>
+                        <option value="zh" selected>ZH</option>
                     </select>
                     <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
                 </div>
@@ -48,16 +48,16 @@
             </div>
         </div>
         <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
-            <a href="/zh/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Journal</a>
-            <a href="/en/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Visionary</a>
-            <a href="/en/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Integrator</a>
+            <a href="/zh/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">博客</a>
+            <a href="/zh/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">远见者</a>
+            <a href="/zh/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">整合者</a>
         </nav>
     </header>
 
     <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
         <div class="max-w-3xl mx-auto">
             <a href="/zh/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
-                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Journal
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> 返回博客
             </a>
 
             <article>
@@ -67,134 +67,134 @@
                 </div>
 
                 <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-6 tracking-tight leading-tight">
-                    Карта подотчетности: Кто правит в гараже, а кто — на Межгалактическом совете
+                    问责表：谁在车库里说了算，谁在星际议会里说了算
                 </h1>
 
                 <p class="text-base text-stone-500 dark:text-stone-400 mb-8 italic">
-                    Article 4 of the series. Accountability Chart — инструмент, который сжигает старую оргструктуру и ставит каждого на своё место.
+                    系列第 4 篇文章。问责表——这个工具烧掉你旧的组织架构图，把每个人放在正确的位置上。
                 </p>
 
                 <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
 
                     <p>
-                        В прошлых сериях мы разобрались с психотипами. Если ты Рик — ты генерируешь хаос и порталы. Если ты Морти — ты заземляешь этот хаос и превращаешь его в работающий бизнес. Но как только эти двое оказываются в одной кабине, начинается классическое: «Кто здесь главный?! Выключи это радио! Нет, сам выключи!».
+                        在前几集里，我们搞清楚了心理类型。如果你是瑞克——你制造混乱和传送门。如果你是莫蒂——你把混乱落地，变成能运转的生意。但一旦这两个人进了同一个驾驶舱，经典戏码就开始了：「谁说了算？！关掉收音机！不，你自己关掉！」
                     </p>
 
                     <p>
-                        Большинство предпринимателей строят структуру компании по старинке — рисуют классическую органиграмму (оргструктуру), где куча квадратиков, стрелочек и должностей вроде «Директор по связям с космосом». Авторы книги <em>Rocket Fuel</em> предлагают сжечь этот хлам и внедрить инструмент под названием Карта подотчетности (The Accountability Chart).
+                        大多数创业者按老办法搭建公司结构——画一张经典的组织架构图，里面一堆框框、箭头和花哨的职位头衔，比如「星际关系总监」。《火箭燃料》的作者建议烧掉这套东西，改用一种叫做问责表（Accountability Chart）的工具。
                     </p>
 
                     <p>
-                        В чём разница? Оргструктура показывает, кто кому подчиняется и как звучит твоя пафосная должность на визитке. Карта подотчетности показывает, кто за какой конкретно результат отвечает головой.
+                        区别在哪？组织架构图展示谁向谁汇报、你的名片上印着什么头衔。问责表展示谁个人对什么具体结果负责。
                     </p>
 
                     <p>
-                        И вот как она выглядит, если очистить её от корпоративного бреда и разложить по правилам Цитадели Риков.
+                        如果我们剥离所有公司行话，按照瑞克城寨的规则来重新整理，它就是这个样子的。
                     </p>
 
                     <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8"></div>
 
                     <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
                         <span class="text-brand dark:text-brand-light shrink-0">1.</span>
-                        <span>Архитектура правильного бизнеса: 3 + 2</span>
+                        <span>健康企业的架构：3 + 2</span>
                     </h2>
 
                     <p>
-                        В любой здоровой предпринимательской компании есть 3 базовые операционные функции. Ими управляет Интегратор. И над ними всеми стоит ещё одна надстройка — Визионер.
+                        任何健康的创业公司都有 3 个基本运营职能。整合者管理它们。而在所有这些职能之上还有一层——远见者。
                     </p>
 
                     <p>
-                        Давай посмотрим на эту схему сверху вниз:
+                        让我们从上到下看看这个架构：
                     </p>
 
                     <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
                         <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300 mb-3">
-                            <strong class="text-stone-900 dark:text-stone-50">Ложа Визионера (Рик).</strong> Находится на самом верху, но вне ежедневной операционной цепочки. Твои задачи здесь: генерировать крупные идеи, выстраивать стратегические связи (с другими измерениями или инвесторами), следить за тем, чтобы продукт опережал рынок на 10 лет, и вдохновлять команду. Всё. Никакого микроменеджмента.
+                            <strong class="text-stone-900 dark:text-stone-50">远见者的包厢（瑞克）。</strong>在最顶层，但在日常运营链之外。你的职责：产生大创意、建立战略关系（与其他维度或投资者）、确保产品领先市场 10 年、激励团队。就这些。没有微观管理。
                         </p>
                         <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
-                            <strong class="text-stone-900 dark:text-stone-50">Пульт Интегратора (Морти).</strong> Находится ровно под Визионером. Интегратор — это мост. Он держит в руках все ниточки и руководит тремя главными столпами бизнеса:
+                            <strong class="text-stone-900 dark:text-stone-50">整合者的控制台（莫蒂）。</strong>就在远见者下方。整合者是桥梁。他掌握所有线索，管理业务的三个主要支柱：
                         </p>
                     </div>
 
                     <ul class="list-disc pl-5 space-y-2 text-stone-700 dark:text-stone-300">
-                        <li><strong class="text-stone-900 dark:text-stone-50">Маркетинг и Продажи (Sales & Marketing):</strong> Как сделать так, чтобы о наших портальных пушках узнали во всех галактиках, и как закрывать сделки.</li>
-                        <li><strong class="text-stone-900 dark:text-stone-50">Производство/Продукт (Operations/Delivery):</strong> Как сделать так, чтобы эти пушки реально стреляли, не взрывались в руках и доставлялись клиенту вовремя.</li>
-                        <li><strong class="text-stone-900 dark:text-stone-50">Финансы и Администрирование (Finance/Admin):</strong> Кто считает межгалактические креды, платит налоги Федерации и выстраивает HR-процессы.</li>
+                        <li><strong class="text-stone-900 dark:text-stone-50">销售与市场营销：</strong>让所有星系都知道我们的传送门炮，并达成交易。</li>
+                        <li><strong class="text-stone-900 dark:text-stone-50">运营/产品：</strong>确保这些炮真的能发射，不会在手里爆炸，并按时交付给客户。</li>
+                        <li><strong class="text-stone-900 dark:text-stone-50">财务与行政：</strong>管理星际货币账目、向联邦缴税、建立人力资源流程。</li>
                     </ul>
 
                     <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
                         <span class="text-brand dark:text-brand-light shrink-0">2.</span>
-                        <span>Главное правило Цитадели: Один шлюз</span>
+                        <span>城寨的黄金法则：单网关</span>
                     </h2>
 
                     <p>
-                        А теперь забудь всё, чему тебя учили на курсах «эффективного менеджмента». Вот тебе главное правило, без которого Карта подотчетности превратится в тыкву:
+                        现在忘掉所有你在「高效管理」课程上学到的东西。这是问责表最重要的规则，没有它就会变成南瓜：
                     </p>
 
                     <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
                         <p class="text-sm sm:text-base font-semibold text-stone-900 dark:text-stone-50">
-                            У Визионера есть только ОДИН прямой подчиненный в компании. Это Интегратор.
+                            远见者在公司里只有 <em>一个</em> 直接下属。那就是整合者。
                         </p>
                     </div>
 
                     <p>
-                        Посмотри на типичный хаос в своей конторе. Ты (Рик) прибегаешь на кухню, видишь маркетолога и говоришь: «Слушай, давай перекрасим сайт в фиолетовый и запустим рекламу на Марс». Маркетолог в панике бросает текущую воронку, которую ему три недели выстраивал Интегратор, и бежит красить сайт. В итоге: воронка сломана, лидов нет, Интегратор рвет на себе волосы, а ты через три дня удивляешься: «Почему у нас кассовый разрыв?».
+                        看看你办公室里的典型混乱。你（瑞克）跑到茶水间，看到一个市场营销员就对他说：「嘿，我们把网站漆成紫色，然后发起一场火星广告活动吧。」营销员惊慌失措地丢下整合者花了三周时间建好的漏斗，跑去漆网站。结果：漏斗坏了，零线索，整合者抓狂，三天后你奇怪：「我们怎么出现了资金缺口？」
                     </p>
 
                     <p>
-                        В правильной системе Рик не имеет права ставить задачи команде в обход Морти. Если у тебя родилась гениальная идея — ты идёшь к Интегратору. Вы садитесь в закрытом гараже и спорите. Если Интегратор говорит: «Ок, это разрывает рынок, у нас есть на это ресурсы», он сам идёт к команде и системно внедряет это в процессы. Если говорит: «Нет, это бред, мы сольём бюджет» — ты затыкаешься и думаешь дальше.
+                        在正确的系统中，瑞克无权绕过莫蒂给团队分配任务。你想到了一个绝妙的点子？去找整合者。你们在封闭的车库里坐下来讨论。如果整合者说：「好，这能颠覆市场，我们有资源做这个」，他自己去跟团队说，系统地把它纳入流程。如果他说：「不行，这太疯狂了，我们会烧光预算」——你闭嘴，继续想别的办法。
                     </p>
 
                     <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
                         <span class="text-brand dark:text-brand-light shrink-0">3.</span>
-                        <span>Кто за что отвечает? Тест на разделение кнопок</span>
+                        <span>谁负责什么？按钮分离测试</span>
                     </h2>
 
                     <p>
-                        Чтобы окончательно разграничить власть, авторы <em>Rocket Fuel</em> дают четкий список функций. Давай проверим, не жмёте ли вы с партнером одну и ту же кнопку одновременно.
+                        为了明确划分权力，《火箭燃料》的作者给出了一个清晰的职能列表。让我们检查一下你和你的合伙人是否在同时按同一个按钮。
                     </p>
 
                     <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
                         <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300 mb-2">
-                            <strong class="text-stone-900 dark:text-stone-50">Зона Рика (Визионер):</strong>
+                            <strong class="text-stone-900 dark:text-stone-50">瑞克的领域（远见者）：</strong>
                         </p>
                         <ul class="text-sm sm:text-base text-stone-700 dark:text-stone-300 list-disc pl-4 space-y-1">
-                            <li>Крупные идеи и R&D</li>
-                            <li>Стратегическое видение (куда летим через 5 лет)</li>
-                            <li>Культура и дух компании</li>
-                            <li>Продажи ключевым, самым крупным клиентам</li>
-                            <li>Защита бренда</li>
+                            <li>大创意和研发</li>
+                            <li>战略愿景（未来 5 年的方向）</li>
+                            <li>公司文化和精神</li>
+                            <li>面向关键大客户的销售</li>
+                            <li>品牌保护</li>
                         </ul>
                     </div>
 
                     <div class="bg-brand-subtle dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
                         <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300 mb-2">
-                            <strong class="text-stone-900 dark:text-stone-50">Зона Морти (Интегратор):</strong>
+                            <strong class="text-stone-900 dark:text-stone-50">莫蒂的领域（整合者）：</strong>
                         </p>
                         <ul class="text-sm sm:text-base text-stone-700 dark:text-stone-300 list-disc pl-4 space-y-1">
-                            <li>Выполнение бизнес-плана (Execution) и P&L (прибыль и убытки)</li>
-                            <li>Ежедневное управление руководителями отделов</li>
-                            <li>Наведение порядка, устранение препятствий и хаоса</li>
-                            <li>Интеграция всех процессов (чтобы продажи дружили с производством)</li>
-                            <li>Обеспечение дисциплины и подотчетности (KPI, Scorecard)</li>
+                            <li>执行业务计划和损益管理</li>
+                            <li>部门主管的日常管理</li>
+                            <li>恢复秩序，消除障碍和混乱</li>
+                            <li>整合所有流程（让销售和生产成为盟友）</li>
+                            <li>执行纪律和问责（KPI、记分卡）</li>
                         </ul>
                     </div>
 
                     <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
                         <span class="text-brand dark:text-brand-light shrink-0">4.</span>
-                        <span>Зачем это тебе?</span>
+                        <span>为什么这对你很重要？</span>
                     </h2>
 
                     <p>
-                        Если ты Визионер, Карта подотчетности — это твой билет на свободу. Она официально разрешает тебе заниматься творчеством и космосом, снимая с тебя обязанность быть «хорошим боссом» и ковыряться в отчетах.
+                        如果你是远见者，问责表就是你通往自由的车票。它正式允许你从事创造和宇宙相关的事情，解除你当「好老板」和翻看报表的义务。
                     </p>
 
                     <p>
-                        Если ты Интегратор, эта карта — твой щит. Она защищает тебя и команду от внезапных ментальных штурмов Визионера и дает тебе легитимную власть строить систему.
+                        如果你是整合者，这张表就是你的盾牌。它保护你和团队免受远见者突发奇想的冲击，并给你建立系统的合法权力。
                     </p>
 
                     <p>
-                        В следующей серии мы разберем «5 правил выживания» для этого дуэта. Как синхронизировать часы, как правильно орать друг на друга за закрытыми дверями, чтобы бизнес от этого только рос, и как сохранять «единый фронт» перед лицом Саммер, Бет и Джерри (твоих сотрудников). Заряжай портальную пушку, продолжение следует.
+                        下一集我们将分析这个二人组的「5 条生存法则」。如何同步时间，如何在关起门来时正确地对彼此吼叫，以便业务只增不减，以及如何在萨默、贝丝和杰瑞（你的员工）面前保持「统一战线」。给传送门炮充能，未完待续。
                     </p>
 
                 </div>
