@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为什么你的传送枪需要保险丝 — RoleChk</title>
+    <meta name="description" content="你可以在午饭前产生二十个绝妙的想法。但如果你的运营看起来像一个被Cronenbergs侵染的世界，你就是一个试图在没有整合者的情况下飞行的愿景家。">
+    <link rel="canonical" href="https://rolechk.site/zh/blog/why-rick-needs-morty/">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="article" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">日志</a>
+                <a href="/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">愿景者</a>
+                <a href="/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">整合者</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">日志</a>
+            <a href="/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">愿景者</a>
+            <a href="/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">整合者</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-3xl mx-auto">
+            <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> 返回日志
+            </a>
+
+            <article>
+                <div class="flex items-center gap-2 text-xs text-stone-400 dark:text-stone-500 mb-4">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                    <span>2026-05-17</span>
+                </div>
+
+                <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-8 tracking-tight leading-tight">
+                    为什么你的传送枪需要保险丝，或为什么瑞克不能没有莫蒂
+                </h1>
+
+                <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
+
+                    <p class="text-lg sm:text-xl font-medium text-stone-700 dark:text-stone-300 leading-relaxed">
+                        听好了，"商业天才"。是的，就是你——这位创始人已经三天没睡了，因为你在重写销售脚本，而你的团队则呆呆地盯着显示器。我有坏消息要告诉你。你的企业不是星际帝国。它是C-137维度里一个燃烧的垃圾箱。
+                    </p>
+
+                    <p>
+                        你可以在午饭前产生二十个绝妙的想法。你可以像吞了一把超级种子一样清晰地看到未来趋势。你可以亲自签下让竞争对手瞠目结舌的大单。但如果你的运营看起来像一个被Cronenbergs侵染的星球，员工在你走进办公室时缩起脑袋——恭喜你。你是一个经典的愿景家。一个创业界的疯狂科学家。
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        而你的主要问题是，你仍然试图在没有整合者的情况下飞行。没有你的莫蒂。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-4 tracking-tight">孤独牛仔的伟大神话</h2>
+
+                    <p>
+                        商业文献几十年来一直在给我们灌输同样的废话。强大的领导者必须无所不能：在餐巾纸上勾勒战略，核对资产负债表，为清洁工设定KPI。他们向我们展示托尼·斯塔克或埃隆·马斯克，然后说："像他们一样。一个人扛起一切。"
+                    </p>
+
+                    <p class="text-stone-500 dark:text-stone-400 italic">
+                        你知道我怎么看吗？Bu—urp…… 一派胡言。
+                    </p>
+
+                    <p>
+                        伟大的公司不是靠一个人建立的。每个所谓的史蒂夫·乔布斯（一个能看到未来但不擅长管人的疯狂愿景家）背后，都有一个蒂姆·库克（一个把供应链变成瑞士手表的铁血整合者）。沃尔特·迪士尼背后站着他的哥哥罗伊，他数着每一分钱，把天才的幻想落回到现实的土地上。
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        要建立一个能运转的企业，一个企业家是不够的。你需要一个搭档。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-4 tracking-tight">你在这艘飞碟里扮演什么角色？</h2>
+
+                    <p>
+                        《Rocket Fuel》一书将创业世界分为两个阵营。如果你想生存，你需要立刻确定自己的角色。
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl p-6 sm:p-8 my-6 space-y-4">
+                        <h3 class="text-base font-semibold text-brand dark:text-brand-light tracking-tight flex items-center gap-2">
+                            <i data-lucide="zap" class="w-5 h-5 shrink-0"></i>
+                            <span>愿景家 <span class="text-stone-400 dark:text-stone-500 font-normal">(瑞克·桑切斯)</span></span>
+                        </h3>
+                        <p class="text-sm sm:text-base">一个高频混乱发生器。他们的超能力是研发、战略、宏观愿景、公司文化和达成"不可能"的交易。他们的弱点：讨厌细节，有商业多动症，一旦感到无聊就半途而废，而且绝对无法（也不愿意）日常管理人。</p>
+
+                        <h3 class="text-base font-semibold text-brand dark:text-brand-light tracking-tight flex items-center gap-2">
+                            <i data-lucide="layers" class="w-5 h-5 shrink-0"></i>
+                            <span>整合者 <span class="text-stone-400 dark:text-stone-500 font-normal">(莫蒂·史密斯)</span></span>
+                        </h3>
+                        <p class="text-sm sm:text-base">流程架构师。保持专注的人。他们的超能力是执行。他们从愿景家的50个混乱想法中挑出2个可行的，转化为团队能理解的清晰指令，建立损益表和CRM系统，并在任何试图打破截止日期的人的手背上狠狠拍一下——包括愿景家本人。</p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-4 tracking-tight">为什么瑞克 + 莫蒂 = 火箭燃料</h2>
+
+                    <p>
+                        当一个愿景家试图兼任整合者时，公司就变成了瑞克的车库。到处都是很酷但只装了一半的设备，电线散落一地，东西不停地爆炸——但赚不到钱，而且根本没法住人。愿景家不断改变方向，把公司折腾得喘不过气来：<em>"昨天我们卖软件，今天我们要建生态系统，明天我们去抢冥王星！"</em>团队精疲力竭，纷纷辞职。
+                    </p>
+
+                    <p>
+                        如果只有整合者掌管公司（没有愿景家），它就变成了杰瑞·史密斯的房子。一切都很整洁，草坪修剪整齐，税按时缴纳。但这是一家灰色、无聊、停滞不前的公司，困在一个维度里，市场稍有变化就会死去——因为没有想法，没有规模，没有燃料。
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100 text-lg">
+                        真正的魔法——真正的火箭燃料——只在这两者结合时才会发生。愿景家提供能量、方向和速度。整合者提供轨道、刹车和控制系统。
+                    </p>
+
+                    <p>
+                        如果瑞克制造了传送枪，莫蒂需要确保电池不会在充满怪物的维度中间耗尽。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-4 tracking-tight">走出运营地狱的第一步</h2>
+
+                    <p>
+                        如果你在瑞克身上看到了自己，我有个建议：别再手动驾驶飞碟了。你作为愿景家的职责不是追踪程序员工作了多少小时——而是思考公司三年后会在哪里。
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        你需要有人把你的天才接地。你需要一个整合者。
+                    </p>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8">
+                        <p class="text-sm text-stone-400 dark:text-stone-500 italic">
+                            在下一篇文章中，我们将剖析愿景家的解剖结构。我们将照照镜子，诚实地回答：为什么你每分钟20个绝妙的想法正在摧毁你自己的企业？不要切换维度。
+                        </p>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p id="disclaimer-text" class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center"></p>
+            <a href="/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie 政策</a>
+        </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
