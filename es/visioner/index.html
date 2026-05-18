@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleChk - Evaluacion de Visionario</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="quiz" class="bg-teal-700 dark:bg-teal-950 text-white font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between">
+        <a href="/es/" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors no-underline">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span class="text-sm font-medium">Salir</span>
+        </a>
+        <div class="flex items-center gap-2 text-xs font-medium text-white/50">
+            <span id="progress-text"></span>
+            <span class="text-white/30">|</span>
+            <span id="progress-percent"></span>
+        </div>
+        <div class="w-20"></div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-6 sm:px-10 py-6">
+
+        <div class="w-full max-w-2xl mx-auto text-center">
+
+            <div class="w-full bg-white/10 rounded-full h-1 mb-10 sm:mb-14 overflow-hidden">
+                <div id="progress-bar" class="bg-white/80 h-full rounded-full progress-bar" style="width: 5%"></div>
+            </div>
+
+            <div class="min-h-[200px] flex items-center justify-center mb-8 sm:mb-10">
+                <h2 id="question-text" class="text-2xl sm:text-3xl lg:text-4xl font-medium leading-snug tracking-tight"></h2>
+            </div>
+
+            <div id="options-container" class="space-y-3 sm:space-y-4 max-w-lg mx-auto">
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+    window.QUIZ_TEST_ID = 'visioner';
+    window.QUIZ_DATA = [
+        { text: "Mi mente genera constantemente nuevos conceptos e ideas mucho mas activamente que la mayoria de las personas que conozco.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Conecto facilmente hechos dispares en un sistema global unico y veo las tendencias en su conjunto.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Formular la mision a largo plazo y el vector estrategico de la organizacion es mi tarea principal.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Me atrae encontrar soluciones no convencionales para desafios grandes y complejos.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Me encargo de construir alianzas estrategicas con figuras clave y contrapartes.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Las negociaciones de los contratos mas grandes y acuerdos clave son mi punto fuerte.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Mi pasion sincera por el producto y la fe en la empresa energizan a quienes me rodean.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Soy propenso a entusiasmarme con nuevos proyectos prometedores, abandonando las tareas actuales.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Mi enfoque siempre esta en lo que sucedera manana, no en los resultados actuales o pasados.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "La administracion diaria, el micromanagement y el control de empleados me deprimen.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Un alto nivel de incertidumbre y el riesgo justificado me motivan, no me asustan.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Siento regularmente que los colegas se mueven demasiado lento y no captan de inmediato el hilo de mis pensamientos.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Mi estilo de liderazgo es inspirar corazones y motivar, no supervisar la disciplina.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Lanzo nuevas iniciativas con gusto, pero prefiero delegar la rutina de llevarlas a cabo.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Estoy en busqueda continua de vectores para la transformacion, modernizacion y crecimiento del negocio.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "En la toma de decisiones, confio en mi intuicion desarrollada y reacciono al instante.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Sumergirme en pequenos detalles tecnicos y burocraticos rapidamente me agota.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Mis valores y carisma estan en el centro de la cultura corporativa de nuestro equipo.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Al analizar tareas, primero busco la respuesta a \"Por que se hace esto?\" en lugar de \"Cual es el algoritmo?\"", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] },
+        { text: "Creo sinceramente en la viabilidad de los objetivos mas ambiciosos, incluso si aun no hay un plan detallado.", options: [{ text: "Totalmente en desacuerdo", score: 1 }, { text: "En desacuerdo", score: 2 }, { text: "Neutral", score: 3 }, { text: "De acuerdo", score: 4 }, { text: "Totalmente de acuerdo", score: 5 }] }
+    ];
+    window.RESULT_DATA = [
+        { min: 85, title: "Visionario Absoluto", desc: "Eres un generador de ideas e ideologo clasico. Vives en el futuro, creas significado magistralmente e inspiras a las personas, pero necesitas vitalmente un socio operativo fuerte (Integrador/Ejecutor) que estructure el caos y haga realidad tus ideas." },
+        { min: 60, title: "Lider Estrategico", desc: "Tienes una vision de gran alcance bien desarrollada y un instinto emprendedor, mientras mantienes una conexion con la realidad. Puedes guiar una empresa con exito, combinando creatividad con comprension de los procesos comerciales." },
+        { min: 40, title: "Gerente Pragmatico", desc: "Estas mas enfocado en la tactica y la estabilidad. Puedes percibir las ideas innovadoras de otros e implementarlas, pero encontrar soluciones revolucionarias de forma independiente no es tu principal fuerza motriz." },
+        { min: 0, title: "Estabilizador / Gerente de Operaciones", desc: "Tu fortaleza radica en la estructura, el orden, la logica y los procesos del 'aqui y ahora'. Exceles en convertir el caos en sistemas funcionales, pero tiendes a evitar el riesgo y la incertidumbre." }
+    ];
+    window.QUIZ_Q_OF = 'Pregunta {n} de {max}';
+    window.QUIZ_BACK = 'Atras';
+    </script>
+    <script src="/js/quiz.js" defer></script>
+</body>
+</html>

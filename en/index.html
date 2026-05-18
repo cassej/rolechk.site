@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleChk - Journal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/js/shared.js" defer></script>
+</head>
+<body data-page="home" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/en/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/en/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-900 dark:text-stone-50 bg-stone-100 dark:bg-stone-800 transition-all">Journal</a>
+                <a href="/en/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Visionary</a>
+                <a href="/en/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Integrator</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en" selected>EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/en/" class="text-xs font-medium text-stone-900 dark:text-stone-50 transition-colors">Journal</a>
+            <a href="/en/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Visionary</a>
+            <a href="/en/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Integrator</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+
+        <div class="lg:flex lg:gap-12 max-w-7xl mx-auto">
+
+            <section class="lg:w-3/4">
+                <h2 class="text-xs uppercase tracking-[0.15em] font-semibold text-stone-400 dark:text-stone-500 mb-1">Journal</h2>
+                <div class="divide-y divide-stone-200/30 dark:divide-stone-700/30">
+                    <a href="/en/blog/why-rick-needs-morty/" class="group block no-underline py-7 sm:py-8 first:pt-0">
+                        <div class="text-xs tracking-widest uppercase text-stone-400 dark:text-stone-500 mb-2">2026-05-17</div>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors leading-snug">Why Your Portal Gun Needs a Fuse, or Why Rick Doesn't Fly Without Morty</h3>
+                        <p class="text-sm sm:text-base text-stone-500 dark:text-stone-400 mt-2 leading-relaxed line-clamp-2">You can generate twenty brilliant ideas before lunch. You can see future trends as if you've swallowed a handful of mega-seeds. But if your operations look like a Cronenberg world — congratulations. You're a classic Visionary, and you're trying to fly without an Integrator.</p>
+                        <span class="inline-flex items-center gap-1 mt-3 text-sm font-medium text-brand dark:text-brand-light opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
+                            Read More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="/en/blog/the-rick-test/" class="group block no-underline py-7 sm:py-8">
+                        <div class="text-xs tracking-widest uppercase text-stone-400 dark:text-stone-500 mb-2">2026-06-01</div>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors leading-snug">The Rick Sanchez Test: 5 Signs You're a Visionary (and Your Business Is on Fire)</h3>
+                        <p class="text-sm sm:text-base text-stone-500 dark:text-stone-400 mt-2 leading-relaxed line-clamp-2">Your brain is a nuclear reactor generating insights at industrial scale. You inspire, but you also paralyze. Check yourself before your business collapses into a black hole.</p>
+                        <span class="inline-flex items-center gap-1 mt-3 text-sm font-medium text-brand dark:text-brand-light opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
+                            Read More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="/en/blog/the-integrator/" class="group block no-underline py-7 sm:py-8">
+                        <div class="text-xs tracking-widest uppercase text-stone-400 dark:text-stone-500 mb-2">2026-06-15</div>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors leading-snug">Morty, We Screwed It All Up! Who Is the Integrator and Why It's Not Just an Errand Boy</h3>
+                        <p class="text-sm sm:text-base text-stone-500 dark:text-stone-400 mt-2 leading-relaxed line-clamp-2">In pop culture and bad business literature, the Integrator is treated as second-class. Time to fix that. The real Integrator is a figure equal to you in scale — just with a completely different force vector.</p>
+                        <span class="inline-flex items-center gap-1 mt-3 text-sm font-medium text-brand dark:text-brand-light opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
+                            Read More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <aside class="lg:w-1/4 mt-10 lg:mt-0">
+                <h2 class="text-lg font-semibold text-stone-900 dark:text-stone-50">RoleChk</h2>
+                <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 mb-6 leading-relaxed">Professional self-assessments to understand your strengths and working style.</p>
+
+                <div class="bg-white dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl p-6 mb-5 card-hover">
+                    <div class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-brand-subtle dark:bg-stone-800 mb-4">
+                        <i data-lucide="eye" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                    </div>
+                    <h3 class="font-semibold text-stone-900 dark:text-stone-50 text-lg">Visionary Test</h3>
+                    <p class="text-sm text-stone-500 dark:text-stone-400 mt-2 leading-relaxed">Discover your entrepreneurial potential. Find out how you generate ideas, inspire change, and shape the future.</p>
+                    <div class="mt-5 pt-4 border-t border-stone-200/60 dark:border-stone-700/60 space-y-3">
+                        <span class="block text-xs text-stone-400 dark:text-stone-500 text-center">20 questions · Takes 2 minutes</span>
+                        <a href="/en/visioner/" class="w-full inline-flex items-center justify-center gap-1.5 bg-brand hover:bg-brand-hover dark:bg-brand-light dark:hover:bg-brand text-white dark:text-stone-900 text-sm font-semibold px-5 py-2.5 rounded-xl transition-all no-underline">
+                            Start Free Test
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl p-6 card-hover">
+                    <div class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-brand-subtle dark:bg-stone-800 mb-4">
+                        <i data-lucide="grid-3x3" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                    </div>
+                    <h3 class="font-semibold text-stone-900 dark:text-stone-50 text-lg">Integrator Test</h3>
+                    <p class="text-sm text-stone-500 dark:text-stone-400 mt-2 leading-relaxed">Measure your operational excellence. Find out how you structure chaos, enforce discipline, and drive results.</p>
+                    <div class="mt-5 pt-4 border-t border-stone-200/60 dark:border-stone-700/60 space-y-3">
+                        <span class="block text-xs text-stone-400 dark:text-stone-500 text-center">20 questions · Takes 2 minutes</span>
+                        <a href="/en/integrator/" class="w-full inline-flex items-center justify-center gap-1.5 bg-brand hover:bg-brand-hover dark:bg-brand-light dark:hover:bg-brand text-white dark:text-stone-900 text-sm font-semibold px-5 py-2.5 rounded-xl transition-all no-underline">
+                            Start Free Test
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-stone-900/95 backdrop-blur-lg border-t border-stone-200/60 dark:border-stone-700/60 px-6 sm:px-10 py-4 sm:py-5">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
+            <p class="text-xs text-stone-500 dark:text-stone-400 leading-relaxed flex-grow">We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience and analyze website traffic. By clicking "Accept," you agree to our website's cookie use as described in our Cookie Policy.</p>
+            <div class="flex items-center gap-2 shrink-0">
+                <button id="cookie-accept-btn" class="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white text-xs font-semibold px-5 py-2 rounded-xl transition-all cursor-pointer"><i data-lucide="check" class="w-3.5 h-3.5"></i> Accept</button>
+                <button id="cookie-reject-btn" class="inline-flex items-center gap-1.5 bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600 text-stone-700 dark:text-stone-300 text-xs font-semibold px-5 py-2 rounded-xl transition-all cursor-pointer"><i data-lucide="x" class="w-3.5 h-3.5"></i> Reject</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center">Disclaimer: This tool is inspired by Dr. Ichak Adizes PAEI framework but is unofficial and for educational use only. All responses stay on your device and are not stored or shared.</p>
+            <a href="/en/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie Policy</a>
+        </div>
+    </footer>
+
+</body>
+</html>

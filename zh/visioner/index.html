@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleChk - 愿景者测试</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="quiz" class="bg-teal-700 dark:bg-teal-950 text-white font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between">
+        <a href="/zh/" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors no-underline">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span class="text-sm font-medium">退出</span>
+        </a>
+        <div class="flex items-center gap-2 text-xs font-medium text-white/50">
+            <span id="progress-text"></span>
+            <span class="text-white/30">|</span>
+            <span id="progress-percent"></span>
+        </div>
+        <div class="w-20"></div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-6 sm:px-10 py-6">
+
+        <div class="w-full max-w-2xl mx-auto text-center">
+
+            <div class="w-full bg-white/10 rounded-full h-1 mb-10 sm:mb-14 overflow-hidden">
+                <div id="progress-bar" class="bg-white/80 h-full rounded-full progress-bar" style="width: 5%"></div>
+            </div>
+
+            <div class="min-h-[200px] flex items-center justify-center mb-8 sm:mb-10">
+                <h2 id="question-text" class="text-2xl sm:text-3xl lg:text-4xl font-medium leading-snug tracking-tight"></h2>
+            </div>
+
+            <div id="options-container" class="space-y-3 sm:space-y-4 max-w-lg mx-auto">
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+    window.QUIZ_TEST_ID = 'visioner';
+    window.QUIZ_DATA = [
+        { text: "我的大脑不断产生新的概念和想法，比大多数我认识的人活跃得多。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我很容易将分散的事实连接成一个统一的系统，并整体看待趋势。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "制定长期使命和组织的战略方向是我的主要任务。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我热衷于为大规模和复杂的挑战寻找非传统的解决方案。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我负责建立与关键人物和对受方的战略伙伴关系。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "就最大合同和关键协议进行谈判是我的强项。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我对产品的真诚热情和对公司的信念激励着周围的人。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我容易被有前途的新项目所吸引，从而放弃当前的任务。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我的注意力总是集中在明天会发生什么，而不是当前或过去的业绩。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "日常行政管理、微观管理和员工控制让我感到压抑。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "高度的不确定性和合理的风险激励着我，而不是吓到我。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我经常觉得同事们行动太慢，不能立刻理解我的思路。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我的领导风格是激发热情和激励，而不是监督纪律。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我很乐意启动新的计划，但更愿意将完成的日常工作委托给别人。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我不断寻找转型、现代化和业务增长的方向。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "在做决策时，我依靠发达的直觉并迅速做出反应。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "沉浸在小的技术细节和乐鼓文科琐碎中会很快耗尽我的精力。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我的价值观和魅力是我们团队企业文化的核心。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "在分析任务时，我首先寻找"为什么要做这个？"的答案，而不是"算法是什么？"", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] },
+        { text: "我真诚地相信最雄心勃勃的目标是可实现的，即使还没有详细的计划。", options: [{ text: "完全不同意", score: 1 }, { text: "不同意", score: 2 }, { text: "中立", score: 3 }, { text: "同意", score: 4 }, { text: "完全同意", score: 5 }] }
+    ];
+    window.RESULT_DATA = [
+        { min: 85, title: "绝对愿景者", desc: "你是经典的点子生成者和思想家。你活在未来，擅长创造意义并激励他人，但你非常需要一个强大的运营伙伴（整合者/执行者）来结构化混乱并将你的想法变为现实。" },
+        { min: 60, title: "战略领导者", desc: "你拥有良好的大局观和创业直觉，同时与现实保持联系。你可以成功地引导公司，将创造力与对业务流程的理解结合起来。" },
+        { min: 40, title: "务实管理者", desc: "你更注重战术和稳定性。你能接受他人的创新想法并加以实施，但独立寻找突破性解决方案并不是你的主要驱动力。" },
+        { min: 0, title: "稳定者 / 运营经理", desc: "你的优势在于结构、秩序、逻辑和此时此刻的流程。你善于将混乱转变为可运作的系统，但倾向于避免风险和不确定性。" }
+    ];
+    window.QUIZ_Q_OF = '第 {n} 题，共 {max} 题';
+    window.QUIZ_BACK = '返回';
+    </script>
+    <script src="/js/quiz.js" defer></script>
+</body>
+</html>

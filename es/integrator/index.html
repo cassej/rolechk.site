@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleChk - Evaluacion de Integrador</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="quiz" class="bg-teal-700 dark:bg-teal-950 text-white font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between">
+        <a href="/es/" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors no-underline">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span class="text-sm font-medium">Salir</span>
+        </a>
+        <div class="flex items-center gap-2 text-xs font-medium text-white/50">
+            <span id="progress-text"></span>
+            <span class="text-white/30">|</span>
+            <span id="progress-percent"></span>
+        </div>
+        <div class="w-20"></div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-6 sm:px-10 py-6">
+
+        <div class="w-full max-w-2xl mx-auto text-center">
+
+            <div class="w-full bg-white/10 rounded-full h-1 mb-10 sm:mb-14 overflow-hidden">
+                <div id="progress-bar" class="bg-white/80 h-full rounded-full progress-bar" style="width: 5%"></div>
+            </div>
+
+            <div class="min-h-[200px] flex items-center justify-center mb-8 sm:mb-10">
+                <h2 id="question-text" class="text-2xl sm:text-3xl lg:text-4xl font-medium leading-snug tracking-tight"></h2>
+            </div>
+
+            <div id="options-container" class="space-y-3 sm:space-y-4 max-w-lg mx-auto">
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+    window.QUIZ_TEST_ID = 'integrator';
+    window.QUIZ_DATA = [
+        { text: "I am excellent at coordinating team work, building management systems, and monitoring the fulfillment of commitments.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "Routine operational management and solving current business tasks bring me professional satisfaction.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "My superpower is structuring uncertainty, turning chaos into a well-organized system.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I quickly identify and remove any barriers that prevent employees from effectively performing their tasks.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I notice hidden nuances and long-term consequences of actions that others often miss.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I take full internal responsibility for meeting KPIs, implementing plans, and the company's final financial results.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I uncompromisingly ensure 100% transparency in the company's structure, roles, and areas of responsibility.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I succeed in building effective cross-functional communications between different departments and employees.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "Seeing things through to completion and delivering tangible results is my main forte.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "In case of internal conflicts in the team, I take on the role of arbitrator and put an end to disputes by making the final decision.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I can keep the entire organization focused on key, strategically important priorities, cutting out the excess.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "Thanks to my efforts, the company operates in a predictable, stable, and rhythmic pace.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I am much more comfortable managing processes from behind the scenes, remaining a \"gray cardinal,\" rather than being publicly in the spotlight.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I masterfully decompose global, abstract ideas from leadership into step-by-step, understandable action plans.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I regularly act as a critic of new hypotheses, testing them for realism, which is why others sometimes see me as a skeptic.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "Administering complex business processes and allocating scarce resources is my comfort zone.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I am ready to make unpopular and tough decisions, including layoffs, without hesitation if the business requires it.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I maintain a high standard of personal organization and expect a similar level of discipline from the team.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I know how to firmly reject new impulsive proposals if they divert focus from the approved course.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] },
+        { text: "I serve as the connecting link that holds the structural elements together and prevents the company from falling apart.", options: [{ text: "Strongly Disagree", score: 1 }, { text: "Disagree", score: 2 }, { text: "Neutral", score: 3 }, { text: "Agree", score: 4 }, { text: "Strongly Agree", score: 5 }] }
+    ];
+    window.RESULT_DATA = [
+        { min: 80, title: "Integrador Absoluto", desc: "Your main strength is flawless execution, strict discipline, and creating structure. You are the ideal process architect, capable of grounding even the wildest ideas and turning them into a stable, functioning business. You are the backbone of the company." },
+        { min: 60, title: "Lider Operativo Fuerte", desc: "You have well-developed management skills and systems thinking. You successfully handle administration and control, but you periodically feel the need to step outside the regulations and apply a creative, entrepreneurial approach." },
+        { min: 0, title: "Perfil Alternativo", desc: "Operational routine, micromanagement, and maintaining strict regulations are not your element. Your true role likely lies in generating meaning (Visionary) or in deep expert work in a specific narrow niche." }
+    ];
+    window.QUIZ_Q_OF = 'Pregunta {n} de {max}';
+    window.QUIZ_BACK = 'Atras';
+    </script>
+    <script src="/js/quiz.js" defer></script>
+</body>
+</html>

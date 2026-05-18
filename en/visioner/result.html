@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleChk - Your Result</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/js/shared.js" defer></script>
+</head>
+<body data-page="result" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/en/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/en/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Journal</a>
+                <a href="/en/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Visionary</a>
+                <a href="/en/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Integrator</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en" selected>EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/en/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Journal</a>
+            <a href="/en/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Visionary</a>
+            <a href="/en/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Integrator</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14 flex items-center justify-center">
+
+        <div class="w-full max-w-lg mx-auto text-center fade-up">
+
+            <div class="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-stone-100 dark:bg-stone-800 mb-6 sm:mb-8">
+                <i data-lucide="award" class="w-8 h-8 sm:w-10 sm:h-10 text-brand dark:text-brand-light"></i>
+            </div>
+
+            <h2 class="text-xs uppercase tracking-[0.15em] font-semibold text-stone-400 dark:text-stone-500 mb-4">Your Result</h2>
+
+            <div class="mb-6">
+                <span class="text-6xl sm:text-7xl lg:text-8xl font-bold text-brand dark:text-brand-light tracking-tight" id="score-value">0</span>
+                <span class="text-2xl sm:text-3xl text-stone-300 dark:text-stone-600 mx-1">/</span>
+                <span class="text-2xl sm:text-3xl text-stone-400 dark:text-stone-500">100</span>
+            </div>
+
+            <div class="space-y-3 mb-8 sm:mb-10">
+                <h3 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50" id="status-title"></h3>
+                <p class="text-sm sm:text-base text-stone-500 dark:text-stone-400 leading-relaxed max-w-md mx-auto" id="status-desc"></p>
+            </div>
+
+            <div class="border-t border-stone-200/60 dark:border-stone-800/60 pt-6 sm:pt-8">
+                <p class="text-[11px] uppercase tracking-[0.15em] font-semibold text-stone-400 dark:text-stone-500 mb-4">Share your result</p>
+                <div class="flex flex-wrap justify-center gap-2" id="social-share-buttons"></div>
+                <a href="/en/" class="inline-block w-full mt-5 py-3.5 px-6 rounded-xl text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all no-underline">
+                    Back to Home
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-stone-900/95 backdrop-blur-lg border-t border-stone-200/60 dark:border-stone-700/60 px-6 sm:px-10 py-4 sm:py-5">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
+            <p class="text-xs text-stone-500 dark:text-stone-400 leading-relaxed flex-grow">We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience and analyze website traffic. By clicking "Accept," you agree to our website's cookie use as described in our Cookie Policy.</p>
+            <div class="flex items-center gap-2 shrink-0">
+                <button id="cookie-accept-btn" class="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white text-xs font-semibold px-5 py-2 rounded-xl transition-all cursor-pointer"><i data-lucide="check" class="w-3.5 h-3.5"></i> Accept</button>
+                <button id="cookie-reject-btn" class="inline-flex items-center gap-1.5 bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600 text-stone-700 dark:text-stone-300 text-xs font-semibold px-5 py-2 rounded-xl transition-all cursor-pointer"><i data-lucide="x" class="w-3.5 h-3.5"></i> Reject</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center">Disclaimer: This tool is inspired by Dr. Ichak Adizes PAEI framework but is unofficial and for educational use only. All responses stay on your device and are not stored or shared.</p>
+            <a href="/en/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie Policy</a>
+        </div>
+    </footer>
+
+    <script>
+    window.RESULT_DATA = [
+        { min: 85, title: "Absolute Visionary", desc: "You are a classic idea generator and ideologist. You live in the future, masterfully create meaning and inspire people, but you vitally need a strong operational partner (Integrator/Executor) who will structure the chaos and bring your ideas to life." },
+        { min: 60, title: "Strategic Leader", desc: "You have a well-developed big-picture vision and entrepreneurial instinct, while maintaining a connection to reality. You can successfully guide a company, combining creativity with an understanding of business processes." },
+        { min: 40, title: "Pragmatic Manager", desc: "You are more focused on tactics and stability. You can perceive others' innovative ideas and implement them, but independently finding breakthrough solutions is not your main driving force." },
+        { min: 0, title: "Stabilizer / Operations Manager", desc: "Your strength lies in structure, order, logic, and 'here and now' processes. You excel at turning chaos into working systems, but tend to avoid risk and uncertainty." }
+    ];
+    window.QUIZ_RES_TITLE = 'Your Result';
+    window.QUIZ_MAX_SCORE = 100;
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var score = parseInt(sessionStorage.getItem('quizScore')) || 0;
+        var max = parseInt(sessionStorage.getItem('quizMax')) || 100;
+        var pct = Math.min(100, Math.round((score / max) * 100));
+        document.getElementById('score-value').textContent = pct;
+
+        var sorted = window.RESULT_DATA.slice().sort(function(a, b) { return b.min - a.min; });
+        var result = null;
+        for (var i = 0; i < sorted.length; i++) {
+            if (pct >= sorted[i].min) { result = sorted[i]; break; }
+        }
+        if (result) {
+            document.getElementById('status-title').textContent = result.title;
+            document.getElementById('status-desc').textContent = result.desc;
+        }
+
+        var shareUrl = encodeURIComponent(window.location.origin + '/en/');
+        var shareText = encodeURIComponent('I scored ' + pct + '/100 on the Visionary Test! Find out yours:');
+        var container = document.getElementById('social-share-buttons');
+        var platforms = [
+            { icon: 'facebook', label: 'Facebook', color: 'bg-[#1877F2] hover:bg-[#166fe5]', url: 'https://www.facebook.com/sharer/sharer.php?u=' + shareUrl },
+            { icon: 'twitter', label: 'X', color: 'bg-stone-900 dark:bg-stone-100 hover:bg-stone-800 dark:hover:bg-stone-200 text-white dark:text-stone-900', url: 'https://twitter.com/intent/tweet?text=' + shareText + '&url=' + shareUrl },
+            { icon: 'linkedin', label: 'LinkedIn', color: 'bg-[#0A66C2] hover:bg-[#0958a8]', url: 'https://www.linkedin.com/sharing/share-offsite/?url=' + shareUrl },
+            { icon: 'message-circle', label: 'Reddit', color: 'bg-[#FF4500] hover:bg-[#e03d00]', url: 'https://reddit.com/submit?url=' + shareUrl + '&title=' + shareText }
+        ];
+
+        platforms.forEach(function(p) {
+            var btn = document.createElement('a');
+            btn.href = p.url;
+            btn.target = '_blank';
+            btn.rel = 'noopener noreferrer';
+            btn.className = 'social-btn ' + p.color + ' text-white text-xs font-semibold px-4 py-2 rounded-xl transition inline-flex items-center gap-1.5';
+            btn.innerHTML = '<i data-lucide="' + p.icon + '" class="w-3.5 h-3.5"></i> ' + p.label;
+            container.appendChild(btn);
+        });
+
+        var copyBtn = document.createElement('button');
+        copyBtn.className = 'social-btn bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600 text-stone-700 dark:text-stone-300 text-xs font-semibold px-4 py-2 rounded-xl transition inline-flex items-center gap-1.5 cursor-pointer';
+        copyBtn.innerHTML = '<i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy Link';
+        copyBtn.onclick = function() {
+            navigator.clipboard.writeText(window.location.origin + '/en/').then(function() {
+                copyBtn.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5"></i> Link Copied!';
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+                setTimeout(function() {
+                    copyBtn.innerHTML = '<i data-lucide="copy" class="w-3.5 h-3.5"></i> Copy Link';
+                    if (typeof lucide !== 'undefined') lucide.createIcons();
+                }, 2000);
+            });
+        };
+        container.appendChild(copyBtn);
+
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    });
+    </script>
+</body>
+</html>

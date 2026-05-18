@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleChk - Politica de Cookies</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/js/shared.js" defer></script>
+</head>
+<body data-page="cookie" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/es/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/es/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Blog</a>
+                <a href="/es/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Visionario</a>
+                <a href="/es/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Integrador</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es" selected>ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/es/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Blog</a>
+            <a href="/es/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Visionario</a>
+            <a href="/es/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Integrador</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+
+        <div class="max-w-3xl mx-auto">
+            <div class="flex items-center gap-3 mb-10">
+                <div class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-brand-subtle dark:bg-stone-800">
+                    <i data-lucide="shield" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-stone-900 dark:text-stone-50">Politica de Cookies</h2>
+            </div>
+
+            <div class="prose prose-stone dark:prose-invert max-w-none text-sm sm:text-base">
+                <p>Esta Politica de Cookies explica como RoleChk utiliza cookies y tecnologias similares para reconocerte cuando visitas nuestro sitio web. Explica que son estas tecnologias y por que las usamos, asi como tus derechos para controlar su uso.</p>
+                <h2>Que Son las Cookies?</h2>
+                <p>Las cookies son pequenos archivos de datos que se colocan en tu computadora o dispositivo movil cuando visitas un sitio web. Las cookies son ampliamente utilizadas por los propietarios de sitios web para hacer que sus sitios funcionen de manera mas eficiente, asi como para proporcionar informacion de informes.</p>
+                <p>Las cookies establecidas por el propietario del sitio web se llaman "cookies de primera parte." Las cookies establecidas por partes distintas al propietario del sitio web se llaman "cookies de terceros."</p>
+                <h2>Por Que Usamos Cookies?</h2>
+                <p>Usamos cookies de primera parte por razones tecnicas para que nuestro sitio web funcione. Estas se denominan cookies "esenciales" o "estrictamente necesarias." No utilizamos cookies de terceros para publicidad, analitica o seguimiento.</p>
+                <p><strong>Cookies Esenciales:</strong> Son estrictamente necesarias para que el sitio web funcione correctamente. Incluyen almacenar tu preferencia de tema (claro/oscuro) y seleccion de idioma. No se recopilan datos de navegacion personal.</p>
+                <h2>Como Puedo Controlar las Cookies?</h2>
+                <p>Puedes controlar las cookies a traves de la configuracion de tu navegador. Deshabilitar las cookies esenciales puede afectar ciertas funciones del sitio, como recordar tu tema o preferencias de idioma.</p>
+                <p>Visita el menu de ayuda de tu navegador para obtener mas informacion sobre como administrar cookies en los navegadores mas populares:</p>
+                <ul>
+                    <li>Chrome</li>
+                    <li>Firefox</li>
+                    <li>Safari</li>
+                    <li>Edge</li>
+                </ul>
+                <h2>Con Que Frecuencia Se Actualiza Esta Politica?</h2>
+                <p>Podemos actualizar esta Politica de Cookies de vez en cuando para reflejar cambios en las cookies que utilizamos o por otras razones operativas, legales o regulatorias. Te recomendamos revisar esta pagina regularmente.</p>
+                <p>Ultima actualizacion: Abril 2026</p>
+                <h2>Contacto</h2>
+                <p>Si tienes preguntas sobre esta politica, contactanos a traves del sitio.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-stone-900/95 backdrop-blur-lg border-t border-stone-200/60 dark:border-stone-700/60 px-6 sm:px-10 py-4 sm:py-5">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
+            <p class="text-xs text-stone-500 dark:text-stone-400 leading-relaxed flex-grow">Utilizamos cookies esenciales para que nuestro sitio funcione. Con tu consentimiento, tambien podemos utilizar cookies no esenciales para mejorar la experiencia del usuario y analizar el trafico del sitio web. Al hacer clic en "Aceptar", aceptas el uso de cookies en nuestro sitio web como se describe en nuestra Politica de Cookies.</p>
+            <div class="flex items-center gap-2 shrink-0">
+                <button id="cookie-accept-btn" class="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white text-xs font-semibold px-5 py-2 rounded-xl transition-all cursor-pointer"><i data-lucide="check" class="w-3.5 h-3.5"></i> Aceptar</button>
+                <button id="cookie-reject-btn" class="inline-flex items-center gap-1.5 bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600 text-stone-700 dark:text-stone-300 text-xs font-semibold px-5 py-2 rounded-xl transition-all cursor-pointer"><i data-lucide="x" class="w-3.5 h-3.5"></i> Rechazar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center">Descargo de responsabilidad: Esta herramienta esta inspirada en el marco PAEI del Dr. Ichak Adizes, pero es no oficial y solo para uso educativo. Todas las respuestas permanecen en su dispositivo y no se almacenan ni se comparten.</p>
+            <a href="/es/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Politica de Cookies</a>
+        </div>
+    </footer>
+
+</body>
+</html>

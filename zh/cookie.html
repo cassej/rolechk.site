@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleChk - Cookie 政策</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/js/shared.js" defer></script>
+</head>
+<body data-page="cookie" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/zh/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/zh/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">日志</a>
+                <a href="/zh/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">愿景者</a>
+                <a href="/zh/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">整合者</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh" selected>ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/zh/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">日志</a>
+            <a href="/zh/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">愿景者</a>
+            <a href="/zh/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">整合者</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+
+        <div class="max-w-3xl mx-auto">
+            <div class="flex items-center gap-3 mb-10">
+                <div class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-brand-subtle dark:bg-stone-800">
+                    <i data-lucide="shield" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-stone-900 dark:text-stone-50">Cookie 政策</h2>
+            </div>
+
+            <div class="prose prose-stone dark:prose-invert max-w-none text-sm sm:text-base">
+                <p>本Cookie政策说明RoleChk如何使用Cookie和类似技术在您访问我们网站时识别您。它解释了这些技术是什么以及我们为何使用它们，以及您控制我们使用它们的权利。</p><h2>什么是Cookie？</h2><p>Cookie是当您访问网站时放置在您计算机或移动设备上的小型数据文件。网站所有者广泛使用Cookie以使他们的网站更高效地运行，并提供报告信息。</p><p>由网站所有者设置的Cookie称为"第一方Cookie。"由网站所有者以外的方设置的Cookie称为"第三方Cookie。"</p><h2>我们为何使用Cookie？</h2><p>我们出于技术原因使用第一方Cookie以使我们的网站运行。这些被称为"必要"或"严格必要"的Cookie。我们不使用第三方Cookie进行广告、分析或跟踪。</p><p><strong>必要Cookie：</strong>这些对于网站正常运行是严格必要的。包括存储您的主题偏好（亮/暗模式）和语言选择。不收集个人浏览数据。</p><h2>如何控制Cookie？</h2><p>您可以通过浏览器设置控制Cookie。禁用必要Cookie可能会影响网站的某些功能，例如记住您的主题或语言偏好。</p><p>请访问浏览器的帮助菜单，了解如何在最流行的浏览器上管理Cookie：</p><ul><li>Chrome</li><li>Firefox</li><li>Safari</li><li>Edge</li></ul><h2>本政策多久更新一次？</h2><p>我们可能会不时更新本Cookie政策，以反映我们使用的Cookie的变化或出于其他运营、法律或监管原因。建议您定期查看此页面。</p><p>最后更新：2026年4月</p><h2>联系方式</h2><p>如果您对此政策有疑问，请通过网站与我们联系。</p>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-stone-900/95 backdrop-blur-lg border-t border-stone-200/60 dark:border-stone-700/60 px-6 sm:px-10 py-4 sm:py-5">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6">
+            <p class="text-xs text-stone-500 dark:text-stone-400 leading-relaxed flex-grow">我们使用必要的Cookie以确保网站正常运行。在您同意的情况下，我们可能还会使用非必要的Cookie来改善用户体验和分析网站流量。点击"接受"，即表示您同意我们按照Cookie政策中的描述使用Cookie。</p>
+            <div class="flex items-center gap-2 shrink-0">
+                <button id="cookie-accept-btn" class="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover text-white text-xs font-semibold px-5 py-2 rounded-xl transition-all cursor-pointer"><i data-lucide="check" class="w-3.5 h-3.5"></i> 接受</button>
+                <button id="cookie-reject-btn" class="inline-flex items-center gap-1.5 bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600 text-stone-700 dark:text-stone-300 text-xs font-semibold px-5 py-2 rounded-xl transition-all cursor-pointer"><i data-lucide="x" class="w-3.5 h-3.5"></i> 拒绝</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center">免责声明：本工具受 Ichak Adizes 博士的 PAEI 框架启发，但为非官方工具，仅供教育使用。所有回答均保存在您的设备上，不会被存储或分享。</p>
+            <a href="/zh/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie 政策</a>
+        </div>
+    </footer>
+
+</body>
+</html>
