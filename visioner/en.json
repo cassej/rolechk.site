@@ -1,8 +1,8 @@
 {
-    "title": "Integrator Test",
+    "title": "Visionary Test",
     "questions": [
         {
-            "text": "I am excellent at coordinating team work, building management systems, and monitoring the fulfillment of commitments.",
+            "text": "My mind constantly generates new concepts and ideas much more actively than most people I know.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -12,7 +12,7 @@
             ]
         },
         {
-            "text": "Routine operational management and solving current business tasks bring me professional satisfaction.",
+            "text": "I easily connect disparate facts into a single global system and see trends as a whole.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -22,7 +22,7 @@
             ]
         },
         {
-            "text": "My superpower is structuring uncertainty, turning chaos into a well-organized system.",
+            "text": "Formulating a long-term mission and strategic vector of the organization is my main task.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -32,7 +32,7 @@
             ]
         },
         {
-            "text": "I quickly identify and remove any barriers that prevent employees from effectively performing their tasks.",
+            "text": "I am attracted to finding unconventional solutions for large-scale and complex challenges.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -42,7 +42,7 @@
             ]
         },
         {
-            "text": "I notice hidden nuances and long-term consequences of actions that others often miss.",
+            "text": "I take on building strategic partnerships with key figures and counterparties.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -52,7 +52,7 @@
             ]
         },
         {
-            "text": "I take full internal responsibility for meeting KPIs, implementing plans, and the company's final financial results.",
+            "text": "Negotiations on the largest contracts and key agreements are my strong suit.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -62,7 +62,7 @@
             ]
         },
         {
-            "text": "I uncompromisingly ensure 100% transparency in the company's structure, roles, and areas of responsibility.",
+            "text": "My sincere passion for the product and belief in the company energize those around me.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -72,7 +72,7 @@
             ]
         },
         {
-            "text": "I succeed in building effective cross-functional communications between different departments and employees.",
+            "text": "I am prone to getting excited about promising new projects, abandoning current tasks.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -82,7 +82,7 @@
             ]
         },
         {
-            "text": "Seeing things through to completion and delivering tangible results is my main forte.",
+            "text": "My focus is always on what will happen tomorrow, not on current or past performance.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -92,7 +92,7 @@
             ]
         },
         {
-            "text": "In case of internal conflicts in the team, I take on the role of arbitrator and put an end to disputes by making the final decision.",
+            "text": "Daily administration, micromanagement, and employee control depress me.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -102,7 +102,7 @@
             ]
         },
         {
-            "text": "I can keep the entire organization focused on key, strategically important priorities, cutting out the excess.",
+            "text": "A high level of uncertainty and justified risk motivate me, not scare me.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "text": "Thanks to my efforts, the company operates in a predictable, stable, and rhythmic pace.",
+            "text": "I regularly feel that colleagues move too slowly and don't immediately grasp my train of thought.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -122,7 +122,7 @@
             ]
         },
         {
-            "text": "I am much more comfortable managing processes from behind the scenes, remaining a \"gray cardinal,\" rather than being publicly in the spotlight.",
+            "text": "My leadership style is to inspire hearts and motivate, not to monitor discipline.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -132,7 +132,7 @@
             ]
         },
         {
-            "text": "I masterfully decompose global, abstract ideas from leadership into step-by-step, understandable action plans.",
+            "text": "I gladly launch new initiatives, but prefer to delegate the routine of seeing them through.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -142,7 +142,7 @@
             ]
         },
         {
-            "text": "I regularly act as a critic of new hypotheses, testing them for realism, which is why others sometimes see me as a skeptic.",
+            "text": "I am in continuous search of vectors for transformation, modernization, and business growth.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -152,7 +152,7 @@
             ]
         },
         {
-            "text": "Administering complex business processes and allocating scarce resources is my comfort zone.",
+            "text": "In decision-making, I rely on developed intuition and react instantly.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -162,7 +162,7 @@
             ]
         },
         {
-            "text": "I am ready to make unpopular and tough decisions, including layoffs, without hesitation if the business requires it.",
+            "text": "Diving into minor technical details and bureaucratic specifics quickly drains my energy.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -172,7 +172,7 @@
             ]
         },
         {
-            "text": "I maintain a high standard of personal organization and expect a similar level of discipline from the team.",
+            "text": "My values and charisma are at the core of our team's corporate culture.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -182,7 +182,7 @@
             ]
         },
         {
-            "text": "I know how to firmly reject new impulsive proposals if they divert focus from the approved course.",
+            "text": "When analyzing tasks, I first look for the answer to \"Why is this being done?\" rather than \"What is the algorithm?\"",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -192,7 +192,7 @@
             ]
         },
         {
-            "text": "I serve as the connecting link that holds the structural elements together and prevents the company from falling apart.",
+            "text": "I sincerely believe in the feasibility of the most ambitious goals, even if a detailed plan is not yet available.",
             "options": [
                 { "text": "Strongly Disagree", "score": 1 },
                 { "text": "Disagree", "score": 2 },
@@ -203,8 +203,9 @@
         }
     ],
     "results": [
-        { "min": 80, "title": "Absolute Integrator", "desc": "Your main strength is flawless execution, strict discipline, and creating structure. You are the ideal process architect, capable of grounding even the wildest ideas and turning them into a stable, functioning business. You are the backbone of the company." },
-        { "min": 60, "title": "Strong Operational Leader", "desc": "You have well-developed management skills and systems thinking. You successfully handle administration and control, but you periodically feel the need to step outside the regulations and apply a creative, entrepreneurial approach." },
-        { "min": 0, "title": "Alternative Profile", "desc": "Operational routine, micromanagement, and maintaining strict regulations are not your element. Your true role likely lies in generating meaning (Visionary) or in deep expert work in a specific narrow niche." }
+        { "min": 85, "title": "Absolute Visionary", "desc": "You are a classic idea generator and ideologist. You live in the future, masterfully create meaning and inspire people, but you vitally need a strong operational partner (Integrator/Executor) who will structure the chaos and bring your ideas to life." },
+        { "min": 60, "title": "Strategic Leader", "desc": "You have a well-developed big-picture vision and entrepreneurial instinct, while maintaining a connection to reality. You can successfully guide a company, combining creativity with an understanding of business processes." },
+        { "min": 40, "title": "Pragmatic Manager", "desc": "You are more focused on tactics and stability. You can perceive others' innovative ideas and implement them, but independently finding breakthrough solutions is not your main driving force." },
+        { "min": 0, "title": "Stabilizer / Operations Manager", "desc": "Your strength lies in structure, order, logic, and 'here and now' processes. You excel at turning chaos into working systems, but tend to avoid risk and uncertainty." }
     ]
 }

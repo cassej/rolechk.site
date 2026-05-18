@@ -1,161 +1,136 @@
 const translationsCache = {};
-let currentLang = 'en';
-let currentQuestionIndex = 0;
-let totalScore = 0;
-let currentTestId = null;
-let currentArticleId = null;
+const testDataCache = {};
+let currentLang = localStorage.getItem('lang') || 'en';
+
+function getT() {
+    return translationsCache[currentLang];
+}
 
 function initTheme() {
     if (!('theme' in localStorage)) {
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
         }
-    } else {
-        if (localStorage.theme === 'dark') {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
+    } else if (localStorage.theme === 'dark') {
+        document.documentElement.classList.add('dark');
     }
     updateThemeIcons();
 }
 
 function toggleTheme() {
-    if (document.documentElement.classList.contains('dark')) {
-        document.documentElement.classList.remove('dark');
-        localStorage.theme = 'light';
-    } else {
-        document.documentElement.classList.add('dark');
-        localStorage.theme = 'dark';
-    }
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.theme = isDark ? 'dark' : 'light';
     updateThemeIcons();
 }
 
 function updateThemeIcons() {
     const isDark = document.documentElement.classList.contains('dark');
-    document.getElementById('sun-icon').classList.toggle('hidden', !isDark);
-    document.getElementById('moon-icon').classList.toggle('hidden', isDark);
+    const sun = document.getElementById('sun-icon');
+    const moon = document.getElementById('moon-icon');
+    if (sun) sun.classList.toggle('hidden', !isDark);
+    if (moon) moon.classList.toggle('hidden', isDark);
+    if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
     if (!('theme' in localStorage)) {
-        if (event.matches) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
+        document.documentElement.classList.toggle('dark', e.matches);
         updateThemeIcons();
     }
 });
 
 async function loadTranslations(lang) {
     if (translationsCache[lang]) return translationsCache[lang];
-    const res = await fetch(`integrator/${lang}.json`);
+    const res = await fetch(`/${lang}.json`);
     if (!res.ok) throw new Error(`Failed to load ${lang}`);
     const data = await res.json();
     translationsCache[lang] = data;
     return data;
 }
 
-function getT() {
-    return translationsCache[currentLang];
+async function loadTestData(lang, testId) {
+    const key = `${lang}_${testId}`;
+    if (testDataCache[key]) return testDataCache[key];
+    const res = await fetch(`/${testId}/${lang}.json`);
+    if (!res.ok) throw new Error(`Failed to load ${testId}/${lang}`);
+    const data = await res.json();
+    testDataCache[key] = data;
+    return data;
 }
 
-function showScreen(id) {
-    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-    const screen = document.getElementById(`screen-${id}`);
-    if (screen) screen.classList.add('active');
-
-    document.querySelectorAll('.nav-link[data-screen]').forEach(link => {
-        link.classList.toggle('active', link.dataset.screen === id);
-    });
+function detectTestId() {
+    const m = window.location.pathname.match(/\/(visioner|integrator)(\/|$)/);
+    return m ? m[1] : null;
 }
 
-function initNav() {
-    document.querySelectorAll('.nav-link[data-screen]').forEach(link => {
-        link.addEventListener('click', e => {
-            e.preventDefault();
-            const screen = link.dataset.screen;
-            if (screen === 'home') showHome();
-            else if (screen === 'blog') showBlog();
-            else if (screen === 'cookie') showCookie();
-        });
-    });
-
-    document.getElementById('logo-link').addEventListener('click', e => {
-        e.preventDefault();
-        showHome();
-    });
-
-    document.getElementById('back-to-tests-btn').addEventListener('click', () => {
-        showHome();
-    });
-
-    document.getElementById('back-to-blog-btn').addEventListener('click', () => {
-        showBlog();
-    });
-
-    document.querySelectorAll('a[data-screen="cookie"]').forEach(link => {
-        link.addEventListener('click', e => {
-            e.preventDefault();
-            showCookie();
-        });
-    });
+async function ensureTestData(lang, testId) {
+    if (!testId) return;
+    const t = getT();
+    if (!t) return;
+    if (t.tests && t.tests[testId] && t.tests[testId].questions) return;
+    const testData = await loadTestData(lang, testId);
+    t.tests = t.tests || {};
+    t.tests[testId] = testData;
 }
 
 async function changeLanguage(lang) {
     currentLang = lang;
+    localStorage.setItem('lang', lang);
     await loadTranslations(lang);
+
+    const page = document.body.dataset.page;
+    let testId = null;
+    if (page === 'quiz') testId = detectTestId();
+    else if (page === 'result') testId = sessionStorage.getItem('quizTestId');
+    await ensureTestData(lang, testId);
+
+    if (page === 'home') { renderTestGrid(); renderBlogList(); }
+    else if (page === 'quiz') renderQuestion();
+    else if (page === 'result') renderResult();
+    else if (page === 'blog') renderBlogList();
+    else if (page === 'article') renderArticle();
+    else if (page === 'cookie') renderCookieContent();
+    updateStaticTexts();
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+function updateStaticTexts() {
     const t = getT();
     if (!t) return;
-
-    const activeScreen = document.querySelector('.screen.active');
-    const id = activeScreen ? activeScreen.id.replace('screen-', '') : 'home';
-
-    document.getElementById('home-title').textContent = t.home.title;
-    document.getElementById('home-subtitle').textContent = t.home.subtitle;
-    document.getElementById('blog-title').textContent = t.blog.title;
-    document.getElementById('cookie-title').textContent = t.cookie.title;
-    document.getElementById('cookie-banner-text').textContent = t.cookie.banner;
-    document.getElementById('cookie-accept-btn').textContent = t.cookie.accept;
-    document.getElementById('disclaimer-text').textContent = t.disclaimer;
-    document.getElementById('meta-res-title').textContent = t.quiz.resTitle;
-    document.getElementById('back-to-tests-btn').textContent = 'Back to Tests';
-
-    if (id === 'home') renderTestGrid();
-    else if (id === 'blog') renderBlogList();
-    else if (id === 'article' && currentArticleId) renderArticle(currentArticleId);
-    else if (id === 'cookie') renderCookieContent();
-    else if (id === 'quiz') {
-        if (!document.getElementById('result-view').classList.contains('hidden')) {
-            showResults();
-        } else if (getT().questions) {
-            renderQuestion();
-        }
-    }
+    const el = id => document.getElementById(id);
+    if (el('home-title')) el('home-title').textContent = t.home.title;
+    if (el('home-subtitle')) el('home-subtitle').textContent = t.home.subtitle;
+    if (el('blog-title')) el('blog-title').textContent = t.blog.title;
+    if (el('cookie-title')) el('cookie-title').textContent = t.cookie.title;
+    if (el('cookie-banner-text')) el('cookie-banner-text').textContent = t.cookie.banner;
+    if (el('disclaimer-text')) el('disclaimer-text').textContent = t.disclaimer;
+    if (el('meta-res-title')) el('meta-res-title').textContent = t.quiz.resTitle;
+    setCookieBtnText(t.cookie.accept);
 }
 
-function showHome() {
-    showScreen('home');
-    renderTestGrid();
-}
+/* ── HOME ── */
 
 function renderTestGrid() {
     const t = getT();
     if (!t) return;
     const grid = document.getElementById('test-grid');
+    if (!grid) return;
     grid.innerHTML = '';
     t.home.tests.forEach(test => {
         const card = document.createElement('div');
-        card.className = 'test-card bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-700 rounded-xl p-5 sm:p-6 flex flex-col cursor-pointer hover:border-indigo-400 dark:hover:border-indigo-500';
+        card.className = 'test-card bg-white dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl sm:rounded-3xl p-8 sm:p-10 flex flex-col cursor-pointer hover:border-brand/40 dark:hover:border-brand-light/40 card-hover';
         card.innerHTML = `
-            <h3 class="font-bold text-slate-900 dark:text-white text-base sm:text-lg">${test.title}</h3>
-            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed flex-grow">${test.desc}</p>
-            <div class="flex items-center justify-between mt-4 pt-3 border-t border-slate-200 dark:border-slate-700">
-                <span class="text-[11px] text-slate-400 dark:text-slate-500">${test.info}</span>
-                <button class="bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white text-xs font-semibold px-4 py-2 rounded-xl transition cursor-pointer">${test.cta}</button>
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-brand-subtle dark:bg-stone-800 mb-5">
+                <i data-lucide="clipboard-list" class="w-7 h-7 text-brand dark:text-brand-light"></i>
+            </div>
+            <h3 class="font-semibold text-stone-900 dark:text-stone-50 text-xl">${test.title}</h3>
+            <p class="text-base text-stone-500 dark:text-stone-400 mt-3 leading-relaxed flex-grow">${test.desc}</p>
+            <div class="flex items-center justify-between mt-8 pt-6 border-t border-stone-200/60 dark:border-stone-700/60">
+                <span class="text-sm text-stone-400 dark:text-stone-500">${test.info}</span>
+                <button class="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover dark:bg-brand-light dark:hover:bg-brand text-white dark:text-stone-900 text-sm font-semibold px-6 py-3 rounded-xl transition-all cursor-pointer">
+                    ${test.cta}
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
             </div>
         `;
         card.querySelector('button').addEventListener('click', e => {
@@ -165,91 +140,160 @@ function renderTestGrid() {
         card.addEventListener('click', () => startTest(test.id));
         grid.appendChild(card);
     });
+    if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
 function startTest(id) {
+    window.location.href = `/${id}/`;
+}
+
+function setCookieBtnText(label) {
+    const btn = document.getElementById('cookie-accept-btn');
+    if (!btn) return;
+    btn.replaceChildren();
+    const icon = document.createElement('i');
+    icon.setAttribute('data-lucide', 'check');
+    icon.className = 'w-3.5 h-3.5';
+    btn.append(icon, ' ' + label);
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+function initCookieBanner() {
+    if (localStorage.getItem('cookieConsent')) {
+        const banner = document.getElementById('cookie-banner');
+        if (banner) banner.classList.add('hidden');
+        return;
+    }
+    const banner = document.getElementById('cookie-banner');
+    if (!banner) return;
+    banner.classList.remove('hidden');
+    document.getElementById('cookie-accept-btn').addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'true');
+        banner.classList.add('hidden');
+    });
+}
+
+/* ── QUIZ ── */
+
+let currentQuestionIndex = 0;
+let totalScore = 0;
+let currentTestId = null;
+
+function getCurrentTest() {
     const t = getT();
-    if (!t || !t.questions) return;
-    currentTestId = id;
+    if (!t || !t.tests || !currentTestId) return null;
+    return t.tests[currentTestId];
+}
+
+function startQuiz(testId) {
+    currentTestId = testId;
     currentQuestionIndex = 0;
     totalScore = 0;
-
-    document.getElementById('result-view').classList.add('hidden');
-    document.getElementById('quiz-view').classList.remove('hidden');
-
-    showScreen('quiz');
+    const test = getCurrentTest();
+    if (!test || !test.questions || !test.questions.length) return;
     renderQuestion();
 }
 
 function renderQuestion() {
     const t = getT();
-    if (!t || !t.questions) return;
+    const test = getCurrentTest();
+    if (!t || !test || !test.questions) return;
+    if (currentQuestionIndex >= test.questions.length) {
+        finishQuiz();
+        return;
+    }
 
-    const currentQuestion = t.questions[currentQuestionIndex];
-    document.getElementById('question-text').innerText = currentQuestion.text;
+    const q = test.questions[currentQuestionIndex];
+    document.getElementById('question-text').textContent = q.text;
 
-    const progress = Math.round(((currentQuestionIndex + 1) / t.questions.length) * 100);
-    document.getElementById('progress-bar').style.width = `${progress}%`;
-    document.getElementById('progress-text').innerText = t.quiz.qOf.replace('{n}', currentQuestionIndex + 1).replace('{max}', t.questions.length);
-    document.getElementById('progress-percent').innerText = `${progress}%`;
+    const progress = Math.round(((currentQuestionIndex + 1) / test.questions.length) * 100);
+    const bar = document.getElementById('progress-bar');
+    if (bar) bar.style.width = `${progress}%`;
+    const pt = document.getElementById('progress-text');
+    if (pt) pt.textContent = t.quiz.qOf.replace('{n}', currentQuestionIndex + 1).replace('{max}', test.questions.length);
+    const pp = document.getElementById('progress-percent');
+    if (pp) pp.textContent = `${progress}%`;
 
     const container = document.getElementById('options-container');
     container.innerHTML = '';
 
-    currentQuestion.options.forEach(option => {
-        const button = document.createElement('button');
-        button.className = "choice-btn w-full text-left bg-slate-50 dark:bg-slate-700/40 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-500 rounded-xl p-3 sm:p-4 font-medium text-sm text-slate-700 dark:text-slate-300 hover:text-indigo-700 dark:hover:text-indigo-400 cursor-pointer transition-all shadow-xs";
-        button.innerText = option.text;
-        button.onclick = () => handleAnswer(option.score);
-        container.appendChild(button);
+    const labels = ['A', 'B', 'C', 'D', 'E'];
+    q.options.forEach((option, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn w-full flex items-center gap-4 bg-white/15 hover:bg-white/25 dark:bg-white/5 dark:hover:bg-white/15 border border-white/20 hover:border-white/40 rounded-2xl p-4 sm:p-5 text-left cursor-pointer transition-all';
+        btn.innerHTML = `
+            <span class="shrink-0 flex items-center justify-center w-9 h-9 rounded-xl text-sm font-bold text-white/70 bg-white/10 border border-white/20">${labels[i]}</span>
+            <span class="text-base sm:text-lg font-medium text-white/90 leading-snug">${option.text}</span>
+        `;
+        btn.onclick = () => handleAnswer(option.score);
+        container.appendChild(btn);
     });
 }
 
 function handleAnswer(score) {
     totalScore += score;
     currentQuestionIndex++;
-
-    const t = getT();
-    if (!t || !t.questions) return;
-    if (currentQuestionIndex < t.questions.length) {
+    const test = getCurrentTest();
+    if (!test || !test.questions) return;
+    if (currentQuestionIndex < test.questions.length) {
         renderQuestion();
     } else {
-        showResults();
+        finishQuiz();
     }
 }
 
-function showResults() {
-    document.getElementById('quiz-view').classList.add('hidden');
-    document.getElementById('result-view').classList.remove('hidden');
+function finishQuiz() {
+    const test = getCurrentTest();
+    if (!test || !test.questions) return;
+    const max = test.questions.length * 5;
+    const finalScore = Math.min(100, Math.round((totalScore / max) * 100));
+    sessionStorage.setItem('quizScore', finalScore);
+    sessionStorage.setItem('quizTestId', currentTestId);
+    window.location.href = '/result.html';
+}
 
+/* ── RESULT ── */
+
+function renderResult() {
     const t = getT();
-    if (!t || !t.questions) return;
-    const maxPossibleScore = t.questions.length * 5;
-    const finalScore = Math.min(100, Math.round((totalScore / maxPossibleScore) * 100));
+    if (!t || !t.tests) return;
+    const score = parseInt(sessionStorage.getItem('quizScore')) || 0;
+    const testId = sessionStorage.getItem('quizTestId') || 'visioner';
+    const test = t.tests[testId];
+    if (!test || !test.results) return;
 
-    document.getElementById('score-display').innerText = `${finalScore} / 100`;
+    if (document.getElementById('score-value')) {
+        document.getElementById('score-value').textContent = score;
+    }
 
-    const result = t.results.find(r => finalScore >= r.min);
-    document.getElementById('status-title').innerText = result.title;
-    document.getElementById('status-desc').innerText = result.desc;
+    const result = test.results.find(r => score >= r.min);
+    if (result) {
+        if (document.getElementById('status-title')) {
+            document.getElementById('status-title').textContent = result.title;
+        }
+        if (document.getElementById('status-desc')) {
+            document.getElementById('status-desc').textContent = result.desc;
+        }
+    }
 
-    renderSocialButtons(finalScore);
+    renderSocialButtons(score);
 }
 
 function renderSocialButtons(score) {
     const t = getT();
     if (!t) return;
     const container = document.getElementById('social-share-buttons');
+    if (!container) return;
     container.innerHTML = '';
 
     const shareUrl = encodeURIComponent(window.location.origin);
     const shareText = encodeURIComponent(t.result.shareText.replace('{score}', score));
 
     const platforms = [
-        { id: 'facebook', label: t.result.facebook, color: 'bg-[#1877F2] hover:bg-[#166fe5]', url: `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}` },
-        { id: 'x', label: t.result.x, color: 'bg-[#000000] dark:bg-[#e8e8e8] hover:bg-[#333] dark:hover:bg-[#ccc]', url: `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}` },
-        { id: 'linkedin', label: t.result.linkedin, color: 'bg-[#0A66C2] hover:bg-[#0958a8]', url: `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}` },
-        { id: 'reddit', label: t.result.reddit, color: 'bg-[#FF4500] hover:bg-[#e03d00]', url: `https://reddit.com/submit?url=${shareUrl}&title=${shareText}` }
+        { icon: 'facebook', label: t.result.facebook, color: 'bg-[#1877F2] hover:bg-[#166fe5]', url: `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}` },
+        { icon: 'twitter', label: t.result.x, color: 'bg-stone-900 dark:bg-stone-100 hover:bg-stone-800 dark:hover:bg-stone-200 text-white dark:text-stone-900', url: `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}` },
+        { icon: 'linkedin', label: t.result.linkedin, color: 'bg-[#0A66C2] hover:bg-[#0958a8]', url: `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}` },
+        { icon: 'message-circle', label: t.result.reddit, color: 'bg-[#FF4500] hover:bg-[#e03d00]', url: `https://reddit.com/submit?url=${shareUrl}&title=${shareText}` }
     ];
 
     platforms.forEach(p => {
@@ -257,112 +301,147 @@ function renderSocialButtons(score) {
         btn.href = p.url;
         btn.target = '_blank';
         btn.rel = 'noopener noreferrer';
-        btn.className = `social-btn ${p.color} text-white text-xs font-semibold px-3 sm:px-4 py-2 rounded-xl transition cursor-pointer inline-flex items-center gap-1.5`;
-        btn.innerHTML = `${p.label}`;
+        btn.className = `social-btn ${p.color} text-white text-xs font-semibold px-4 py-2 rounded-xl transition inline-flex items-center gap-1.5`;
+        btn.innerHTML = `<i data-lucide="${p.icon}" class="w-3.5 h-3.5"></i> ${p.label}`;
         container.appendChild(btn);
     });
 
     const copyBtn = document.createElement('button');
-    copyBtn.className = 'social-btn bg-slate-700 hover:bg-slate-600 dark:bg-slate-600 dark:hover:bg-slate-500 text-white text-xs font-semibold px-3 sm:px-4 py-2 rounded-xl transition cursor-pointer inline-flex items-center gap-1.5';
-    copyBtn.textContent = t.result.copyLink;
+    copyBtn.className = 'social-btn bg-stone-200 dark:bg-stone-700 hover:bg-stone-300 dark:hover:bg-stone-600 text-stone-700 dark:text-stone-300 text-xs font-semibold px-4 py-2 rounded-xl transition inline-flex items-center gap-1.5 cursor-pointer';
+    copyBtn.innerHTML = `<i data-lucide="copy" class="w-3.5 h-3.5"></i> ${t.result.copyLink}`;
     copyBtn.onclick = () => {
         navigator.clipboard.writeText(window.location.origin).then(() => {
-            copyBtn.textContent = t.result.copied;
-            setTimeout(() => { copyBtn.textContent = t.result.copyLink; }, 2000);
+            copyBtn.innerHTML = `<i data-lucide="check" class="w-3.5 h-3.5"></i> ${t.result.copied}`;
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+            setTimeout(() => {
+                copyBtn.innerHTML = `<i data-lucide="copy" class="w-3.5 h-3.5"></i> ${t.result.copyLink}`;
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+            }, 2000);
         });
     };
     container.appendChild(copyBtn);
+
+    if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
-function showBlog() {
-    showScreen('blog');
-    renderBlogList();
-}
+/* ── BLOG ── */
 
 function renderBlogList() {
     const t = getT();
     if (!t || !t.blog || !t.blog.articles) return;
     const list = document.getElementById('blog-list');
+    if (!list) return;
     list.innerHTML = '';
 
     t.blog.articles.forEach((article, index) => {
         const card = document.createElement('div');
-        card.className = 'blog-card bg-slate-50 dark:bg-slate-700/40 border border-slate-200 dark:border-slate-700 rounded-xl p-5 sm:p-6 cursor-pointer hover:border-indigo-400 dark:hover:border-indigo-500';
+        card.className = 'blog-card bg-white dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl sm:rounded-3xl p-8 sm:p-10 cursor-pointer hover:border-brand/40 dark:hover:border-brand-light/40 card-hover';
         card.innerHTML = `
-            <p class="text-[11px] text-slate-400 dark:text-slate-500 mb-1">${article.date}</p>
-            <h3 class="font-bold text-slate-900 dark:text-white text-base sm:text-lg">${article.title}</h3>
-            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">${article.excerpt}</p>
-            <span class="inline-block mt-3 text-xs font-semibold text-indigo-600 dark:text-indigo-400">${t.blog.readMore} &rarr;</span>
+            <div class="flex items-center gap-2 text-sm text-stone-400 dark:text-stone-500 mb-4">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                <span>${article.date}</span>
+            </div>
+            <h3 class="font-semibold text-stone-900 dark:text-stone-50 text-xl">${article.title}</h3>
+            <p class="text-base text-stone-500 dark:text-stone-400 mt-3 leading-relaxed">${article.excerpt}</p>
+            <span class="inline-flex items-center gap-1.5 mt-6 text-sm font-medium text-brand dark:text-brand-light">
+                ${t.blog.readMore} <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </span>
         `;
-        card.addEventListener('click', () => showArticle(index));
+        card.addEventListener('click', () => {
+            window.location.href = `/article.html?id=${index}`;
+        });
         list.appendChild(card);
     });
+    if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
-function showArticle(index) {
-    currentArticleId = index;
-    showScreen('article');
-    renderArticle(index);
-}
+/* ── ARTICLE ── */
 
-function renderArticle(index) {
+function renderArticle() {
     const t = getT();
     if (!t || !t.blog || !t.blog.articles) return;
+    const params = new URLSearchParams(window.location.search);
+    const index = parseInt(params.get('id')) || 0;
     const article = t.blog.articles[index];
     if (!article) return;
 
     const container = document.getElementById('article-content');
+    if (!container) return;
     container.innerHTML = `
-        <p class="text-xs text-slate-400 dark:text-slate-500 mb-1">${article.date}</p>
-        <h1 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-4">${article.title}</h1>
+        <div class="flex items-center gap-2 text-xs text-stone-400 dark:text-stone-500 mb-4">
+            <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+            <span>${article.date}</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-8 tracking-tight">${article.title}</h1>
         ${article.content}
     `;
+    if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
-function showCookie() {
-    showScreen('cookie');
-    renderCookieContent();
-}
+/* ── COOKIE ── */
 
 function renderCookieContent() {
     const t = getT();
     if (!t) return;
-    document.getElementById('cookie-title').textContent = t.cookie.title;
-    document.getElementById('cookie-content').innerHTML = t.cookie.content;
+    const container = document.getElementById('cookie-content');
+    if (!container) return;
+    container.innerHTML = t.cookie.content;
 }
 
-function initCookieBanner() {
-    if (localStorage.getItem('cookieConsent')) {
-        document.getElementById('cookie-banner').classList.add('hidden');
-        return;
-    }
-    document.getElementById('cookie-banner').classList.remove('hidden');
-    document.getElementById('cookie-accept-btn').addEventListener('click', () => {
-        localStorage.setItem('cookieConsent', 'true');
-        document.getElementById('cookie-banner').classList.add('hidden');
-    });
+/* ── INIT ── */
+
+function initLangSelect() {
+    const sel = document.getElementById('lang-select');
+    if (!sel) return;
+    sel.value = currentLang;
+    sel.addEventListener('change', e => changeLanguage(e.target.value));
 }
 
-document.getElementById('lang-select').addEventListener('change', e => changeLanguage(e.target.value));
-document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-
-initTheme();
-initNav();
-initCookieBanner();
+function initThemeToggle() {
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.addEventListener('click', toggleTheme);
+}
 
 (async () => {
-    await loadTranslations('en');
+    initTheme();
+    initLangSelect();
+    initThemeToggle();
+
+    const page = document.body.dataset.page;
+    let testId = null;
+    if (page === 'quiz') testId = detectTestId();
+    else if (page === 'result') testId = sessionStorage.getItem('quizTestId');
+
+    try {
+        await loadTranslations(currentLang);
+        if (testId) await ensureTestData(currentLang, testId);
+    } catch (e) {
+        currentLang = 'en';
+        localStorage.setItem('lang', 'en');
+        await loadTranslations('en');
+        if (testId) await ensureTestData('en', testId);
+    }
+
     const t = getT();
     if (!t) return;
 
-    document.getElementById('home-title').textContent = t.home.title;
-    document.getElementById('home-subtitle').textContent = t.home.subtitle;
-    document.getElementById('blog-title').textContent = t.blog.title;
-    document.getElementById('disclaimer-text').textContent = t.disclaimer;
-    document.getElementById('cookie-banner-text').textContent = t.cookie.banner;
-    document.getElementById('cookie-accept-btn').textContent = t.cookie.accept;
-    document.getElementById('meta-res-title').textContent = t.quiz.resTitle;
-    document.getElementById('back-to-tests-btn').textContent = 'Back to Tests';
+    updateStaticTexts();
 
-    renderTestGrid();
+    if (page === 'home') {
+        initCookieBanner();
+        renderTestGrid();
+        renderBlogList();
+    } else if (page === 'quiz') {
+        if (testId) startQuiz(testId);
+    } else if (page === 'result') {
+        renderResult();
+    } else if (page === 'blog') {
+        renderBlogList();
+    } else if (page === 'article') {
+        renderArticle();
+    } else if (page === 'cookie') {
+        renderCookieContent();
+    }
+
+    if (typeof lucide !== 'undefined') lucide.createIcons();
 })();

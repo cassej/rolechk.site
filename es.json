@@ -1,0 +1,76 @@
+{
+    "nav": {
+        "home": "Blog",
+        "visionary": "Visionario",
+        "integrator": "Integrador",
+        "cookie": "Politica de Cookies"
+    },
+    "home": {
+        "title": "RoleChk",
+        "subtitle": "Autoevaluaciones profesionales para comprender tus fortalezas y estilo de trabajo.",
+        "tests": [
+            {
+                "id": "visioner",
+                "title": "Test de Visionario",
+                "desc": "Descubre tu potencial emprendedor. Averigua como generas ideas, inspiras cambios y moldeas el futuro.",
+                "info": "20 preguntas \u00b7 Toma 2 minutos",
+                "cta": "Iniciar Prueba Gratis"
+            },
+            {
+                "id": "integrator",
+                "title": "Test de Integrador",
+                "desc": "Mide tu excelencia operacional. Descubre como estructuras el caos, impones disciplina y generas resultados.",
+                "info": "20 preguntas \u00b7 Toma 2 minutos",
+                "cta": "Iniciar Prueba Gratis"
+            }
+        ]
+    },
+    "quiz": {
+        "qOf": "Pregunta {n} de {max}",
+        "resTitle": "Tu Resultado"
+    },
+    "result": {
+        "shareBtn": "Compartir Enlace de Verificacion",
+        "copied": "Enlace Copiado!",
+        "shareText": "Obtuve {score}/100 en el test! Descubre el tuyo:",
+        "facebook": "Facebook",
+        "x": "X",
+        "linkedin": "LinkedIn",
+        "reddit": "Reddit",
+        "copyLink": "Copiar Enlace"
+    },
+    "blog": {
+        "title": "Blog",
+        "readMore": "Leer Mas",
+        "articles": [
+            {
+                "id": "what-is-paei",
+                "title": "Que es el Marco PAEI?",
+                "excerpt": "Una introduccion al modelo de gestion del Dr. Ichak Adizes y como puede ayudarte a entender tu estilo de liderazgo.",
+                "date": "2026-01-15",
+                "content": "<p>El marco PAEI, desarrollado por el Dr. Ichak Adizes, identifica cuatro roles principales de gestion: Productor, Administrador, Emprendedor e Integrador. Cada rol representa una funcion diferente necesaria para el exito organizacional.</p><p>La mayoria de las personas tienen un estilo dominante y un estilo secundario, con un rol siendo debil o ausente. Comprender tu perfil PAEI te ayuda a reconocer tus fortalezas, puntos ciegos y como construir equipos complementarios.</p><h2>Los Cuatro Roles</h2><p><strong>Productor (P)</strong>: Enfocado en resultados, ejecucion y hacer que las cosas sucedan. Los Productores estan orientados a la accion y miden el exito por los resultados.</p><p><strong>Administrador (A)</strong>: Enfocado en sistemas, estructura y eficiencia. Los Administradores crean orden a partir del caos y aseguran que los procesos funcionen sin problemas.</p><p><strong>Emprendedor (E)</strong>: Enfocado en vision, innovacion y oportunidades futuras. Los Emprendedores son creativos, tolerantes al riesgo e impulsan el cambio.</p><p><strong>Integrador (I)</strong>: Enfocado en cultura, colaboracion y cohesion del equipo. Los Integradores construyen relaciones y alinean a las personas en torno a valores compartidos.</p><p>Ningun estilo es mejor que otro. Las organizaciones mas efectivas tienen un equilibrio de los cuatro roles trabajando juntos.</p>"
+            },
+            {
+                "id": "visionary-leadership",
+                "title": "Fortalezas y Desafios de los Lideres Visionarios",
+                "excerpt": "Los lideres visionarios impulsan la innovacion pero enfrentan desafios unicos. Aprende a aprovechar tu impulso empresarial mientras construyes equipos efectivos.",
+                "date": "2026-02-01",
+                "content": "<p>Los lideres visionarios son el motor de la innovacion. Ven posibilidades donde otros ven obstaculos, inspiran equipos con futuros convincentes e impulsan cambios transformadores. Sin embargo, esta fortaleza conlleva desafios distintos.</p><h2>Fortalezas Clave</h2><p><strong>Vision Estrategica</strong>: Los visionarios anticipan tendencias y posicionan a sus organizaciones adelantadas a la curva. Piensan en decadas, no en trimestres.</p><p><strong>Comunicacion Inspiradora</strong>: Articulan una vision convincente que atrae talento, inversores y clientes. Las personas quieren ser parte de algo significativo.</p><p><strong>Tolerancia al Riesgo</strong>: Se sienten comodos con la incertidumbre y estan dispuestos a tomar decisiones audaces que otros evitan.</p><h2>Desafios Comunes</h2><p><strong>Brecha de Ejecucion</strong>: Los visionarios a menudo luchan con el seguimiento. Generar ideas es natural; ejecutarlas requiere disciplina y sistemas.</p><p><strong>Impaciencia</strong>: Pueden aburrirse con las operaciones rutinarias y pasar a la siguiente idea antes de que se materialicen completamente.</p><p><strong>Friccion en la Comunicacion</strong>: Su pensamiento rapido puede superar la capacidad de implementacion de su equipo, causando frustracion en ambos lados.</p>"
+            },
+            {
+                "id": "building-balanced-teams",
+                "title": "Construyendo Equipos Equilibrados",
+                "excerpt": "Los grandes equipos se construyen sobre fortalezas complementarias. Aprende a identificar brechas en tu equipo y a contratar para el equilibrio.",
+                "date": "2026-02-15",
+                "content": "<p>Ninguna persona sobresale en todo. Los equipos mas efectivos se construyen sobre fortalezas complementarias donde las habilidades de cada miembro llenan las brechas de los demas.</p><h2>El Problema con los Equipos Homogeneos</h2><p>Los equipos que contratan solo por ajuste cultural a menudo terminan con todos pensando de la misma manera. Aunque esto se siente armonioso, crea puntos ciegos.</p><h2>Como Construir para el Equilibrio</h2><p><strong>Evalua tu Equipo Actual</strong>: Mapea el estilo dominante de cada miembro usando un marco como PAEI. Identifica que roles estan sobrerrepresentados y cuales faltan.</p><p><strong>Contrata para Brechas, No Espejos</strong>: Resistete a contratar personas que piensen como tu. Contrata a quienes te desafien y aporten habilidades que te faltan.</p><p><strong>Fomenta la Seguridad Psicologica</strong>: Los equipos complementarios naturalmente tienen tension. Crea un ambiente donde el desacuerdo respetuoso sea alentado.</p>"
+            }
+        ]
+    },
+    "cookie": {
+        "title": "Politica de Cookies",
+        "banner": "Este sitio utiliza cookies para mejorar tu experiencia. Al continuar, aceptas el uso de cookies.",
+        "accept": "Aceptar",
+        "content": "<p>Esta Politica de Cookies explica como RoleChk utiliza cookies y tecnologias de seguimiento similares.</p><h2>Que Son las Cookies</h2><p>Las cookies son pequenos archivos de texto almacenados en tu dispositivo cuando visitas un sitio web. Ayudan al sitio a recordar tus preferencias y mejorar tu experiencia.</p><h2>Como Usamos las Cookies</h2><p><strong>Cookies Esenciales</strong>: Necesarias para que el sitio funcione correctamente. Incluyen almacenar tu preferencia de tema (claro/oscuro) y seleccion de idioma.</p><p><strong>Cookies de Analitica</strong>: Podemos usar analitica basica para entender como los visitantes interactuan con nuestro sitio. No se recopilan datos personales.</p><h2>Tus Opciones</h2><p>Puedes controlar las cookies a traves de la configuracion de tu navegador. Deshabilitar las cookies puede afectar ciertas funciones del sitio.</p>"
+    },
+    "disclaimer": "Descargo de responsabilidad: Esta herramienta esta inspirada en el marco PAEI del Dr. Ichak Adizes, pero es no oficial y solo para uso educativo. Todas las respuestas permanecen en su dispositivo y no se almacenan ni se comparten."
+}

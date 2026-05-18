@@ -1,276 +1,210 @@
 {
-    "nav": {
-        "home": "Tests",
-        "blog": "Blog",
-        "cookie": "Politica de Cookies"
-    },
-    "home": {
-        "title": "RoleChk",
-        "subtitle": "Autoevaluaciones profesionales para comprender tus fortalezas y estilo de trabajo.",
-        "tests": [
-            {
-                "id": "management-style",
-                "title": "Test de Estilo de Gestion",
-                "desc": "Descubre tu arquetipo profesional dominante. Conoce como manejas los desafios y lideras proyectos.",
-                "info": "20 preguntas · Toma 2 minutos",
-                "cta": "Iniciar Prueba Gratis"
-            }
-        ]
-    },
-    "quiz": {
-        "qOf": "Pregunta {n} de {max}",
-        "resTitle": "Tu Resultado"
-    },
-    "result": {
-        "shareBtn": "Compartir Enlace de Verificacion",
-        "copied": "Enlace Copiado!",
-        "shareText": "Obtuve {score}/100 en el Test de Estilo de Gestion! Descubre el tuyo:",
-        "facebook": "Facebook",
-        "x": "X",
-        "linkedin": "LinkedIn",
-        "reddit": "Reddit",
-        "copyLink": "Copiar Enlace"
-    },
-    "blog": {
-        "title": "Blog",
-        "readMore": "Leer Mas",
-        "articles": [
-            {
-                "id": "what-is-paei",
-                "title": "Que es el Marco PAEI?",
-                "excerpt": "Una introduccion al modelo de gestion del Dr. Ichak Adizes y como puede ayudarte a entender tu estilo de liderazgo.",
-                "date": "2026-01-15",
-                "content": "<p>El marco PAEI, desarrollado por el Dr. Ichak Adizes, identifica cuatro roles principales de gestion: Productor, Administrador, Emprendedor e Integrador. Cada rol representa una funcion diferente necesaria para el exito organizacional.</p><p>La mayoria de las personas tienen un estilo dominante y un estilo secundario, con un rol siendo debil o ausente. Comprender tu perfil PAEI te ayuda a reconocer tus fortalezas, puntos ciegos y como construir equipos complementarios.</p><h2>Los Cuatro Roles</h2><p><strong>Productor (P)</strong>: Enfocado en resultados, ejecucion y hacer que las cosas sucedan. Los Productores estan orientados a la accion y miden el exito por los resultados.</p><p><strong>Administrador (A)</strong>: Enfocado en sistemas, estructura y eficiencia. Los Administradores crean orden a partir del caos y aseguran que los procesos funcionen sin problemas.</p><p><strong>Emprendedor (E)</strong>: Enfocado en vision, innovacion y oportunidades futuras. Los Emprendedores son creativos, tolerantes al riesgo e impulsan el cambio.</p><p><strong>Integrador (I)</strong>: Enfocado en cultura, colaboracion y cohesion del equipo. Los Integradores construyen relaciones y alinean a las personas en torno a valores compartidos.</p><p>Ningun estilo es mejor que otro. Las organizaciones mas efectivas tienen un equilibrio de los cuatro roles trabajando juntos.</p>"
-            },
-            {
-                "id": "visionary-leadership",
-                "title": "Fortalezas y Desafios de los Lideres Visionarios",
-                "excerpt": "Los lideres visionarios impulsan la innovacion pero enfrentan desafios unicos. Aprende a aprovechar tu impulso empresarial mientras construyes equipos efectivos.",
-                "date": "2026-02-01",
-                "content": "<p>Los lideres visionarios son el motor de la innovacion. Ven posibilidades donde otros ven obstaculos, inspiran equipos con futuros convincentes e impulsan cambios transformadores. Sin embargo, esta fortaleza conlleva desafios distintos.</p><h2>Fortalezas Clave</h2><p><strong>Vision Estrategica</strong>: Los visionarios anticipan tendencias y posicionan a sus organizaciones adelantadas a la curva. Piensan en decadas, no en trimestres.</p><p><strong>Comunicacion Inspiradora</strong>: Articulan una vision convincente que atrae talento, inversores y clientes. Las personas quieren ser parte de algo significativo.</p><p><strong>Tolerancia al Riesgo</strong>: Se sienten comodos con la incertidumbre y estan dispuestos a tomar decisiones audaces que otros evitan.</p><h2>Desafios Comunes</h2><p><strong>Brecha de Ejecucion</strong>: Los visionarios a menudo luchan con el seguimiento. Generar ideas es natural; ejecutarlas requiere disciplina y sistemas.</p><p><strong>Impaciencia</strong>: Pueden aburrirse con las operaciones rutinarias y pasar a la siguiente idea antes de que se materialicen completamente.</p><p><strong>Friccion en la Comunicacion</strong>: Su pensamiento rapido puede superar la capacidad de implementacion de su equipo, causando frustracion en ambos lados.</p>"
-            },
-            {
-                "id": "building-balanced-teams",
-                "title": "Construyendo Equipos Equilibrados",
-                "excerpt": "Los grandes equipos se construyen sobre fortalezas complementarias. Aprende a identificar brechas en tu equipo y a contratar para el equilibrio.",
-                "date": "2026-02-15",
-                "content": "<p>Ninguna persona sobresale en todo. Los equipos mas efectivos se construyen sobre fortalezas complementarias donde las habilidades de cada miembro llenan las brechas de los demas.</p><h2>El Problema con los Equipos Homogeneos</h2><p>Los equipos que contratan solo por ajuste cultural a menudo terminan con todos pensando de la misma manera. Aunque esto se siente armonioso, crea puntos ciegos.</p><h2>Como Construir para el Equilibrio</h2><p><strong>Evalua tu Equipo Actual</strong>: Mapea el estilo dominante de cada miembro usando un marco como PAEI. Identifica que roles estan sobrerrepresentados y cuales faltan.</p><p><strong>Contrata para Brechas, No Espejos</strong>: Resistete a contratar personas que piensen como tu. Contrata a quienes te desafien y aporten habilidades que te faltan.</p><p><strong>Fomenta la Seguridad Psicologica</strong>: Los equipos complementarios naturalmente tienen tension. Crea un ambiente donde el desacuerdo respetuoso sea alentado.</p>"
-            }
-        ]
-    },
-    "cookie": {
-        "title": "Politica de Cookies",
-        "banner": "Este sitio utiliza cookies para mejorar tu experiencia. Al continuar, aceptas el uso de cookies.",
-        "accept": "Aceptar",
-        "content": "<p>Esta Politica de Cookies explica como RoleChk utiliza cookies y tecnologias de seguimiento similares.</p><h2>Que Son las Cookies</h2><p>Las cookies son pequenos archivos de texto almacenados en tu dispositivo cuando visitas un sitio web. Ayudan al sitio a recordar tus preferencias y mejorar tu experiencia.</p><h2>Como Usamos las Cookies</h2><p><strong>Cookies Esenciales</strong>: Necesarias para que el sitio funcione correctamente. Incluyen almacenar tu preferencia de tema (claro/oscuro) y seleccion de idioma.</p><p><strong>Cookies de Analitica</strong>: Podemos usar analitica basica para entender como los visitantes interactuan con nuestro sitio. No se recopilan datos personales.</p><h2>Tus Opciones</h2><p>Puedes controlar las cookies a traves de la configuracion de tu navegador. Deshabilitar las cookies puede afectar ciertas funciones del sitio.</p>"
-    },
-    "disclaimer": "Descargo de responsabilidad: Esta herramienta esta inspirada en el marco PAEI del Dr. Ichak Adizes, pero es no oficial y solo para uso educativo. Todas las respuestas permanecen en su dispositivo y no se almacenan ni se comparten.",
+    "title": "Test de Integrador",
     "questions": [
         {
-            "text": "Mi mente genera constantemente nuevos conceptos e ideas mucho mas activamente que la mayoria de las personas que conozco.",
+            "text": "I am excellent at coordinating team work, building management systems, and monitoring the fulfillment of commitments.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Conecto facilmente hechos dispares en un sistema global unico y veo las tendencias en su conjunto.",
+            "text": "Routine operational management and solving current business tasks bring me professional satisfaction.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Formular la mision a largo plazo y el vector estrategico de la organizacion es mi tarea principal.",
+            "text": "My superpower is structuring uncertainty, turning chaos into a well-organized system.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Me atrae encontrar soluciones no convencionales para desafios grandes y complejos.",
+            "text": "I quickly identify and remove any barriers that prevent employees from effectively performing their tasks.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Me encargo de construir alianzas estrategicas con figuras clave y contrapartes.",
+            "text": "I notice hidden nuances and long-term consequences of actions that others often miss.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Las negociaciones de los contratos mas grandes y acuerdos clave son mi punto fuerte.",
+            "text": "I take full internal responsibility for meeting KPIs, implementing plans, and the company's final financial results.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Mi pasion sincera por el producto y la fe en la empresa energizan a quienes me rodean.",
+            "text": "I uncompromisingly ensure 100% transparency in the company's structure, roles, and areas of responsibility.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Soy propenso a entusiasmarme con nuevos proyectos prometedores, abandonando las tareas actuales.",
+            "text": "I succeed in building effective cross-functional communications between different departments and employees.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Mi enfoque siempre esta en lo que sucedera manana, no en los resultados actuales o pasados.",
+            "text": "Seeing things through to completion and delivering tangible results is my main forte.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "La administracion diaria, el micromanagement y el control de empleados me deprimen.",
+            "text": "In case of internal conflicts in the team, I take on the role of arbitrator and put an end to disputes by making the final decision.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Un alto nivel de incertidumbre y el riesgo justificado me motivan, no me asustan.",
+            "text": "I can keep the entire organization focused on key, strategically important priorities, cutting out the excess.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Siento regularmente que los colegas se mueven demasiado lento y no captan de inmediato el hilo de mis pensamientos.",
+            "text": "Thanks to my efforts, the company operates in a predictable, stable, and rhythmic pace.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Mi estilo de liderazgo es inspirar corazones y motivar, no supervisar la disciplina.",
+            "text": "I am much more comfortable managing processes from behind the scenes, remaining a \"gray cardinal,\" rather than being publicly in the spotlight.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Lanzo nuevas iniciativas con gusto, pero prefiero delegar la rutina de llevarlas a cabo.",
+            "text": "I masterfully decompose global, abstract ideas from leadership into step-by-step, understandable action plans.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Estoy en busqueda continua de vectores para la transformacion, modernizacion y crecimiento del negocio.",
+            "text": "I regularly act as a critic of new hypotheses, testing them for realism, which is why others sometimes see me as a skeptic.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "En la toma de decisiones, confio en mi intuicion desarrollada y reacciono al instante.",
+            "text": "Administering complex business processes and allocating scarce resources is my comfort zone.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Sumergirme en pequenos detalles tecnicos y burocraticos rapidamente me agota.",
+            "text": "I am ready to make unpopular and tough decisions, including layoffs, without hesitation if the business requires it.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Mis valores y carisma estan en el centro de la cultura corporativa de nuestro equipo.",
+            "text": "I maintain a high standard of personal organization and expect a similar level of discipline from the team.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Al analizar tareas, primero busco la respuesta a \"Por que se hace esto?\" en lugar de \"Cual es el algoritmo?\"",
+            "text": "I know how to firmly reject new impulsive proposals if they divert focus from the approved course.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         },
         {
-            "text": "Creo sinceramente en la viabilidad de los objetivos mas ambiciosos, incluso si aun no hay un plan detallado.",
+            "text": "I serve as the connecting link that holds the structural elements together and prevents the company from falling apart.",
             "options": [
-                { "text": "Totalmente en desacuerdo", "score": 1 },
-                { "text": "En desacuerdo", "score": 2 },
+                { "text": "Strongly Disagree", "score": 1 },
+                { "text": "Disagree", "score": 2 },
                 { "text": "Neutral", "score": 3 },
-                { "text": "De acuerdo", "score": 4 },
-                { "text": "Totalmente de acuerdo", "score": 5 }
+                { "text": "Agree", "score": 4 },
+                { "text": "Strongly Agree", "score": 5 }
             ]
         }
     ],
     "results": [
-        { "min": 85, "title": "Visionario Absoluto", "desc": "Eres un generador de ideas e ideologo clasico. Vives en el futuro, creas significado magistralmente e inspiras a las personas, pero necesitas vitalmente un socio operativo fuerte (Integrador/Ejecutor) que estructure el caos y haga realidad tus ideas." },
-        { "min": 60, "title": "Lider Estrategico", "desc": "Tienes una vision de gran alcance bien desarrollada y un instinto emprendedor, mientras mantienes una conexion con la realidad. Puedes guiar una empresa con exito, combinando creatividad con comprension de los procesos comerciales." },
-        { "min": 40, "title": "Gerente Pragmatico", "desc": "Estas mas enfocado en la tactica y la estabilidad. Puedes percibir las ideas innovadoras de otros e implementarlas, pero encontrar soluciones revolucionarias de forma independiente no es tu principal fuerza motriz." },
-        { "min": 0, "title": "Estabilizador / Gerente de Operaciones", "desc": "Tu fortaleza radica en la estructura, el orden, la logica y los procesos del 'aqui y ahora'. Exceles en convertir el caos en sistemas funcionales, pero tiendes a evitar el riesgo y la incertidumbre." }
+        { "min": 80, "title": "Integrador Absoluto", "desc": "Your main strength is flawless execution, strict discipline, and creating structure. You are the ideal process architect, capable of grounding even the wildest ideas and turning them into a stable, functioning business. You are the backbone of the company." },
+        { "min": 60, "title": "Lider Operativo Fuerte", "desc": "You have well-developed management skills and systems thinking. You successfully handle administration and control, but you periodically feel the need to step outside the regulations and apply a creative, entrepreneurial approach." },
+        { "min": 0, "title": "Perfil Alternativo", "desc": "Operational routine, micromanagement, and maintaining strict regulations are not your element. Your true role likely lies in generating meaning (Visionary) or in deep expert work in a specific narrow niche." }
     ]
 }

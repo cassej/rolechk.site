@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoleChk - Assessment</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="quiz" class="bg-teal-700 dark:bg-teal-950 text-white font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between">
+        <a href="../" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors no-underline">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            <span class="text-sm font-medium">Exit</span>
+        </a>
+        <div class="flex items-center gap-2 text-xs font-medium text-white/50">
+            <span id="progress-text"></span>
+            <span class="text-white/30">|</span>
+            <span id="progress-percent"></span>
+        </div>
+        <div class="w-20"></div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-6 sm:px-10 py-6">
+
+        <div class="w-full max-w-2xl mx-auto text-center">
+
+            <div class="w-full bg-white/10 rounded-full h-1 mb-10 sm:mb-14 overflow-hidden">
+                <div id="progress-bar" class="bg-white/80 h-full rounded-full progress-bar" style="width: 5%"></div>
+            </div>
+
+            <div class="min-h-[200px] flex items-center justify-center mb-8 sm:mb-10">
+                <h2 id="question-text" class="text-2xl sm:text-3xl lg:text-4xl font-medium leading-snug tracking-tight"></h2>
+            </div>
+
+            <div id="options-container" class="space-y-3 sm:space-y-4 max-w-lg mx-auto">
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../app.js" defer></script>
+</body>
+</html>
