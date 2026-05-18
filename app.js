@@ -107,6 +107,9 @@ function updateStaticTexts() {
     const t = getT();
     if (!t) return;
     const el = id => document.getElementById(id);
+    if (el('nav-home')) el('nav-home').textContent = t.nav.home;
+    if (el('nav-visionary')) el('nav-visionary').textContent = t.nav.visionary;
+    if (el('nav-integrator')) el('nav-integrator').textContent = t.nav.integrator;
     if (el('home-title')) el('home-title').textContent = t.home.title;
     if (el('home-subtitle')) el('home-subtitle').textContent = t.home.subtitle;
     if (el('blog-title')) el('blog-title').textContent = t.blog.title;
