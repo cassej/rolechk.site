@@ -54,6 +54,12 @@
                 "slug": "the-rick-test",
                 "excerpt": "Your brain is a nuclear reactor generating insights at industrial scale. You inspire, but you also paralyze. Check yourself before your business collapses into a black hole.",
                 "date": "2026-06-01"
+            },
+            {
+                "title": "Morty, We Screwed It All Up! Who Is the Integrator and Why It's Not Just an Errand Boy",
+                "slug": "the-integrator",
+                "excerpt": "In pop culture and bad business literature, the Integrator is treated as second-class. Time to fix that. The real Integrator is a figure equal to you in scale — just with a completely different force vector.",
+                "date": "2026-06-15"
             }
         ]
     },

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瑞克·桑切斯测试 — RoleChk</title>
+    <meta name="description" content="你是愿景家的5个迹象（以及你的企业正在燃烧）。在你的企业坍缩成黑洞之前，对照一下这些迹象。">
+    <link rel="canonical" href="https://rolechk.site/zh/blog/the-rick-test/">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="article" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">日志</a>
+                <a href="/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">愿景者</a>
+                <a href="/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">整合者</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">日志</a>
+            <a href="/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">愿景者</a>
+            <a href="/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">整合者</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-3xl mx-auto">
+            <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> 返回日志
+            </a>
+
+            <article>
+                <div class="flex items-center gap-2 text-xs text-stone-400 dark:text-stone-500 mb-4">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                    <span>2026-06-01</span>
+                </div>
+
+                <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-6 tracking-tight leading-tight">
+                    瑞克·桑切斯测试：你是愿景家的5个迹象（以及你的企业正在燃烧）
+                </h1>
+
+                <p class="text-base text-stone-500 dark:text-stone-400 mb-8 italic">
+                    系列文章第2篇。一篇残酷、愤世嫉俗但该死的真实复盘，献给那些陷入"我自己搞定一切"模式的人。
+                </p>
+
+                <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
+
+                    <p>
+                        上一集我们了解到，试图独自拖着一家公司前行是精神上的自杀。今天，我们摘下面具。进来，在手术台前坐下。我们将解剖你的大脑，看看你离典型的疯狂天才——瑞克·桑切斯——有多近。
+                    </p>
+
+                    <p>
+                        《Rocket Fuel》一书声称，只有大约3-5%的人拥有真正的企业家愿景。如果你创办了一家企业，你很可能就是其中之一。但这枚硬币有非常丑陋的另一面。
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        老实说。你有多少次发现自己在想，你的团队就是一群懒惰的杰瑞，没有你的指示一步都走不了？现在照照镜子。也许问题不在他们。也许你只是在用你的混乱消耗他们的资源。
+                    </p>
+
+                    <p class="text-lg sm:text-xl font-medium text-stone-700 dark:text-stone-300">
+                        以下是你是愿景家的5个经典迹象。在你的企业坍缩成黑洞之前，对照一下吧。
+                    </p>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8"></div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">1.</span>
+                        <span>每10分钟冒出一个"我有个主意！"</span>
+                    </h2>
+
+                    <p>
+                        你的大脑是一个以工业规模产生洞察的核反应堆。你在浇花、看剧、开车——然后BAM！新产品、新市场、新定位策略。
+                    </p>
+
+                    <p>
+                        你带着炽热的眼神冲进工作群：<em>"莫蒂，放下一切，我们去抢冥王星！"</em>团队乖乖地放下当前任务，重建流程，花一周时间测试……然后下周一你来了，说：<em>"冥王星太烂了，我想到了更酷的东西！"</em>
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">诊断：</strong>你激励人心，但你也让人瘫痪。不断改变方向——也就是闪亮物体综合症——把你的公司变成一艘在原地疯狂打转的船。
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">2.</span>
+                        <span>对微观管理和电子表格过敏</span>
+                    </h2>
+
+                    <p>
+                        一看到Excel表格就让你反胃。填写CRM系统会引发你堪比意识到宇宙无意义的存在主义危机。你真心不明白为什么要花两个小时写规程，当<em>"这很明显，正常做就行了！"</em>
+                    </p>
+
+                    <p>
+                        你的元素是混乱、突击、"英雄模式"的救火，以及通过纯粹的个人魅力达成大单。
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">诊断：</strong>企业只有在拥有系统时才能成长。没有系统，你不是在建立公司——你是在建立游牧营地。如果你不在，营地就会消亡。
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">3.</span>
+                        <span>你的员工害怕你（而且不理解你）</span>
+                    </h2>
+
+                    <p>
+                        当你走进办公室或加入电话会议时，温度会下降。不，你不是一个邪恶的暴君。你只是思想领先三个光年。你分配任务时说：<em>"我们需要重建漏斗，让客户感觉像在家一样。"</em>
+                    </p>
+
+                    <p>
+                        对你来说，那是一幅水晶般清晰的画面。对你的营销人员来说，那是一堆模糊的声音。他们做错了，你爆发了，大喊周围都是白痴，然后退回到你的车库。
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">诊断：</strong>愿景家的沟通通道常常有故障。你活在未来；你的团队活在当下。他们需要轨道和指标，而不是你的宇宙隐喻。
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">4.</span>
+                        <span>你在项目完成80%时放弃</span>
+                    </h2>
+
+                    <p>
+                        你对开始阶段疯狂着迷。第一笔销售、概念开发、选择logo、高喊<em>"我们要横扫市场了！"</em>但一旦进入日常实施、修复bug、法律文书工作和集成配置——你的保险丝就断了。你感到无聊。任务在"几乎完成"的状态下挂起数周，而你早已跳到了一个新的"闪亮玩具"上。
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">诊断：</strong>你是短跑运动员，但商业是马拉松。如果没有一个能系统地把任务推到100%完成的人，你的公司就会变成一个天才但不工作的原型机的墓地。
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">5.</span>
+                        <span>你是自己公司的主要瓶颈</span>
+                    </h2>
+
+                    <p>
+                        这是最矛盾的一点。你创建了这家企业，但也是你在阻止它成长。所有关键决策都锁定在你身上。设计师没有你的"ok"就不能发布banner。销售没有你的批准就不能给折扣。你感觉自己是你自己创造物的奴隶，每天工作14小时，但如果你关掉手机两天——一切都会停止和燃烧。
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">诊断：</strong>你把运营绑在了你的个性上，因为你潜意识里害怕放开方向盘。你把对公司的控制与对流程的控制混为一谈。
+                        </p>
+                    </div>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8"></div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-8 mb-3 tracking-tight">你得了多少分（满分5分）？</h2>
+
+                    <p>
+                        如果至少有3条符合——恭喜，你是纯种的瑞克·桑切斯。你的大脑是十亿美元的资产，但你的管理方法是纯粹的负债。
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        好消息是：你不需要改变自己，不需要学会喜欢电子表格，也不需要强迫自己检查报告。那行不通——你只会精疲力尽并憎恨你的工作。你的任务是保持做瑞克，但找到那个处理所有脏活的人。一个能整理你车库的人。
+                    </p>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8">
+                        <p class="text-sm text-stone-400 dark:text-stone-500 italic">
+                            在下一篇文章中，我们将详细分析什么是真正的整合者。剧透：这不是一个顺从的秘书或只是一个CEO。这是一个有权对你说<em>"闭嘴，瑞克，我们按计划来"</em>的人。准备好接受了吗？等待下一个传送枪信号。
+                        </p>
+                    </div>
+
+                </div>
+            </article>
+
+            <div class="mt-10 pt-6 border-t border-stone-200/40 dark:border-stone-700/40">
+                <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand dark:text-brand-light hover:underline no-underline">
+                    <i data-lucide="chevron-left" class="w-4 h-4"></i> 所有文章
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p id="disclaimer-text" class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center"></p>
+            <a href="/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie 政策</a>
+        </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>

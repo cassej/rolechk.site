@@ -54,6 +54,12 @@
                 "slug": "the-rick-test",
                 "excerpt": "Tu cerebro es un reactor nuclear que genera ideas a escala industrial. Inspiras, pero también paralizas. Revisa estas señales antes de que tu negocio colapse en un agujero negro.",
                 "date": "2026-06-01"
+            },
+            {
+                "title": "¡Morty, la cagamos! Quién es el Integrador y por qué no es un simple recadero",
+                "slug": "the-integrator",
+                "excerpt": "En la cultura popular y la mala literatura de negocios, el Integrador es tratado como alguien de segunda clase. Hora de arreglar eso. El verdadero Integrador es una figura igual a ti en escala — solo con un vector de fuerza completamente diferente.",
+                "date": "2026-06-15"
             }
         ]
     },

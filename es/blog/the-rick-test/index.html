@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Test de Rick Sanchez — RoleChk</title>
+    <meta name="description" content="5 señales de que eres un Visionario (y tu negocio está en llamas). Revisa estas señales antes de que tu negocio colapse en un agujero negro.">
+    <link rel="canonical" href="https://rolechk.site/es/blog/the-rick-test/">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="article" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Blog</a>
+                <a href="/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Visionario</a>
+                <a href="/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Integrador</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Blog</a>
+            <a href="/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Visionario</a>
+            <a href="/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Integrador</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-3xl mx-auto">
+            <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver al Blog
+            </a>
+
+            <article>
+                <div class="flex items-center gap-2 text-xs text-stone-400 dark:text-stone-500 mb-4">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                    <span>2026-06-01</span>
+                </div>
+
+                <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-6 tracking-tight leading-tight">
+                    El Test de Rick Sanchez: 5 señales de que eres un Visionario (y tu negocio está en llamas)
+                </h1>
+
+                <p class="text-base text-stone-500 dark:text-stone-400 mb-8 italic">
+                    Artículo 2 de la serie. Un análisis brutal, cínico, pero malditamente honesto para quienes están atrapados en el modo "yo lo resuelvo todo solo".
+                </p>
+
+                <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
+
+                    <p>
+                        En el episodio anterior, descubrimos que intentar arrastrar una empresa en solitario es un suicidio mental. Hoy, nos quitamos las máscaras. Pasa, siéntate en la mesa de operaciones. Vamos a diseccionar tu cerebro para descubrir qué tan cerca estás del arquetipo del genio loco — Rick Sanchez.
+                    </p>
+
+                    <p>
+                        El libro <em>Rocket Fuel</em> afirma que solo entre el 3 y el 5% de las personas poseen una visión empresarial verdadera. Si fundaste un negocio, probablemente eres uno de ellos. Pero esta moneda tiene una cara muy fea.
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        Seamos honestos. ¿Cuántas veces te has sorprendido pensando que tu equipo es un montón de Jerrys perezosos que no pueden dar un paso sin tu instrucción? Ahora mírate al espejo. Quizás el problema no son ellos. Quizás solo estás consumiendo sus recursos con tu caos.
+                    </p>
+
+                    <p class="text-lg sm:text-xl font-medium text-stone-700 dark:text-stone-300">
+                        Aquí tienes 5 señales clásicas de que eres un Visionario. Verifícate antes de que tu negocio colapse en un agujero negro.
+                    </p>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8"></div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">1.</span>
+                        <span>"¡Tengo una idea!" cada 10 minutos</span>
+                    </h2>
+
+                    <p>
+                        Tu cerebro es un reactor nuclear que genera ideas a escala industrial. Estás regando una planta, viendo una serie, conduciendo — ¡y BAM! Nuevo producto, nuevo mercado, nueva estrategia de posicionamiento.
+                    </p>
+
+                    <p>
+                        Entras al chat del trabajo con ojos ardientes: <em>"Morty, deja todo, ¡vamos a robar Plutón!"</em> El equipo obedientemente abandona sus tareas, reconstruye procesos, pasa una semana en pruebas... y el lunes siguiente llegas y dices: <em>"Plutón apesta, ¡se me ocurrió algo mucho mejor!"</em>
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnóstico:</strong> Inspiras, pero también paralizas. El cambio constante de rumbo — el Síndrome del Objeto Brillante — convierte tu empresa en un barco que gira frenéticamente en el mismo lugar.
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">2.</span>
+                        <span>Alergia al microgestión y las hojas de cálculo</span>
+                    </h2>
+
+                    <p>
+                        La simple vista de una hoja de Excel te da náuseas. Llenar un CRM te provoca una crisis existencial comparable a darte cuenta de la falta de sentido del universo. Sinceramente no entiendes por qué perder dos horas redactando procedimientos cuando <em>"es obvio, ¡solo hazlo bien!"</em>
+                    </p>
+
+                    <p>
+                        Tu elemento es el caos, el asalto, apagar incendios en modo "héroe" y cerrar grandes acuerdos con puro carisma.
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnóstico:</strong> Un negocio solo crece cuando tiene un sistema. Sin sistemas, no construyes una corporación — construyes un campamento nómada. Si no estás allí, el campamento muere.
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">3.</span>
+                        <span>Tus empleados te temen (y no te entienden)</span>
+                    </h2>
+
+                    <p>
+                        Cuando entras a la oficina o te conectas a una llamada, la temperatura baja. No, no eres un tirano malvado. Solo piensas tres años luz adelante. Das una tarea como: <em>"Necesitamos reconstruir el embudo para que el cliente se sienta como en casa."</em>
+                    </p>
+
+                    <p>
+                        Para ti, eso es una imagen cristalina. Para tu marketero, es un conjunto de sonidos vagos. Lo hacen mal, explotas, gritas que todos son idiotas, y te retiras a tu garaje.
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnóstico:</strong> Los Visionarios suelen tener una puerta de comunicación rota. Vives en el futuro; tu equipo vive en el presente. Necesitan rieles y métricas, no tus metáforas cósmicas.
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">4.</span>
+                        <span>Abandonas proyectos al 80%</span>
+                    </h2>
+
+                    <p>
+                        Te apasiona locamente el inicio. Las primeras ventas, el desarrollo del concepto, elegir el logo, gritar <em>"¡Vamos a arrasar el mercado!"</em> Pero cuando llega la implementación rutinaria, la corrección de errores, el papeleo legal y la configuración de integraciones — se apaga tu fusible. Te aburres. La tarea se queda en "casi listo" durante semanas mientras ya saltaste a un nuevo "objeto brillante."
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnóstico:</strong> Eres un velocista, pero el negocio es un maratón. Sin alguien que lleve metódicamente las tareas al 100%, tu empresa se convierte en un cementerio de prototipos brillantes pero no funcionales.
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">5.</span>
+                        <span>Eres el principal cuello de botella de tu propia empresa</span>
+                    </h2>
+
+                    <p>
+                        El más paradójico. Creaste este negocio, pero también le impides crecer. Todas las decisiones clave dependen de ti. El diseñador no puede publicar un banner sin tu "ok." El vendedor no puede dar un descuento sin tu aprobación. Te sientes esclavo de tu propia creación, trabajas 14 horas al día, pero si apagas el teléfono dos días — todo se detiene y se quema.
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnóstico:</strong> Has atado la operación a tu personalidad porque inconscientemente temes soltar el volante. Confundes el control de la empresa con el control de los procesos.
+                        </p>
+                    </div>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8"></div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-8 mb-3 tracking-tight">¿Cuántos de 5 puntos tienes?</h2>
+
+                    <p>
+                        Si al menos 3 de 5 — felicidades, eres un Rick Sanchez de pura sangre. Tu cerebro es un activo de mil millones de dólares, pero tus métodos de gestión son pura pérdida.
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        La buena noticia: no necesitas cambiarte, aprender a amar las hojas de cálculo u obligarte a revisar informes. Eso no funcionará — solo te agotarás y odiarás tu trabajo. Tu tarea es seguir siendo Rick, pero encontrar a alguien que haga el trabajo sucio. Alguien que ponga orden en tu garaje.
+                    </p>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8">
+                        <p class="text-sm text-stone-400 dark:text-stone-500 italic">
+                            En el próximo artículo, analizaremos qué es un verdadero Integrador. Spoiler: no es un secretario obediente ni un simple director ejecutivo. Es alguien que tiene derecho a decirte <em>"Cállate, Rick, seguimos el plan."</em> ¿Listo para eso? Espera la próxima señal de la pistola portal.
+                        </p>
+                    </div>
+
+                </div>
+            </article>
+
+            <div class="mt-10 pt-6 border-t border-stone-200/40 dark:border-stone-700/40">
+                <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand dark:text-brand-light hover:underline no-underline">
+                    <i data-lucide="chevron-left" class="w-4 h-4"></i> Todos los artículos
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p id="disclaimer-text" class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center"></p>
+            <a href="/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Política de Cookies</a>
+        </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
