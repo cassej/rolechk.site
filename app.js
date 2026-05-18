@@ -128,16 +128,16 @@ function renderTestGrid() {
     grid.innerHTML = '';
     t.home.tests.forEach(test => {
         const card = document.createElement('div');
-        card.className = 'test-card bg-white dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl sm:rounded-3xl p-8 sm:p-10 flex flex-col cursor-pointer hover:border-brand/40 dark:hover:border-brand-light/40 card-hover';
+        card.className = 'test-card bg-white dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl p-6 flex flex-col cursor-pointer hover:border-brand/40 dark:hover:border-brand-light/40 card-hover';
         card.innerHTML = `
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-brand-subtle dark:bg-stone-800 mb-5">
-                <i data-lucide="clipboard-list" class="w-7 h-7 text-brand dark:text-brand-light"></i>
+            <div class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-brand-subtle dark:bg-stone-800 mb-4">
+                <i data-lucide="clipboard-list" class="w-5 h-5 text-brand dark:text-brand-light"></i>
             </div>
-            <h3 class="font-semibold text-stone-900 dark:text-stone-50 text-xl">${test.title}</h3>
-            <p class="text-base text-stone-500 dark:text-stone-400 mt-3 leading-relaxed flex-grow">${test.desc}</p>
-            <div class="flex items-center justify-between mt-8 pt-6 border-t border-stone-200/60 dark:border-stone-700/60">
-                <span class="text-sm text-stone-400 dark:text-stone-500">${test.info}</span>
-                <button class="inline-flex items-center gap-1.5 bg-brand hover:bg-brand-hover dark:bg-brand-light dark:hover:bg-brand text-white dark:text-stone-900 text-sm font-semibold px-6 py-3 rounded-xl transition-all cursor-pointer">
+            <h3 class="font-semibold text-stone-900 dark:text-stone-50 text-lg">${test.title}</h3>
+            <p class="text-sm text-stone-500 dark:text-stone-400 mt-2 leading-relaxed flex-grow">${test.desc}</p>
+            <div class="mt-5 pt-4 border-t border-stone-200/60 dark:border-stone-700/60 space-y-3">
+                <span class="block text-xs text-stone-400 dark:text-stone-500 text-center">${test.info}</span>
+                <button class="w-full inline-flex items-center justify-center gap-1.5 bg-brand hover:bg-brand-hover dark:bg-brand-light dark:hover:bg-brand text-white dark:text-stone-900 text-sm font-semibold px-5 py-2.5 rounded-xl transition-all cursor-pointer">
                     ${test.cta}
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </button>
