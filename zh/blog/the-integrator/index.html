@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谁是整合者 — RoleChk</title>
+    <meta name="description" content="真正的整合者是一个与你规模相当的人物。他能对瑞克说'不'，在危机中保持航向，将混乱转化为可运行的系统。">
+    <link rel="canonical" href="https://rolechk.site/zh/blog/the-integrator/">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="article" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">日志</a>
+                <a href="/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">愿景者</a>
+                <a href="/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">整合者</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">日志</a>
+            <a href="/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">愿景者</a>
+            <a href="/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">整合者</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-3xl mx-auto">
+            <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> 返回日志
+            </a>
+
+            <article>
+                <div class="flex items-center gap-2 text-xs text-stone-400 dark:text-stone-500 mb-4">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                    <span>2026-06-15</span>
+                </div>
+
+                <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-6 tracking-tight leading-tight">
+                    莫蒂，我们搞砸了！谁是整合者，为什么他不是跑腿小弟
+                </h1>
+
+                <p class="text-base text-stone-500 dark:text-stone-400 mb-8 italic">
+                    系列文章第3篇。是时候谈谈那个在你漂浮在云端时扛着整个星际系统的人了。
+                </p>
+
+                <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
+
+                    <p>
+                        上次我们发现，如果你在瑞克·桑切斯测试中得了三分以上，你的企业就是一个可控（更多时候是不可控）混乱的发电机。你在维度之间跳跃，产生想法，但运营正在支离破碎。
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        今天我们来谈谈那个在你漂浮在云端时扛着整个星际系统的人。谈谈整合者。你的莫蒂。
+                    </p>
+
+                    <p>
+                        在大众文化和糟糕的商业书籍中，整合者被视为二等角色。你知道的——那种顺从地点头、在笔记本上记下天才创始人的想法、确保办公室有饼干的CEO。如果你也这么想，我有坏消息要告诉你：你把战斗飞行员和秘书搞混了。<strong class="text-stone-900 dark:text-stone-100">真正的整合者是一个与你规模相当的人物——只是拥有完全不同的力量向量。</strong>
+                    </p>
+
+                    <p class="text-lg sm:text-xl font-medium text-stone-700 dark:text-stone-300">
+                        让我们来剖析这种稀有动物的解剖结构。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight">整合者的超能力：执行</h2>
+
+                    <p>
+                        如果愿景家拥有"想要"这个词（想要新产品、想要这个市场、想要征服一个星球），那么整合者拥有那些艰难的问题：<strong class="text-stone-900 dark:text-stone-100">"怎么做？"</strong>、<strong class="text-stone-900 dark:text-stone-100">"谁来做？"</strong>和<strong class="text-stone-900 dark:text-stone-100">"什么时候？"</strong>
+                    </p>
+
+                    <p>
+                        《Rocket Fuel》一书将整合者定义为把公司所有分崩离析的部分粘合成一个整体机制的人。他们的超能力是执行。他们把你抽象的想法——<em>"我们需要做很酷的营销"</em>——转化为：
+                    </p>
+
+                    <ul class="space-y-2 text-stone-700 dark:text-stone-300">
+                        <li class="flex items-start gap-2"><span class="text-brand dark:text-brand-light mt-1.5 shrink-0">&#x2022;</span> 带有截止日期的清晰分步计划；</li>
+                        <li class="flex items-start gap-2"><span class="text-brand dark:text-brand-light mt-1.5 shrink-0">&#x2022;</span> 一套可衡量的指标（KPI/记分卡）；</li>
+                        <li class="flex items-start gap-2"><span class="text-brand dark:text-brand-light mt-1.5 shrink-0">&#x2022;</span> 分配的所有权（谁具体负责，而不是"整个团队"）。</li>
+                    </ul>
+
+                    <p>
+                        他们是粘合剂。他们是流程架构师。没有他们，你的想法只会停留在车库里的蓝图上。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight">整合者与普通COO的3个关键区别</h2>
+
+                    <p>
+                        许多瑞克犯了一个致命错误：他们雇佣"一个不错的运营总监"（COO），然后期望混乱消失。但普通管理者在愿景家的压力下两个月就崩溃了。真正的整合者拥有三个关键特质：
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl p-6 sm:p-8 my-6 space-y-6">
+
+                        <div>
+                            <h3 class="text-base font-semibold text-brand dark:text-brand-light tracking-tight flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-brand/10 dark:bg-brand-light/10 text-brand dark:text-brand-light text-xs font-bold shrink-0">1</span>
+                                <span>他们能对瑞克说"不"</span>
+                            </h3>
+                            <p class="text-sm sm:text-base mt-2">普通雇佣型总监害怕创始人。当瑞克周一冲进来大喊<em>"转型！我们要测试新领域！"</em>时，COO顺从地敬礼。整合者看看电子表格，看看公司当前的重点，关上门说：<em>"不，瑞克。我们有季度计划。你的想法很棒——我把它放进待办清单。我们两个月后的战略会上再讨论。现在，离开车库，让团队工作。"</em></p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-base font-semibold text-brand dark:text-brand-light tracking-tight flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-brand/10 dark:bg-brand-light/10 text-brand dark:text-brand-light text-xs font-bold shrink-0">2</span>
+                                <span>他们是团队的唯一入口</span>
+                            </h3>
+                            <p class="text-sm sm:text-base mt-2">在没有整合者的公司里，瑞克在各部门之间跑来跑去，直接给设计师、程序员和销售人员分配任务。每个人的大脑都因为五个相互冲突的优先事项而爆炸。整合者设置了严格的过滤器：所有愿景家的想法先流向整合者。只有通过合理性审查和资源审核后，它们才能到达团队。</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-base font-semibold text-brand dark:text-brand-light tracking-tight flex items-center gap-2">
+                                <span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-brand/10 dark:bg-brand-light/10 text-brand dark:text-brand-light text-xs font-bold shrink-0">3</span>
+                                <span>他们坚守阵地并承担责任</span>
+                            </h3>
+                            <p class="text-sm sm:text-base mt-2">当危机来临时（它总是会来），愿景家常常陷入存在主义抑郁或开始疯狂乱动。整合者冷静地打开控制面板，重新分配资源，削减成本，保持船只漂浮。</p>
+                        </div>
+
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight">为什么找到你的莫蒂他妈的难</h2>
+
+                    <p>
+                        因为一个强大的整合者是稀缺商品。市场上充满了"杰瑞们"——想要朝九晚五稳定薪水、害怕责任、一有风吹草动就跑来抱怨的人。杰瑞会用官僚主义和抱怨摧毁你的公司。
+                    </p>
+
+                    <p>
+                        你需要一个拥有独特组合的人：系统性的分析思维、铁一般的纪律，以及——创业驱动力。他们必须真心享受在你的疯狂世界中建立秩序。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight">别再窒息你的搭档</h2>
+
+                    <p>
+                        如果你已经有了一个看起来像整合者的人，但企业仍然停滞不前，问问自己：<strong class="text-stone-900 dark:text-stone-100">你真的让他们掌舵了吗？</strong>
+                    </p>
+
+                    <p>
+                        愿景家常常患有控制狂。他们雇佣一个强大的人，然后因为每一个独立决定而打他们的手，在背后推翻他们的命令，然后陷入微观管理。这是把战斗莫蒂变回胆小少年最快的方式。
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-6">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">给瑞克的结论：</strong>如果你的天才没有打包成一个可运行的商业模式，它就正好值零美元。是时候承认了：你需要一个能让你的宇宙飞船着陆的伙伴。
+                        </p>
+                    </div>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8">
+                        <p class="text-sm text-stone-400 dark:text-stone-500 italic">
+                            下一集我们将进入书中最有料的部分——问责表（Accountability Chart）。我们将详细分析如何分配公司的权力，免得你们在飞碟里互相残杀，以及谁应该负责哪些按钮。打开你的混乱过滤器，等待更新。
+                        </p>
+                    </div>
+
+                </div>
+            </article>
+
+            <div class="mt-10 pt-6 border-t border-stone-200/40 dark:border-stone-700/40">
+                <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand dark:text-brand-light hover:underline no-underline">
+                    <i data-lucide="chevron-left" class="w-4 h-4"></i> 所有文章
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p id="disclaimer-text" class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center"></p>
+            <a href="/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie 政策</a>
+        </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
