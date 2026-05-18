@@ -63,6 +63,11 @@ function detectTestId() {
     return m ? m[1] : null;
 }
 
+function getArticleSlug() {
+    const m = window.location.pathname.match(/\/blog\/([^\/]+)/);
+    return m ? m[1] : null;
+}
+
 async function ensureTestData(lang, testId) {
     if (!testId) return;
     const t = getT();
@@ -88,7 +93,11 @@ async function changeLanguage(lang) {
     else if (page === 'quiz') renderQuestion();
     else if (page === 'result') renderResult();
     else if (page === 'blog') renderBlogList();
-    else if (page === 'article') renderArticle();
+    else if (page === 'article') {
+        const slug = getArticleSlug();
+        if (slug) { window.location.href = `/${lang}/blog/${slug}/`; return; }
+        renderArticle();
+    }
     else if (page === 'cookie') renderCookieContent();
     updateStaticTexts();
     if (typeof lucide !== 'undefined') lucide.createIcons();
@@ -371,7 +380,7 @@ function renderBlogList() {
             </span>
         `;
         card.addEventListener('click', () => {
-            window.location.href = `/article.html?id=${index}`;
+            window.location.href = `/${currentLang}/blog/${article.slug}/`;
         });
         list.appendChild(card);
     });
@@ -461,7 +470,6 @@ function initThemeToggle() {
     } else if (page === 'blog') {
         renderBlogList();
     } else if (page === 'article') {
-        renderArticle();
     } else if (page === 'cookie') {
         renderCookieContent();
     }

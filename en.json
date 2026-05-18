@@ -44,25 +44,10 @@
         "readMore": "Read More",
         "articles": [
             {
-                "id": "what-is-paei",
-                "title": "What is the PAEI Framework?",
-                "excerpt": "An introduction to Dr. Ichak Adizes' management model and how it can help you understand your leadership style.",
-                "date": "2026-01-15",
-                "content": "<p>The PAEI framework, developed by Dr. Ichak Adizes, identifies four primary management roles: Producer, Administrator, Entrepreneur, and Integrator. Each role represents a different function necessary for organizational success.</p><p>Most people have a dominant style and a secondary style, with one role being either weak or absent. Understanding your PAEI profile helps you recognize your strengths, blind spots, and how to build complementary teams.</p><h2>The Four Roles</h2><p><strong>Producer (P)</strong>: Focused on results, execution, and getting things done. Producers are action-oriented and measure success by output.</p><p><strong>Administrator (A)</strong>: Focused on systems, structure, and efficiency. Administrators create order from chaos and ensure processes run smoothly.</p><p><strong>Entrepreneur (E)</strong>: Focused on vision, innovation, and future opportunities. Entrepreneurs are creative, risk-tolerant, and drive change.</p><p><strong>Integrator (I)</strong>: Focused on culture, collaboration, and team cohesion. Integrators build relationships and align people around shared values.</p><p>No single style is better than another. The most effective organizations have a balance of all four roles working together.</p>"
-            },
-            {
-                "id": "visionary-leadership",
-                "title": "The Strengths and Challenges of Visionary Leaders",
-                "excerpt": "Visionary leaders drive innovation but face unique challenges. Learn how to leverage your entrepreneurial drive while building effective teams.",
-                "date": "2026-02-01",
-                "content": "<p>Visionary leaders are the engine of innovation. They see possibilities where others see obstacles, inspire teams with compelling futures, and drive transformative change. However, this strength comes with distinct challenges.</p><h2>Key Strengths</h2><p><strong>Strategic Foresight</strong>: Visionaries anticipate trends and position their organizations ahead of the curve. They think in decades, not quarters.</p><p><strong>Inspirational Communication</strong>: They articulate a compelling vision that attracts talent, investors, and customers. People want to be part of something meaningful.</p><p><strong>Risk Tolerance</strong>: They are comfortable with uncertainty and willing to make bold bets that others avoid.</p><h2>Common Challenges</h2><p><strong>Execution Gap</strong>: Visionaries often struggle with follow-through. Generating ideas is natural; executing them requires discipline and systems.</p><p><strong>Impatience</strong>: They may become bored with routine operations and move on before ideas are fully realized.</p><p><strong>Communication Friction</strong>: Their rapid thinking can outpace their team's ability to implement, causing frustration on both sides.</p><h2>The Solution</h2><p>The most successful visionary leaders partner with strong operators who can translate vision into execution. Recognizing this need and building complementary teams is the hallmark of mature leadership.</p>"
-            },
-            {
-                "id": "building-balanced-teams",
-                "title": "Building Balanced Teams: Complementary Strengths",
-                "excerpt": "Great teams are built on complementary strengths. Learn how to identify gaps in your team and hire for balance.",
-                "date": "2026-02-15",
-                "content": "<p>No single person excels at everything. The most effective teams are built on complementary strengths where each member's abilities fill another's gaps.</p><h2>The Problem with Homogeneous Teams</h2><p>Teams that hire for cultural fit alone often end up with everyone thinking the same way. While this feels harmonious, it creates blind spots. A team of visionaries generates endless ideas but never ships. A team of administrators runs smoothly but never innovates.</p><h2>How to Build for Balance</h2><p><strong>Assess Your Current Team</strong>: Map each team member's dominant style using a framework like PAEI. Identify which roles are overrepresented and which are missing.</p><p><strong>Hire for Gaps, Not Mirrors</strong>: Resist the urge to hire people who think like you. Hire people who challenge you and bring skills you lack.</p><p><strong>Foster Psychological Safety</strong>: Complementary teams naturally have tension. Create an environment where respectful disagreement is encouraged and different perspectives are valued.</p><p><strong>Rotate Leadership</strong>: Allow different team members to lead based on the phase of the project. Visionaries lead during ideation, administrators during execution.</p>"
+                "title": "Why Your Portal Gun Needs a Fuse, or Why Rick Doesn't Fly Without Morty",
+                "slug": "why-rick-needs-morty",
+                "excerpt": "You can generate twenty brilliant ideas before lunch. You can see future trends as if you've swallowed a handful of mega-seeds. But if your operations look like a Cronenberg world — congratulations. You're a classic Visionary, and you're trying to fly without an Integrator.",
+                "date": "2026-05-17"
             }
         ]
     },
