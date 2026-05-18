@@ -368,15 +368,12 @@ function renderBlogList() {
     t.blog.articles.forEach((article, index) => {
         const item = document.createElement('a');
         item.href = `/${currentLang}/blog/${article.slug}/`;
-        item.className = 'group flex flex-col bg-white dark:bg-stone-800/40 border border-stone-200/60 dark:border-stone-700/60 rounded-2xl p-6 sm:p-8 no-underline hover:border-brand/40 dark:hover:border-brand-light/40 card-hover transition-all';
+        item.className = 'group block no-underline py-7 sm:py-8 border-b border-stone-200/30 dark:border-stone-700/30 last:border-b-0';
         item.innerHTML = `
-            <div class="flex items-center gap-2 text-xs text-stone-400 dark:text-stone-500 mb-3 font-medium">
-                <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
-                <span>${article.date}</span>
-            </div>
-            <h3 class="text-base sm:text-lg font-semibold text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors">${article.title}</h3>
-            <p class="text-sm text-stone-500 dark:text-stone-400 mt-2 leading-relaxed line-clamp-3 flex-grow">${article.excerpt}</p>
-            <span class="inline-flex items-center gap-1.5 mt-4 text-sm font-medium text-brand dark:text-brand-light group-hover:underline">
+            <div class="text-xs tracking-widest uppercase text-stone-400 dark:text-stone-500 mb-2">${article.date}</div>
+            <h3 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors leading-snug">${article.title}</h3>
+            <p class="text-sm sm:text-base text-stone-500 dark:text-stone-400 mt-2 leading-relaxed line-clamp-2">${article.excerpt}</p>
+            <span class="inline-flex items-center gap-1 mt-3 text-sm font-medium text-brand dark:text-brand-light opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
                 ${t.blog.readMore} <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </span>
         `;
