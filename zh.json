@@ -1,76 +1,77 @@
 {
     "nav": {
-        "home": "\u65e5\u5fd7",
-        "visionary": "\u613f\u666f\u8005",
-        "integrator": "\u6574\u5408\u8005",
-        "cookie": "Cookie \u653f\u7b56"
+        "home": "日志",
+        "visionary": "愿景者",
+        "integrator": "整合者",
+        "cookie": "Cookie 政策"
     },
     "home": {
         "title": "RoleChk",
-        "subtitle": "\u4e13\u4e1a\u7684\u81ea\u6211\u8bc4\u4f30\u5de5\u5177\uff0c\u5e2e\u52a9\u60a8\u4e86\u89e3\u81ea\u5df1\u7684\u4f18\u52bf\u548c\u5de5\u4f5c\u98ce\u683c\u3002",
+        "subtitle": "专业的自我评估工具，帮助您了解自己的优势和工作风格。",
         "tests": [
             {
                 "id": "visioner",
-                "title": "\u613f\u666f\u8005\u6d4b\u8bd5",
-                "desc": "\u53d1\u73b0\u60a8\u7684\u521b\u4e1a\u6f5c\u529b\u3002\u4e86\u89e3\u60a8\u5982\u4f55\u4ea7\u751f\u60f3\u6cd5\u3001\u6fc0\u53d1\u53d8\u9769\u548c\u5851\u9020\u672a\u6765\u3002",
-                "info": "20 \u9053\u9898 \u00b7 \u53ea\u9700 2 \u5206\u949f",
-                "cta": "\u5f00\u59cb\u514d\u8d39\u6d4b\u8bd5"
+                "title": "愿景者测试",
+                "desc": "发现您的创业潜力。了解您如何产生想法、激发变革和塑造未来。",
+                "info": "20 道题 · 只需 2 分钟",
+                "cta": "开始免费测试"
             },
             {
                 "id": "integrator",
-                "title": "\u6574\u5408\u8005\u6d4b\u8bd5",
-                "desc": "\u8861\u91cf\u60a8\u7684\u8fd0\u8425\u5353\u8d8a\u6027\u3002\u4e86\u89e3\u60a8\u5982\u4f55\u7ed3\u6784\u4e71\u5e8f\u3001\u5f3a\u5316\u7eaa\u5f8b\u548c\u9a71\u52a8\u7ed3\u679c\u3002",
-                "info": "20 \u9053\u9898 \u00b7 \u53ea\u9700 2 \u5206\u949f",
-                "cta": "\u5f00\u59cb\u514d\u8d39\u6d4b\u8bd5"
+                "title": "整合者测试",
+                "desc": "衡量您的运营卓越性。了解您如何结构乱序、强化纪律和驱动结果。",
+                "info": "20 道题 · 只需 2 分钟",
+                "cta": "开始免费测试"
             }
         ]
     },
     "quiz": {
-        "qOf": "\u7b2c {n} \u9898\uff0c\u5171 {max} \u9898",
-        "resTitle": "\u60a8\u7684\u7ed3\u679c"
+        "qOf": "第 {n} 题，共 {max} 题",
+        "resTitle": "您的结果"
     },
     "result": {
-        "shareBtn": "\u5206\u4eab\u9a8c\u8bc1\u94fe\u63a5",
-        "copied": "\u94fe\u63a5\u5df2\u590d\u5236\uff01",
-        "shareText": "\u6211\u5728\u6d4b\u8bd5\u4e2d\u83b7\u5f97\u4e86 {score}/100 \u5206\uff01\u6765\u53d1\u73b0\u4f60\u7684\u5206\u6570\uff1a",
+        "shareBtn": "分享验证链接",
+        "copied": "链接已复制！",
+        "shareText": "我在测试中获得了 {score}/100 分！来发现你的分数：",
         "facebook": "Facebook",
         "x": "X",
         "linkedin": "LinkedIn",
         "reddit": "Reddit",
-        "copyLink": "\u590d\u5236\u94fe\u63a5"
+        "copyLink": "复制链接"
     },
     "blog": {
-        "title": "\u535a\u5ba2",
-        "readMore": "\u9605\u8bfb\u66f4\u591a",
+        "title": "博客",
+        "readMore": "阅读更多",
         "articles": [
             {
                 "id": "what-is-paei",
-                "title": "\u4ec0\u4e48\u662f PAEI \u6846\u67b6\uff1f",
-                "excerpt": "\u4ecb\u7ecd Ichak Adizes \u535a\u58eb\u7684\u7ba1\u7406\u6a21\u578b\uff0c\u4ee5\u53ca\u5b83\u5982\u4f55\u5e2e\u52a9\u60a8\u4e86\u89e3\u81ea\u5df1\u7684\u9886\u5bfc\u98ce\u683c\u3002",
+                "title": "什么是 PAEI 框架？",
+                "excerpt": "介绍 Ichak Adizes 博士的管理模型，以及它如何帮助您了解自己的领导风格。",
                 "date": "2026-01-15",
-                "content": "<p>PAEI \u6846\u67b6\u7531 Ichak Adizes \u535a\u58eb\u5f00\u53d1\uff0c\u786e\u5b9a\u4e86\u56db\u79cd\u4e3b\u8981\u7ba1\u7406\u89d2\u8272\uff1a\u751f\u4ea7\u8005\u3001\u7ba1\u7406\u8005\u3001\u521b\u4e1a\u8005\u548c\u6574\u5408\u8005\u3002\u6bcf\u4e2a\u89d2\u8272\u4ee3\u8868\u7ec4\u7ec7\u6210\u529f\u6240\u9700\u7684\u4e0d\u540c\u529f\u80fd\u3002</p><p>\u5927\u591a\u6570\u4eba\u6709\u4e00\u4e2a\u4e3b\u5bfc\u98ce\u683c\u548c\u4e00\u4e2a\u526f\u8981\u98ce\u683c\uff0c\u5176\u4e2d\u4e00\u4e2a\u89d2\u8272\u8f83\u5f31\u6216\u7f3a\u5931\u3002\u4e86\u89e3\u60a8\u7684 PAEI \u6863\u6848\u6709\u52a9\u4e8e\u60a8\u8ba4\u8bc6\u81ea\u5df1\u7684\u4f18\u52bf\u3001\u76f2\u70b9\u4ee5\u53ca\u5982\u4f55\u5efa\u7acb\u4e92\u8865\u7684\u56e2\u961f\u3002</p><h2>\u56db\u79cd\u89d2\u8272</h2><p><strong>\u751f\u4ea7\u8005 (P)</strong>\uff1a\u4e13\u6ce8\u4e8e\u7ed3\u679c\u3001\u6267\u884c\u548c\u5b8c\u6210\u4efb\u52a1\u3002\u751f\u4ea7\u8005\u4ee5\u884c\u52a8\u4e3a\u5bfc\u5411\uff0c\u901a\u8fc7\u4ea7\u51fa\u8861\u91cf\u6210\u529f\u3002</p><p><strong>\u7ba1\u7406\u8005 (A)</strong>\uff1a\u4e13\u6ce8\u4e8e\u7cfb\u7edf\u3001\u7ed3\u6784\u548c\u6548\u7387\u3002\u7ba1\u7406\u8005\u4ece\u6df7\u4e71\u4e2d\u521b\u9020\u79e9\u5e8f\uff0c\u786e\u4fdd\u6d41\u7a0b\u987a\u5229\u8fd0\u884c\u3002</p><p><strong>\u521b\u4e1a\u8005 (E)</strong>\uff1a\u4e13\u6ce8\u4e8e\u613f\u666f\u3001\u521b\u65b0\u548c\u672a\u6765\u673a\u4f1a\u3002\u521b\u4e1a\u8005\u5bcc\u6709\u521b\u9020\u529b\u3001\u5bb9\u5fcd\u98ce\u9669\u5e76\u63a8\u52a8\u53d8\u9769\u3002</p><p><strong>\u6574\u5408\u8005 (I)</strong>\uff1a\u4e13\u6ce8\u4e8e\u6587\u5316\u3001\u534f\u4f5c\u548c\u56e2\u961f\u51dd\u805a\u529b\u3002\u6574\u5408\u8005\u5efa\u7acb\u5173\u7cfb\uff0c\u4f7f\u4eba\u4eec\u56f4\u7ed5\u5171\u540c\u4ef7\u503c\u89c2\u4fdd\u6301\u4e00\u81f4\u3002</p><p>\u6ca1\u6709\u4e00\u79cd\u98ce\u683c\u6bd4\u53e6\u4e00\u79cd\u66f4\u597d\u3002\u6700\u6709\u6548\u7684\u7ec4\u7ec7\u62e5\u6709\u56db\u79cd\u89d2\u8272\u7684\u5e73\u8861\u534f\u4f5c\u3002</p>"
+                "content": "<p>PAEI 框架由 Ichak Adizes 博士开发，确定了四种主要管理角色：生产者、管理者、创业者和整合者。每个角色代表组织成功所需的不同功能。</p><p>大多数人有一个主导风格和一个副要风格，其中一个角色较弱或缺失。了解您的 PAEI 档案有助于您认识自己的优势、盲点以及如何建立互补的团队。</p><h2>四种角色</h2><p><strong>生产者 (P)</strong>：专注于结果、执行和完成任务。生产者以行动为导向，通过产出衡量成功。</p><p><strong>管理者 (A)</strong>：专注于系统、结构和效率。管理者从混乱中创造秩序，确保流程顺利运行。</p><p><strong>创业者 (E)</strong>：专注于愿景、创新和未来机会。创业者富有创造力、容忍风险并推动变革。</p><p><strong>整合者 (I)</strong>：专注于文化、协作和团队凝聚力。整合者建立关系，使人们围绕共同价值观保持一致。</p><p>没有一种风格比另一种更好。最有效的组织拥有四种角色的平衡协作。</p>"
             },
             {
                 "id": "visionary-leadership",
-                "title": "\u613f\u666f\u578b\u9886\u5bfc\u8005\u7684\u4f18\u52bf\u4e0e\u6311\u6218",
-                "excerpt": "\u613f\u666f\u578b\u9886\u5bfc\u8005\u63a8\u52a8\u521b\u65b0\uff0c\u4f46\u9762\u4e34\u72ec\u7279\u7684\u6311\u6218\u3002\u4e86\u89e3\u5982\u4f55\u5229\u7528\u60a8\u7684\u521b\u4e1a\u52a8\u529b\u540c\u65f6\u5efa\u7acb\u6709\u6548\u56e2\u961f\u3002",
+                "title": "愿景型领导者的优势与挑战",
+                "excerpt": "愿景型领导者推动创新，但面临独特的挑战。了解如何利用您的创业动力同时建立有效团队。",
                 "date": "2026-02-01",
-                "content": "<p>\u613f\u666f\u578b\u9886\u5bfc\u8005\u662f\u521b\u65b0\u7684\u5f15\u64ce\u3002\u4ed6\u4eec\u5728\u522b\u4eba\u770b\u5230\u969c\u788d\u7684\u5730\u65b9\u770b\u5230\u53ef\u80fd\u6027\uff0c\u7528\u4ee4\u4eba\u4fe1\u670d\u7684\u672a\u6765\u6fc0\u52b1\u56e2\u961f\uff0c\u5e76\u63a8\u52a8\u53d8\u9769\u6027\u53d8\u5316\u3002\u7136\u800c\uff0c\u8fd9\u79cd\u4f18\u52bf\u4f34\u968f\u7740\u72ec\u7279\u7684\u6311\u6218\u3002</p><h2>\u5173\u952e\u4f18\u52bf</h2><p><strong>\u6218\u7565\u8fdc\u89c1</strong>\uff1a\u613f\u666f\u9886\u5bfc\u8005\u9884\u89c1\u8d8b\u52bf\uff0c\u5c06\u7ec4\u7ec7\u5b9a\u4f4d\u5728\u66f2\u7ebf\u4e4b\u524d\u3002\u4ed6\u4eec\u4ee5\u5341\u5e74\u4e3a\u5355\u4f4d\u601d\u8003\uff0c\u800c\u975e\u5b63\u5ea6\u3002</p><p><strong>\u6fc0\u52b1\u6c9f\u901a</strong>\uff1a\u4ed6\u4eec\u9610\u8ff0\u5f15\u4eba\u5165\u80dc\u7684\u613f\u666f\uff0c\u5438\u5f15\u4eba\u624d\u3001\u6295\u8d44\u8005\u548c\u5ba2\u6237\u3002\u4eba\u4eec\u5e0c\u671b\u6210\u4e3a\u6709\u610f\u4e49\u4e8b\u7269\u7684\u4e00\u90e8\u5206\u3002</p><p><strong>\u98ce\u9669\u627f\u53d7\u80fd\u529b</strong>\uff1a\u4ed6\u4eec\u9002\u5e94\u4e0d\u786e\u5b9a\u6027\uff0c\u613f\u610f\u505a\u51fa\u4ed6\u4eba\u907f\u514d\u7684\u5927\u80c6\u8d4c\u6ce8\u3002</p><h2>\u5e38\u89c1\u6311\u6218</h2><p><strong>\u6267\u884c\u5dee\u8ddd</strong>\uff1a\u613f\u666f\u9886\u5bfc\u8005\u901a\u5e38\u5728\u8ddf\u8fdb\u65b9\u9762\u9047\u5230\u56f0\u96be\u3002\u4ea7\u751f\u60f3\u6cd5\u662f\u81ea\u7136\u7684\uff1b\u6267\u884c\u9700\u8981\u7eaa\u5f8b\u548c\u7cfb\u7edf\u3002</p><p><strong>\u7f3a\u4e4f\u8010\u5fc3</strong>\uff1a\u4ed6\u4eec\u53ef\u80fd\u5bf9\u65e5\u5e38\u8fd0\u8425\u611f\u5230\u538c\u5026\uff0c\u5728\u60f3\u6cd5\u5b8c\u5168\u5b9e\u73b0\u4e4b\u524d\u5c31\u8f6c\u5411\u4e0b\u4e00\u4e2a\u3002</p>"
+                "content": "<p>愿景型领导者是创新的引擎。他们在别人看到障碍的地方看到可能性，用令人信服的未来激励团队，并推动变革性变化。然而，这种优势伴随着独特的挑战。</p><h2>关键优势</h2><p><strong>战略远见</strong>：愿景领导者预见趋势，将组织定位在曲线之前。他们以十年为单位思考，而非季度。</p><p><strong>激励沟通</strong>：他们阐述引人入胜的愿景，吸引人才、投资者和客户。人们希望成为有意义事物的一部分。</p><p><strong>风险承受能力</strong>：他们适应不确定性，愿意做出他人避免的大胆赌注。</p><h2>常见挑战</h2><p><strong>执行差距</strong>：愿景领导者通常在跟进方面遇到困难。产生想法是自然的；执行需要纪律和系统。</p><p><strong>缺乏耐心</strong>：他们可能对日常运营感到厌倦，在想法完全实现之前就转向下一个。</p>"
             },
             {
                 "id": "building-balanced-teams",
-                "title": "\u5efa\u7acb\u5e73\u8861\u56e2\u961f\uff1a\u4e92\u8865\u4f18\u52bf",
-                "excerpt": "\u4f1f\u5927\u7684\u56e2\u961f\u5efa\u7acb\u5728\u4e92\u8865\u4f18\u52bf\u4e4b\u4e0a\u3002\u4e86\u89e3\u5982\u4f55\u8bc6\u522b\u56e2\u961f\u4e2d\u7684\u5dee\u8ddd\u5e76\u62db\u8058\u4ee5\u5bfb\u6c42\u5e73\u8861\u3002",
+                "title": "建立平衡团队：互补优势",
+                "excerpt": "伟大的团队建立在互补优势之上。了解如何识别团队中的差距并招聘以寻求平衡。",
                 "date": "2026-02-15",
-                "content": "<p>\u6ca1\u6709\u4e00\u4e2a\u4eba\u80fd\u5728\u6240\u6709\u65b9\u9762\u90fd\u51fa\u8272\u3002\u6700\u6709\u6548\u7684\u56e2\u961f\u5efa\u7acb\u5728\u4e92\u8865\u4f18\u52bf\u4e4b\u4e0a\uff0c\u6bcf\u4e2a\u6210\u5458\u7684\u80fd\u529b\u586b\u8865\u4ed6\u4eba\u7684\u7a7a\u767d\u3002</p><h2>\u540c\u8d28\u5316\u56e2\u961f\u7684\u95ee\u9898</h2><p>\u4ec5\u4e3a\u4e86\u6587\u5316\u5951\u5408\u800c\u62db\u8058\u7684\u56e2\u961f\u5f80\u5f80\u6700\u7ec8\u6bcf\u4e2a\u4eba\u90fd\u4ee5\u76f8\u540c\u65b9\u5f0f\u601d\u8003\u3002\u867d\u7136\u8fd9\u611f\u89c9\u548c\u8c10\uff0c\u4f46\u5b83\u521b\u9020\u4e86\u76f2\u70b9\u3002</p><h2>\u5982\u4f55\u5efa\u7acb\u5e73\u8861</h2><p><strong>\u8bc4\u4f30\u60a8\u5f53\u524d\u7684\u56e2\u961f</strong>\uff1a\u4f7f\u7528 PAEI \u7b49\u6846\u67b6\u7ed8\u5236\u6bcf\u4e2a\u56e2\u961f\u6210\u5458\u7684\u4e3b\u5bfc\u98ce\u683c\u3002\u786e\u5b9a\u54ea\u4e9b\u89d2\u8272\u8fc7\u591a\uff0c\u54ea\u4e9b\u7f3a\u5931\u3002</p><p><strong>\u4e3a\u5dee\u8ddd\u62db\u8058\uff0c\u800c\u975e\u955c\u50cf</strong>\uff1a\u62b5\u5236\u62db\u8058\u4e0e\u60a8\u601d\u7ef4\u65b9\u5f0f\u76f8\u540c\u7684\u4eba\u7684\u51b2\u52a8\u3002\u62db\u8058\u90a3\u4e9b\u6311\u6218\u60a8\u5e76\u5e26\u6765\u60a8\u6240\u7f3a\u4e4f\u6280\u80fd\u7684\u4eba\u3002</p><p><strong>\u57f9\u517b\u5fc3\u7406\u5b89\u5168\u611f</strong>\uff1a\u4e92\u8865\u56e2\u961f\u81ea\u7136\u4f1a\u6709\u7d27\u5f20\u611f\u3002\u521b\u9020\u4e00\u4e2a\u9f13\u52b1\u5c0a\u91cd\u6027\u5f02\u8bae\u7684\u73af\u5883\u3002</p>"
+                "content": "<p>没有一个人能在所有方面都出色。最有效的团队建立在互补优势之上，每个成员的能力填补他人的空白。</p><h2>同质化团队的问题</h2><p>仅为了文化契合而招聘的团队往往最终每个人都以相同方式思考。虽然这感觉和谐，但它创造了盲点。</p><h2>如何建立平衡</h2><p><strong>评估您当前的团队</strong>：使用 PAEI 等框架绘制每个团队成员的主导风格。确定哪些角色过多，哪些缺失。</p><p><strong>为差距招聘，而非镜像</strong>：抵制招聘与您思维方式相同的人的冲动。招聘那些挑战您并带来您所缺乏技能的人。</p><p><strong>培养心理安全感</strong>：互补团队自然会有紧张感。创造一个鼓励尊重性异议的环境。</p>"
             }
         ]
     },
     "cookie": {
-        "title": "Cookie \u653f\u7b56",
-        "banner": "\u672c\u7f51\u7ad9\u4f7f\u7528 cookie \u6765\u6539\u5584\u60a8\u7684\u4f53\u9a8c\u3002\u7ee7\u7eed\u4f7f\u7528\u5373\u8868\u793a\u60a8\u540c\u610f\u6211\u4eec\u4f7f\u7528 cookie\u3002",
-        "accept": "\u63a5\u53d7",
-        "content": "<p>\u672c Cookie \u653f\u7b56\u89e3\u91ca\u4e86 RoleChk \u5982\u4f55\u4f7f\u7528 cookie \u548c\u7c7b\u4f3c\u8ddf\u8e2a\u6280\u672f\u3002</p><h2>\u4ec0\u4e48\u662f Cookie</h2><p>Cookie \u662f\u5f53\u60a8\u8bbf\u95ee\u7f51\u7ad9\u65f6\u5b58\u50a8\u5728\u60a8\u8bbe\u5907\u4e0a\u7684\u5c0f\u6587\u672c\u6587\u4ef6\u3002\u5b83\u4eec\u5e2e\u52a9\u7f51\u7ad9\u8bb0\u4f4f\u60a8\u7684\u504f\u597d\u5e76\u6539\u5584\u60a8\u7684\u4f53\u9a8c\u3002</p><h2>\u6211\u4eec\u5982\u4f55\u4f7f\u7528 Cookie</h2><p><strong>\u5fc5\u8981 Cookie</strong>\uff1a\u7f51\u7ad9\u6b63\u5e38\u8fd0\u884c\u6240\u5fc5\u9700\u7684\u3002\u5305\u62ec\u5b58\u50a8\u60a8\u7684\u4e3b\u9898\u504f\u597d\uff08\u4eae/\u6697\u6a21\u5f0f\uff09\u548c\u8bed\u8a00\u9009\u62e9\u3002</p><p><strong>\u5206\u6790 Cookie</strong>\uff1a\u6211\u4eec\u53ef\u80fd\u4f7f\u7528\u57fa\u672c\u5206\u6790\u6765\u4e86\u89e3\u8bbf\u5ba2\u5982\u4f55\u4e0e\u6211\u4eec\u7684\u7f51\u7ad9\u4e92\u52a8\u3002\u4e0d\u6536\u96c6\u4e2a\u4eba\u6570\u636e\u3002</p><h2>\u60a8\u7684\u9009\u62e9</h2><p>\u60a8\u53ef\u4ee5\u901a\u8fc7\u6d4f\u89c8\u5668\u8bbe\u7f6e\u63a7\u5236 cookie\u3002\u7981\u7528 cookie \u53ef\u80fd\u4f1a\u5f71\u54cd\u7f51\u7ad9\u7684\u67d0\u4e9b\u529f\u80fd\u3002</p>"
+        "title": "Cookie 政策",
+        "banner": "我们使用必要的Cookie以确保网站正常运行。在您同意的情况下，我们可能还会使用非必要的Cookie来改善用户体验和分析网站流量。点击\"接受\"，即表示您同意我们按照Cookie政策中的描述使用Cookie。",
+        "accept": "接受",
+        "content": "<p>本Cookie政策说明RoleChk如何使用Cookie和类似技术在您访问我们网站时识别您。它解释了这些技术是什么以及我们为何使用它们，以及您控制我们使用它们的权利。</p><h2>什么是Cookie？</h2><p>Cookie是当您访问网站时放置在您计算机或移动设备上的小型数据文件。网站所有者广泛使用Cookie以使他们的网站更高效地运行，并提供报告信息。</p><p>由网站所有者设置的Cookie称为\"第一方Cookie。\"由网站所有者以外的方设置的Cookie称为\"第三方Cookie。\"</p><h2>我们为何使用Cookie？</h2><p>我们出于技术原因使用第一方Cookie以使我们的网站运行。这些被称为\"必要\"或\"严格必要\"的Cookie。我们不使用第三方Cookie进行广告、分析或跟踪。</p><p><strong>必要Cookie：</strong>这些对于网站正常运行是严格必要的。包括存储您的主题偏好（亮/暗模式）和语言选择。不收集个人浏览数据。</p><h2>如何控制Cookie？</h2><p>您可以通过浏览器设置控制Cookie。禁用必要Cookie可能会影响网站的某些功能，例如记住您的主题或语言偏好。</p><p>请访问浏览器的帮助菜单，了解如何在最流行的浏览器上管理Cookie：</p><ul><li>Chrome</li><li>Firefox</li><li>Safari</li><li>Edge</li></ul><h2>本政策多久更新一次？</h2><p>我们可能会不时更新本Cookie政策，以反映我们使用的Cookie的变化或出于其他运营、法律或监管原因。建议您定期查看此页面。</p><p>最后更新：2026年4月</p><h2>联系方式</h2><p>如果您对此政策有疑问，请通过网站与我们联系。</p>",
+        "reject": "拒绝"
     },
-    "disclaimer": "\u514d\u8d23\u58f0\u660e\uff1a\u672c\u5de5\u5177\u53d7 Ichak Adizes \u535a\u58eb\u7684 PAEI \u6846\u67b6\u542f\u53d1\uff0c\u4f46\u4e3a\u975e\u5b98\u65b9\u5de5\u5177\uff0c\u4ec5\u4f9b\u6559\u80b2\u4f7f\u7528\u3002\u6240\u6709\u56de\u7b54\u5747\u4fdd\u5b58\u5728\u60a8\u7684\u8bbe\u5907\u4e0a\uff0c\u4e0d\u4f1a\u88ab\u5b58\u50a8\u6216\u5206\u4eab\u3002"
+    "disclaimer": "免责声明：本工具受 Ichak Adizes 博士的 PAEI 框架启发，但为非官方工具，仅供教育使用。所有回答均保存在您的设备上，不会被存储或分享。"
 }

@@ -106,6 +106,7 @@ function updateStaticTexts() {
     if (el('disclaimer-text')) el('disclaimer-text').textContent = t.disclaimer;
     if (el('meta-res-title')) el('meta-res-title').textContent = t.quiz.resTitle;
     setCookieBtnText(t.cookie.accept);
+    setCookieRejectBtnText(t.cookie.reject);
 }
 
 /* ── HOME ── */
@@ -158,6 +159,17 @@ function setCookieBtnText(label) {
     if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
+function setCookieRejectBtnText(label) {
+    const btn = document.getElementById('cookie-reject-btn');
+    if (!btn) return;
+    btn.replaceChildren();
+    const icon = document.createElement('i');
+    icon.setAttribute('data-lucide', 'x');
+    icon.className = 'w-3.5 h-3.5';
+    btn.append(icon, ' ' + label);
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
 function initCookieBanner() {
     if (localStorage.getItem('cookieConsent')) {
         const banner = document.getElementById('cookie-banner');
@@ -167,10 +179,21 @@ function initCookieBanner() {
     const banner = document.getElementById('cookie-banner');
     if (!banner) return;
     banner.classList.remove('hidden');
-    document.getElementById('cookie-accept-btn').addEventListener('click', () => {
-        localStorage.setItem('cookieConsent', 'true');
-        banner.classList.add('hidden');
-    });
+
+    const accept = document.getElementById('cookie-accept-btn');
+    const reject = document.getElementById('cookie-reject-btn');
+    if (accept) {
+        accept.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            banner.classList.add('hidden');
+        });
+    }
+    if (reject) {
+        reject.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'rejected');
+            banner.classList.add('hidden');
+        });
+    }
 }
 
 /* ── QUIZ ── */
