@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rick Sanchez Test — RoleChk</title>
+    <meta name="description" content="5 signs you're a Visionary (and your business is on fire). Check yourself before your business collapses into a black hole.">
+    <link rel="canonical" href="https://rolechk.site/en/blog/the-rick-test/">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="article" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Journal</a>
+                <a href="/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Visionary</a>
+                <a href="/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Integrator</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Journal</a>
+            <a href="/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Visionary</a>
+            <a href="/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Integrator</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-3xl mx-auto">
+            <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Journal
+            </a>
+
+            <article>
+                <div class="flex items-center gap-2 text-xs text-stone-400 dark:text-stone-500 mb-4">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                    <span>2026-06-01</span>
+                </div>
+
+                <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-6 tracking-tight leading-tight">
+                    The Rick Sanchez Test: 5 Signs You're a Visionary (and Your Business Is on Fire)
+                </h1>
+
+                <p class="text-base text-stone-500 dark:text-stone-400 mb-8 italic">
+                    Article 2 of the series. A brutal, cynical, but damn truthful post-mortem for those stuck in "I'll figure it out myself" mode.
+                </p>
+
+                <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
+
+                    <p>
+                        In the last episode, we figured out that trying to drag a company alone is mental suicide. Today, we take off the masks. Come in, have a seat at the operating table. We're going to dissect your brain to find out just how close you are to the archetypal mad genius — Rick Sanchez.
+                    </p>
+
+                    <p>
+                        The book <em>Rocket Fuel</em> claims that only about 3&ndash;5% of people possess true entrepreneurial vision. If you started a business, chances are you're one of them. But this coin has a very ugly flip side.
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        Let's be honest. How many times have you caught yourself thinking your team is a bunch of lazy Jerrys who can't take a step without your direction? Now look in the mirror. Maybe the problem isn't them. Maybe you're just consuming their resources with your chaos.
+                    </p>
+
+                    <p class="text-lg sm:text-xl font-medium text-stone-700 dark:text-stone-300">
+                        Here are 5 classic signs you're a Visionary. Check yourself before your business collapses into a black hole.
+                    </p>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8"></div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">1.</span>
+                        <span>"I've got an idea!" every 10 minutes</span>
+                    </h2>
+
+                    <p>
+                        Your brain is a nuclear reactor generating insights at industrial scale. You're watering a plant, watching a show, driving a car — and BAM! New product, new market, new positioning strategy.
+                    </p>
+
+                    <p>
+                        You burst into the work chat with burning eyes: <em>"Morty, drop everything, we're going to rob Pluto!"</em> The team obediently drops current tasks, rebuilds processes, spends a week on testing... and next Monday you show up and say: <em>"Pluto sucks, I came up with something way cooler!"</em>
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnosis:</strong> You inspire, but you also paralyze. Constant course-changing — aka Shiny Object Syndrome — turns your company into a boat spinning wildly in place.
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">2.</span>
+                        <span>Allergy to micromanagement and spreadsheets</span>
+                    </h2>
+
+                    <p>
+                        The mere sight of an Excel sheet makes you nauseous. Filling out a CRM triggers an existential crisis comparable to realizing the meaninglessness of the universe. You genuinely don't understand why you need to spend two hours writing up procedures when <em>"it's totally obvious, just do it properly!"</em>
+                    </p>
+
+                    <p>
+                        Your element is chaos, storming, firefighting in "hero mode," and closing big deals through sheer charisma.
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnosis:</strong> A business only grows when it has a system. Without systems, you're not building a corporation — you're building a nomad camp. If you're not there, the camp dies.
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">3.</span>
+                        <span>Your employees fear you (and don't understand you)</span>
+                    </h2>
+
+                    <p>
+                        When you walk into the office or join a call, the temperature drops. No, you're not a evil tyrant. You just think three light-years ahead. You give a task like: <em>"We need to rebuild the funnel so the customer feels at home."</em>
+                    </p>
+
+                    <p>
+                        To you, that's a crystal-clear picture. To your marketer, it's a collection of vague sounds. They do it wrong, you blow up, scream that everyone's an idiot, and retreat to your garage.
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnosis:</strong> Visionaries often have a broken communication gateway. You live in the future; your team lives in the present. They need rails and metrics, not your cosmic metaphors.
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">4.</span>
+                        <span>You abandon projects at 80% completion</span>
+                    </h2>
+
+                    <p>
+                        You're insanely excited about the start. First sales, concept development, choosing a logo, shouts of <em>"We're going to crush the market!"</em> But as soon as it comes to routine implementation, bug fixing, legal red tape, and integration setup — your fuse goes out. You get bored. The task hangs at "almost done" for weeks while you've already jumped to a new "shiny object."
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnosis:</strong> You're a sprinter, but business is a marathon. Without someone who methodically pushes tasks to 100% completion, your company becomes a graveyard of brilliant but non-functional prototypes.
+                        </p>
+                    </div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">5.</span>
+                        <span>You're the main bottleneck of your own company</span>
+                    </h2>
+
+                    <p>
+                        The most paradoxical one. You created this business, but you're also preventing it from growing. All key decisions are locked on you. The designer can't publish a banner without your "okay." The salesperson can't give a discount without your approval. You feel like a slave to your own creation, working 14-hour days, but if you turn off your phone for two days — everything stops and burns.
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base font-medium text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Diagnosis:</strong> You've tied operations to your personality because you subconsciously fear letting go of the wheel. You confuse control over the company with control over processes.
+                        </p>
+                    </div>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8"></div>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-8 mb-3 tracking-tight">How many out of 5 did you score?</h2>
+
+                    <p>
+                        If at least 3 out of 5 — congratulations, you're a pure-blooded Rick Sanchez. Your brain is a billion-dollar asset, but your management methods are pure liability.
+                    </p>
+
+                    <p class="font-semibold text-stone-900 dark:text-stone-100">
+                        The good news: you don't need to break yourself, learn to love spreadsheets, or force yourself to check reports. That won't work — you'll just burn out and hate your work. Your job is to stay Rick, but find someone to handle the grunt work. Someone to clean up your garage.
+                    </p>
+
+                    <div class="border-t border-stone-200/40 dark:border-stone-700/40 pt-6 mt-8">
+                        <p class="text-sm text-stone-400 dark:text-stone-500 italic">
+                            In the next article, we'll break down who a real Integrator is. Spoiler: it's not an obedient secretary or just a COO. It's someone who has the right to tell you <em>"Shut up, Rick, we're sticking to the plan."</em> Ready for that? Wait for the next portal gun signal.
+                        </p>
+                    </div>
+
+                </div>
+            </article>
+
+            <div class="mt-10 pt-6 border-t border-stone-200/40 dark:border-stone-700/40">
+                <a href="/" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand dark:text-brand-light hover:underline no-underline">
+                    <i data-lucide="chevron-left" class="w-4 h-4"></i> All articles
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p id="disclaimer-text" class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center"></p>
+            <a href="/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie Policy</a>
+        </div>
+    </footer>
+
+    <script src="/app.js" defer></script>
+</body>
+</html>
