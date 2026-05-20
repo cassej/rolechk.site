@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de supervivencia en un platillo volador: 5 reglas para el Visionario y el Integrador — RoleChk</title>
+    <meta name="description" content="5 reglas implacables de Rocket Fuel para evitar que el dúo Visionario-Integrador se aniquile mutuamente y tu negocio se hunda en el caos.">
+    <link rel="canonical" href="https://rolechk.site/es/blog/survival-codex/">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="article" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/es/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/es/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Blog</a>
+                <a href="/es/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Visionario</a>
+                <a href="/es/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Integrador</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es" selected>ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/es/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Blog</a>
+            <a href="/es/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Visionario</a>
+            <a href="/es/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Integrador</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-3xl mx-auto">
+            <a href="/es/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver al Blog
+            </a>
+
+            <article>
+
+                <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-8 tracking-tight leading-tight">
+                    Código de supervivencia en un platillo volador: 5 reglas para el Visionario y el Integrador
+                </h1>
+
+                <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
+
+                    <p>
+                        Imagina la escena: Rick y Morty vuelan en el platillo. Rick grita que hay que saltar a un portal ahora mismo, Morty entra en pánico y frena, mientras Summer y Jerry en el asiento trasero se golpean la cabeza contra el cristal. Así es exactamente una reunión típica en una empresa donde el fundador (Visionario) y su director operativo (Integrador) no saben interactuar. El equipo ve la grieta, pierde el rumbo y empieza a sabotear todas las tareas.
+                    </p>
+
+                    <p>
+                        <em>Rocket Fuel</em> ofrece un código implacable de 5 reglas que salvará a tu dúo de la aniquilación mutua y a tu negocio del caos.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">1.</span>
+                        <span>Frente unido ante la Ciudadela</span>
+                    </h2>
+
+                    <p>
+                        Esta es la regla más sagrada. Tú y tu socio pueden gritarse en un garaje cerrado, tirar sillas, discutir hasta quedarse roncos y demostrarse mutuamente que están equivocados con datos. Pero en cuanto abren la puerta y salen ante el equipo — proyectan un acuerdo absoluto y monolítico.
+                    </p>
+
+                    <p>
+                        Si Rick dice delante de todos: "Ah, Morty inventó otra tontería con los KPI, olvídalo", la autoridad del Integrador cae a cero al instante. El equipo aprende que las decisiones de Morty se pueden sabotear quejándose directamente a Rick.
+                    </p>
+
+                    <p>
+                        <strong class="text-stone-900 dark:text-stone-50">Cómo debería ser:</strong> Todas las discusiones — estrictamente a puerta cerrada. Frente a los empleados, sois un solo organismo. Si el equipo no ve ni la más mínima grieta entre vosotros, dejan de buscar atajos y empiezan a trabajar.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">2.</span>
+                        <span>El Integrador es el único jefe de la operación</span>
+                    </h2>
+
+                    <p>
+                        Ya lo tratamos en el Accountability Chart, pero lo repetimos porque los Rick tienen el gatillo demasiado fácil. El Integrador gestiona los procesos diarios. Punto.
+                    </p>
+
+                    <p>
+                        Si a Rick no le gusta cómo trabajan ventas o marketing, no va a reprender a los jefes de departamento. Va al Integrador.
+                    </p>
+
+                    <p>
+                        El Visionario debe ceder voluntariamente la última palabra en todo lo relacionado con la Ejecución. Si el Integrador ha construido un sistema, Rick no tiene derecho a romperlo con incursiones repentinas. Tu platillo vuela hacia donde señalaste, Rick, pero Morty es responsable del motor. No metas las manos bajo el capó en pleno vuelo.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">3.</span>
+                        <span>El desempate (Tie-Breaker)</span>
+                    </h2>
+
+                    <p>
+                        ¿Qué pasa cuando chocáis y nadie quiere ceder? Por ejemplo, Rick quiere invertir todo el dinero disponible en lanzar un dispositivo cuántico loco, y Morty cree que eso anulará el capital de trabajo y matará la empresa el mes que viene. Discutís durante horas y llegáis a un punto muerto.
+                    </p>
+
+                    <p>
+                        Para eso existe el mecanismo legítimo del Tie-Breaker (voto decisivo). ¿Quién tiene la última palabra?
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Visión, Marca, Cultura y Dirección Estratégica</strong> — la última palabra SIEMPRE es del Visionario (Rick). Es su negocio, su chispa.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-subtle dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-4">
+                        <p class="text-sm sm:text-base text-stone-700 dark:text-stone-300">
+                            <strong class="text-stone-900 dark:text-stone-50">Recursos, Finanzas, Tiempo y Procesos Diarios</strong> — la última palabra SIEMPRE es del Integrador (Morty). Si él dice "no tenemos dinero ni gente ahora mismo" — eso es ley.
+                        </p>
+                    </div>
+
+                    <p>
+                        Si ambos respetáis las zonas de competencia del otro, no habrá puntos muertos.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">4.</span>
+                        <span>Reuniones «En la misma página»</span>
+                    </h2>
+
+                    <p>
+                        La razón más común de divorcios entre socios comerciales es sencilla: dejan de hablar y empiezan a acumular resentimientos. A Rick le parece que Morty está sofocando su genio con burocracia. A Morti le parece que Rick ha perdido la cabeza y está incendiando la empresa por todos lados.
+                    </p>
+
+                    <p>
+                        Para evitarlo, se instaura un ritual obligatorio: la reunión "En la misma página". Una vez a la semana o cada dos semanas, os encerráis juntos durante 2-3 horas. Sin teléfonos, sin equipo, sin informes.
+                    </p>
+
+                    <p>
+                        Sacáis todas las "cucarachas" a la mesa: discutís malentendidos personales, sincronizáis objetivos a largo plazo y verificáis si alguien está pisando el botón del otro. Es terapia preventiva para tu negocio.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">5.</span>
+                        <span>Trabajar para la empresa, no para tu ego</span>
+                    </h2>
+
+                    <p>
+                        Rick Sanchez es un egocéntrico narcisista. Y eso es un problema enorme para el negocio. Si el Visionario empieza a tratar al Integrador no como un socio igualitario en el éxito, sino como un "sirviente" que solo limpia lo que él ensucia, el Integrador se irá. Y se irá a la competencia, llevándose todo el sistema que construyó.
+                    </p>
+
+                    <p>
+                        Debes tener claro: el uno sin el otro no valéis nada. Un Visionario sin Integrador es solo un soñador en un garaje vacío. Un Integrador sin Visionario es un administrador aburrido que mueve papeles en una oficina estancada. Tu negocio solo crece a través de la sinergia. Guarda tu ego en el estante más lejano.
+                    </p>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-6">
+                        <p class="text-sm sm:text-base font-semibold text-stone-900 dark:text-stone-50">
+                            Resumen de oro: Si adoptas estas 5 reglas, tu platillo volador acelerará tanto que la Ciudadela de los Ricks temblará. El sistema empezará a funcionar sin tu participación 24/7.
+                        </p>
+                    </div>
+
+                    <p>
+                        ¿Pero dónde diablos encuentras a un Morty que acepte aguantar tu carácter difícil y además sea capaz de gestionar la empresa con firmeza? En el próximo episodio pasaremos al tercer bloque — la práctica y la búsqueda. Te daré una guía paso a paso para construir el perfil del Integrador ideal y dónde buscarlo si alrededor solo hay Jerrys. Cambia el portal al siguiente artículo.
+                    </p>
+
+                </div>
+            </article>
+
+            <nav class="mt-12 pt-8 border-t border-stone-200/40 dark:border-stone-700/40">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+                    <a href="/es/blog/accountability-chart/" class="group no-underline max-w-[45%]">
+                        <span class="text-xs text-stone-400 dark:text-stone-500">← Artículo anterior</span>
+                        <p class="text-sm font-medium text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors mt-0.5 leading-snug">El Accountability Chart: Quién manda en el garaje y quién en el Consejo Intergaláctico</p>
+                    </a>
+                    <a href="/es/" class="text-xs text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 transition-colors shrink-0">Todos los artículos</a>
+                    <a href="/es/blog/where-to-find-your-morty/" class="group no-underline max-w-[45%] text-right">
+                        <span class="text-xs text-stone-400 dark:text-stone-500">Siguiente artículo →</span>
+                        <p class="text-sm font-medium text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors mt-0.5 leading-snug">Dónde encontrar a tu Morty si alrededor solo hay Jerrys</p>
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+    </main>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center">Descargo de responsabilidad: Esta herramienta esta inspirada en el marco PAEI del Dr. Ichak Adizes, pero es no oficial y solo para uso educativo. Todas las respuestas permanecen en su dispositivo y no se almacenan ni se comparten.</p>
+            <a href="/es/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Politica de Cookies</a>
+        </div>
+    </footer>
+
+    <script src="/js/shared.js" defer></script>
+</body>
+</html>
