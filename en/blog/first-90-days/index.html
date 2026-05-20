@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First 90 Days in One Dimension: How Rick Learns to Trust Someone Else at the Wheel — RoleChk</title>
+    <meta name="description" content="The most dangerous period from Rocket Fuel — the first 90 days after hiring an Integrator. How to survive the adaptation crisis and not fire your perfect Morty.">
+    <link rel="canonical" href="https://rolechk.site/en/blog/first-90-days/">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="article" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/en/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/en/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Journal</a>
+                <a href="/en/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Visionary</a>
+                <a href="/en/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">Integrator</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en" selected>EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh">ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/en/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Journal</a>
+            <a href="/en/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Visionary</a>
+            <a href="/en/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">Integrator</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-3xl mx-auto">
+            <a href="/en/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Journal
+            </a>
+
+            <article>
+
+                <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-8 tracking-tight leading-tight">
+                    First 90 Days in One Dimension: How Rick Learns to Trust Someone Else at the Wheel
+                </h1>
+
+                <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
+
+                    <p>
+                        So, Rick, you did it. You hired an Integrator. A real, system-minded guy with steel balls who isn't afraid of your mental raids. You gave him the keys to the garage, sat in the passenger seat of the flying saucer, and got ready to watch your business transform into an intergalactic corporation.
+                    </p>
+
+                    <p>
+                        But by the end of the first week, your eye is already twitching.
+                    </p>
+
+                    <p>
+                        Your new Morty blocked direct access to the developers, canceled your "brilliant" Friday promotion because it breaks the margins, and made you (!) fill out a report by Monday. Your ego is screaming like a Cronenberg stuck in the textures: "It's my business! I built it from scratch when you weren't even in the project! Give me the wheel, I'll redo everything myself!"
+                    </p>
+
+                    <p>
+                        Easy, Rick. Put down the portal gun. What you're feeling right now is called the <em>Adaptation Crisis</em> in <em>Rocket Fuel</em>. This is the most dangerous period, when 80% of Visionaries crack, fire their awesome Integrator, and crawl back into their familiar, cozy operational hell.
+                    </p>
+
+                    <p>
+                        Let's break down how to survive the first 90 days without getting a divorce.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">Phase 1</span>
+                        <span>Days 1–30: Inventory of Chaos</span>
+                    </h2>
+
+                    <p>
+                        Your Morty's first month in the company is not a time for grand achievements. It's when he looks under every rug in your garage and quietly freaks out at what he sees. He studies the P&L (if it even exists), digs through the crooked CRM, talks to the team, and tries to understand why the processes are held together with duct tape and spit.
+                    </p>
+
+                    <p>
+                        <strong class="text-stone-900 dark:text-stone-50">Your job in this period:</strong> Shut up and don't interfere. It will seem like he's slow, that he's "not dynamic enough." Remember: to build a system, you first have to study the old foundation. Your only duty right now is to honestly answer his questions and give him access to the numbers.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">Phase 2</span>
+                        <span>Days 31–60: Withdrawal and Crisis of Control</span>
+                    </h2>
+
+                    <p>
+                        Now the real meat show begins. In the second month, the Integrator starts implementing the Accountability Chart and cutting the fat. He removes duplicate functions, introduces hard metrics for departments, and — the most painful part — starts filtering your ideas.
+                    </p>
+
+                    <p>
+                        You come running in screaming: "I figured out how to sell our software to reptiloids from dimension 35C!" and he coolly blocks the task because the team hasn't even finished building the funnel for Earthlings.
+                    </p>
+
+                    <p>
+                        You'll go through hard withdrawal. It will feel like the system is "suffocating" your creativity.
+                    </p>
+
+                    <p>
+                        <strong class="text-stone-900 dark:text-stone-50">How to survive:</strong> Understand that systemization is not a prison for your genius. It's rails. Without those rails, your train will just fly into a ditch. When Morty says "not now," it means "not now," not "your idea sucks." Learn to trust his operational intuition the same way he trusts your strategic vision.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">Phase 3</span>
+                        <span>Days 61–90: First Fruits and the United Front Syndrome</span>
+                    </h2>
+
+                    <p>
+                        By the third month, the fog starts to clear. The team gets used to the new rules. Employees stop running to you crying about the "tough director" because they know Rick will just send them back to Morty (you do remember the United Front Rule, right?).
+                    </p>
+
+                    <p>You suddenly catch yourself thinking:</p>
+
+                    <ul class="list-disc pl-5 space-y-2 text-stone-700 dark:text-stone-300">
+                        <li>You sleep at night instead of rebuilding ad campaigns;</li>
+                        <li>On calls, department heads speak in numbers, not excuses;</li>
+                        <li>You have free time to actually think about next year's strategy or go to a conference.</li>
+                    </ul>
+
+                    <p>
+                        The chaos in the garage is turning into an automated conveyor belt.
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">Checklist for Rick</span>
+                        <span>How to Know the Break-In Succeeded</span>
+                    </h2>
+
+                    <p>By day 90, you should reach the next level of partnership:</p>
+
+                    <ul class="list-disc pl-5 space-y-2 text-stone-700 dark:text-stone-300">
+                        <li>You regularly hold Same Page Meetings and don't want to kill each other afterward.</li>
+                        <li>The team clearly knows who their boss is. For all operational questions, they go to the Integrator. They come to you only for a dose of inspiration or scale.</li>
+                        <li>You've voluntarily surrendered the final say on budget, hiring line staff, and deadlines.</li>
+                    </ul>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-6">
+                        <p class="text-sm sm:text-base font-semibold text-stone-900 dark:text-stone-50">
+                            Bottom line for the mad genius: Handing over the wheel of your company to another person is like giving your firstborn to be raised by an alien race. Painful, terrifying, your ego convulses. But it's the only way to turn your garage startup into an empire that outlives you.
+                        </p>
+                    </div>
+
+                    <p>
+                        We're on the home stretch. In the next — final — episode of our series, we'll break down the concrete toolkit. Quantifying chaos: Time crystals, Scorecard metrics, and 5 operational control tools that will keep your business rocket on course and prevent it from turning into a Cronenberg. Ready the final portal, Rick. Engage the thrust.
+                    </p>
+
+                </div>
+            </article>
+
+            <nav class="mt-12 pt-8 border-t border-stone-200/40 dark:border-stone-700/40">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+                    <a href="/en/blog/where-to-find-your-morty/" class="group no-underline max-w-[45%]">
+                        <span class="text-xs text-stone-400 dark:text-stone-500">← Previous article</span>
+                        <p class="text-sm font-medium text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors mt-0.5 leading-snug">Where to Find Your Morty If All Around Are Jerrys</p>
+                    </a>
+                    <a href="/en/" class="text-xs text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 transition-colors shrink-0">All articles</a>
+                    <div></div>
+                </div>
+            </nav>
+
+        </div>
+    </main>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center">Disclaimer: This tool is inspired by Dr. Ichak Adizes PAEI framework but is unofficial and for educational use only. All responses stay on your device and are not stored or shared.</p>
+            <a href="/en/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie Policy</a>
+        </div>
+    </footer>
+
+    <script src="/js/shared.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同一维度的前90天：瑞克如何学会信任别人的方向盘 — RoleChk</title>
+    <meta name="description" content="《火箭燃料》中最危险的时期——雇佣整合者后的头90天。如何度过适应危机，不辞退你完美的莫蒂。">
+    <link rel="canonical" href="https://rolechk.site/zh/blog/first-90-days/">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+        @theme {
+            --color-brand: #0d9488;
+            --color-brand-hover: #0f766e;
+            --color-brand-light: #2dd4bf;
+            --color-brand-subtle: #ccfbf1;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="article" class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-50 font-sans min-h-screen flex flex-col transition-colors duration-300 antialiased">
+
+    <header class="bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-b border-stone-200/40 dark:border-stone-800/40">
+        <div class="px-6 sm:px-10 h-16 sm:h-18 flex items-center justify-between max-w-none">
+            <a href="/zh/" class="flex items-center gap-2.5 font-semibold text-stone-900 dark:text-stone-50 no-underline">
+                <i data-lucide="target" class="w-5 h-5 text-brand dark:text-brand-light"></i>
+                <span class="text-lg tracking-tight">RoleChk</span>
+            </a>
+            <nav class="hidden sm:flex items-center gap-1">
+                <a href="/zh/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">博客</a>
+                <a href="/zh/visioner/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">远见者</a>
+                <a href="/zh/integrator/" class="px-4 py-2 text-sm font-medium rounded-xl text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 hover:bg-stone-100 dark:hover:bg-stone-800 transition-all">整合者</a>
+            </nav>
+            <div class="flex items-center gap-1.5">
+                <div class="relative">
+                    <select id="lang-select" class="appearance-none h-9 pl-3 pr-8 bg-transparent border border-stone-200 dark:border-stone-700 rounded-xl text-xs font-medium text-stone-600 dark:text-stone-400 cursor-pointer focus:outline-none focus:border-brand dark:focus:border-brand-light transition-colors">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="zh" selected>ZH</option>
+                    </select>
+                    <i data-lucide="globe" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-stone-400 pointer-events-none"></i>
+                </div>
+                <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-xl text-stone-500 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer transition-all border border-transparent hover:border-stone-200 dark:hover:border-stone-700">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="sm:hidden flex items-center justify-center gap-6 pb-3.5">
+            <a href="/zh/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">博客</a>
+            <a href="/zh/visioner/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">远见者</a>
+            <a href="/zh/integrator/" class="text-xs font-medium text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-50 transition-colors">整合者</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-3xl mx-auto">
+            <a href="/zh/" class="inline-flex items-center gap-1.5 text-sm font-medium text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-50 transition-colors mb-8 no-underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> 返回博客
+            </a>
+
+            <article>
+
+                <h1 class="text-2xl sm:text-3xl font-semibold text-stone-900 dark:text-stone-50 mb-8 tracking-tight leading-tight">
+                    同一维度的前90天：瑞克如何学会信任别人的方向盘
+                </h1>
+
+                <div class="prose prose-stone dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed space-y-5">
+
+                    <p>
+                        所以，瑞克，你做到了。你雇佣了一个整合者。一个真正的、有系统思维、有钢铁意志、不怕你精神袭击的家伙。你把车库的钥匙给了他，坐在飞碟的副驾驶座上，准备好看着你的企业变成星际公司。
+                    </p>
+
+                    <p>
+                        但第一周还没结束，你的眼睛就开始抽搐了。
+                    </p>
+
+                    <p>
+                        你的新莫蒂封锁了对开发人员的直接访问，取消了你"天才"的周五促销活动（因为它破坏了利润率），还逼你（！）在周一之前填一份报告。你的自我像被困在纹理中的Cronenberg一样尖叫："这是我的公司！我白手起家建了它，当时你连项目都还没加入！把方向盘还给我，我自己重新来！"
+                    </p>
+
+                    <p>
+                        冷静，瑞克。放下传送枪。你现在的感受在《火箭燃料》中被称为<em>适应危机</em>。这是最危险的时期，80%的远见者会崩溃，解雇他们出色的整合者，爬回他们熟悉而舒适的运营地狱。
+                    </p>
+
+                    <p>
+                        让我们分析如何度过前90天而不离婚。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">第一阶段</span>
+                        <span>第1–30天：混乱盘点</span>
+                    </h2>
+
+                    <p>
+                        你的莫蒂在公司的第一个月不是用来取得伟大成就的。而是用来查看你车库里的每一块地毯，并对看到的东西默默震惊。他研究损益表（如果它存在的话），翻看扭曲的CRM系统，与团队交谈，试图理解为什么流程是用胶带和口水粘在一起的。
+                    </p>
+
+                    <p>
+                        <strong class="text-stone-900 dark:text-stone-50">你在这段时间的任务：</strong>闭嘴，不要干涉。你会觉得他很慢，"不够有活力"。记住：要建立系统，得先研究旧地基。你现在唯一的义务是诚实地回答他的问题，给他数据的访问权限。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">第二阶段</span>
+                        <span>第31–60天：戒断反应与控制危机</span>
+                    </h2>
+
+                    <p>
+                        真正的肉戏开始了。在第二个月，整合者开始实施问责表，砍掉多余的东西。他消除重复职能，为各部门引入严格的指标——最痛苦的是——开始过滤你的想法。
+                    </p>
+
+                    <p>
+                        你冲进来喊道："我想到了怎么把我们的软件卖给35C维度的爬虫人！"而他冷静地阻止了这个任务，因为团队连地球人的漏斗都还没建好。
+                    </p>
+
+                    <p>
+                        你会经历严重的戒断反应。你会觉得系统在"窒息"你的创造力。
+                    </p>
+
+                    <p>
+                        <strong class="text-stone-900 dark:text-stone-50">如何生存：</strong>要明白系统化不是你天才的监狱。它是轨道。没有这些轨道，你的火车就会飞进沟里。当莫蒂说"现在不行"时，意思是"现在不行"，不是"你的想法很烂"。学会相信他的运营直觉，就像他相信你的战略眼光一样。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">第三阶段</span>
+                        <span>第61–90天：初步成果与统一阵线综合征</span>
+                    </h2>
+
+                    <p>
+                        到第三个月，迷雾开始散去。团队习惯了新规则。员工不再跑来向你哭诉"严厉的总监"，因为他们知道瑞克会把他们送回莫蒂那里（你还记得统一阵线规则吧？）。
+                    </p>
+
+                    <p>你突然意识到：</p>
+
+                    <ul class="list-disc pl-5 space-y-2 text-stone-700 dark:text-stone-300">
+                        <li>你晚上在睡觉，而不是在重做广告活动；</li>
+                        <li>在电话会议上，部门主管用数字说话，而不是找借口；</li>
+                        <li>你有空闲时间真正思考明年的战略或去参加一个会议。</li>
+                    </ul>
+
+                    <p>
+                        车库里的混乱正在变成自动化的流水线。
+                    </p>
+
+                    <h2 class="text-xl sm:text-2xl font-semibold text-stone-900 dark:text-stone-50 mt-10 mb-3 tracking-tight flex items-start gap-3">
+                        <span class="text-brand dark:text-brand-light shrink-0">瑞克的检查清单</span>
+                        <span>如何判断磨合成功</span>
+                    </h2>
+
+                    <p>到第90天，你们应该达到合作的下一个层次：</p>
+
+                    <ul class="list-disc pl-5 space-y-2 text-stone-700 dark:text-stone-300">
+                        <li>你们定期举行"同步"会议，之后不想杀了对方。</li>
+                        <li>团队清楚地知道谁是他们的老板。所有运营问题他们去找整合者。他们只来找你要灵感或扩大的视野。</li>
+                        <li>你自愿交出了预算、招聘一线员工和截止日期方面的最终决定权。</li>
+                    </ul>
+
+                    <div class="bg-stone-100 dark:bg-stone-800/40 border-l-4 border-brand dark:border-brand-light rounded-r-xl p-4 sm:p-5 my-6">
+                        <p class="text-sm sm:text-base font-semibold text-stone-900 dark:text-stone-50">
+                            疯狂天才的结论：把公司的方向盘交给另一个人就像把长子交给外星种族抚养。痛苦、可怕、你的自我在抽搐。但这是把你车库里的初创公司变成超越你本人的帝国的唯一方法。
+                        </p>
+                    </div>
+
+                    <p>
+                        我们进入了最后冲刺。在下一集——我们系列的最后一集——我们将分析具体的工具包。量化混乱：时间水晶、指标记分卡和5个运营控制工具，它们将保持你的企业火箭在正确的航向上，防止它变成Cronenberg。准备最终传送门，瑞克。启动推进器。
+                    </p>
+
+                </div>
+            </article>
+
+            <nav class="mt-12 pt-8 border-t border-stone-200/40 dark:border-stone-700/40">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+                    <a href="/zh/blog/where-to-find-your-morty/" class="group no-underline max-w-[45%]">
+                        <span class="text-xs text-stone-400 dark:text-stone-500">← 上一篇</span>
+                        <p class="text-sm font-medium text-stone-900 dark:text-stone-50 group-hover:text-brand dark:group-hover:text-brand-light transition-colors mt-0.5 leading-snug">如果周围都是杰瑞，去哪里找你的莫蒂</p>
+                    </a>
+                    <a href="/zh/" class="text-xs text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 transition-colors shrink-0">所有文章</a>
+                    <div></div>
+                </div>
+            </nav>
+
+        </div>
+    </main>
+
+    <footer class="px-6 sm:px-10 pb-6 sm:pb-8 pt-2">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+            <p class="text-[11px] leading-relaxed text-stone-400 dark:text-stone-500 text-center">免责声明：本工具受 Ichak Adizes 博士的 PAEI 框架启发，但为非官方工具，仅供教育使用。所有回答均保存在您的设备上，不会被存储或分享。</p>
+            <a href="/zh/cookie.html" class="text-[11px] text-stone-400 dark:text-stone-500 hover:text-brand dark:hover:text-brand-light underline decoration-stone-300 dark:decoration-stone-700 underline-offset-2 whitespace-nowrap transition-colors">Cookie 政策</a>
+        </div>
+    </footer>
+
+    <script src="/js/shared.js" defer></script>
+</body>
+</html>
